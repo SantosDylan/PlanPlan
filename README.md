@@ -36,7 +36,7 @@ npm run dev            # web app sur http://localhost:5173
    git remote add origin git@github.com-epitech:<user>/PlanPlan.git
    git push -u origin main
    ```
-2. Repo → Settings → Pages → Source : **GitHub Actions**.
+2. Repo → Settings → Pages → Source : **GitHub Actions**. ⚠️ Nécessite un repo **public** sur le plan gratuit GitHub — sur un repo privé l'activation échoue silencieusement en pratique (HTTP 422), voir [docs/solutions/integration-issues/github-pages-requires-public-repo.md](docs/solutions/integration-issues/github-pages-requires-public-repo.md).
 3. C'est tout : chaque push sur `main` déploie ; le cron rafraîchit la programmation et ne commit que si elle a changé.
 
 ## À savoir
