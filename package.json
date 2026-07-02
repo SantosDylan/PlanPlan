@@ -1,0 +1,16 @@
+{
+  "name": "planplan",
+  "private": true,
+  "workspaces": [
+    "ingest",
+    "web"
+  ],
+  "scripts": {
+    "ingest": "npm run ingest -w @planplan/ingest",
+    "dev": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "test": "npm run test -w @planplan/ingest",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  }
+}

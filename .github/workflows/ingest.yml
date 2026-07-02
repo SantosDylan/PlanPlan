@@ -1,0 +1,38 @@
+name: Ingestion programmation
+
+on:
+  schedule:
+    # ~08h et 18h Europe/Paris (07h/17h en hiver) — la programmation change ~1×/semaine,
+    # 2×/jour couvre largement (annulations) sans charger le site source.
+    - cron: '0 6,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run ingest
+      - name: Commit si la programmation a changé
+        run: |
+          git config user.name "planplan-bot"
+          git config user.email "planplan-bot@users.noreply.github.com"
+          git add web/public/data web/public/calendar
+          # generatedAt/DTSTAMP changent à chaque run : on ne commit que si autre chose a bougé.
+          if git diff --cached --quiet -I'generatedAt' -I'DTSTAMP'; then
+            echo "Programmation inchangée — pas de commit."
+            exit 0
+          fi
+          git commit -m "data: refresh programmation ($(date -u +%Y-%m-%d))"
+          git push
