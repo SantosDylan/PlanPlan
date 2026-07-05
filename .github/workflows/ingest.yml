@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: ingest
@@ -25,6 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run ingest
       - name: Commit si la programmation a changé
+        id: commit
         run: |
           git config user.name "planplan-bot"
           git config user.email "planplan-bot@users.noreply.github.com"
@@ -32,7 +34,17 @@ jobs:
           # generatedAt/DTSTAMP changent à chaque run : on ne commit que si autre chose a bougé.
           if git diff --cached --quiet -I'generatedAt' -I'DTSTAMP'; then
             echo "Programmation inchangée — pas de commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "data: refresh programmation ($(date -u +%Y-%m-%d))"
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: Déclencher le déploiement du site
+        # Un push fait avec le GITHUB_TOKEN par défaut ne relance pas les workflows
+        # écoutant `on: push` (garde-fou anti-boucle de GitHub Actions) : deploy.yml
+        # ne se lancerait donc jamais tout seul après un commit d'ingestion sans cet appel explicite.
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
