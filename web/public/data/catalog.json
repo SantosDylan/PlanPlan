@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T08:54:16.881Z",
+  "generatedAt": "2026-07-05T17:12:27.049Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -19,13 +19,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10462",
-          "movieId": "scala-thionville-903",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-05T15:50:00+0200",
-          "endsAtEstimate": "2026-07-05T15:21:00.000Z"
-        },
         {
           "id": "scala-thionville-10463",
           "movieId": "scala-thionville-903",
@@ -226,88 +219,6 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
-      "id": "scala-thionville-904",
-      "cinemaId": "scala-thionville",
-      "title": "Le Garçon qui faisait danser les collines",
-      "genres": [
-        "Comédie",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10471",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-05T16:00:00+0200",
-          "endsAtEstimate": "2026-07-05T15:39:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10472",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-06T15:50:00+0200",
-          "endsAtEstimate": "2026-07-06T15:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10473",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-07T15:50:00+0200",
-          "endsAtEstimate": "2026-07-07T15:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10520",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-08T18:05:00+0200",
-          "endsAtEstimate": "2026-07-08T17:44:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10521",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-09T19:50:00+0200",
-          "endsAtEstimate": "2026-07-09T19:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10522",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-10T15:40:00+0200",
-          "endsAtEstimate": "2026-07-10T15:19:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10523",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-12T13:50:00+0200",
-          "endsAtEstimate": "2026-07-12T13:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10524",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T19:30:00+0200",
-          "endsAtEstimate": "2026-07-13T19:09:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10525",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T16:20:00+0200",
-          "endsAtEstimate": "2026-07-14T15:59:00.000Z"
-        }
-      ],
-      "director": "Georgi M. Unkovski",
-      "durationMinutes": 99,
-      "synopsis": "Ahmet, 15 ans, grandit au milieu des montagnes de Macédoine, où il garde les moutons de son père tout en prenant soin de son petit frère. Mais lui, ce qui le fait rêver, c’est la musique. Entre les attentes de son entourage et ses envies d’ailleurs, Ahmet pourra-t-il un jour suivre son propre chemin ?",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1400743.jpg",
-      "version": "VOST",
-      "releaseYear": 2025,
-      "tmdbId": "1400743",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
       "id": "scala-thionville-924",
       "cinemaId": "scala-thionville",
       "title": "Animo Rigolo",
@@ -373,6 +284,81 @@
       "version": "VF",
       "releaseYear": 2025,
       "tmdbId": "1443589",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-904",
+      "cinemaId": "scala-thionville",
+      "title": "Le Garçon qui faisait danser les collines",
+      "genres": [
+        "Comédie",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10472",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-06T15:50:00+0200",
+          "endsAtEstimate": "2026-07-06T15:29:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10473",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-07T15:50:00+0200",
+          "endsAtEstimate": "2026-07-07T15:29:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10520",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-08T18:05:00+0200",
+          "endsAtEstimate": "2026-07-08T17:44:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10521",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-09T19:50:00+0200",
+          "endsAtEstimate": "2026-07-09T19:29:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10522",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-10T15:40:00+0200",
+          "endsAtEstimate": "2026-07-10T15:19:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10523",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-12T13:50:00+0200",
+          "endsAtEstimate": "2026-07-12T13:29:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10524",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T19:30:00+0200",
+          "endsAtEstimate": "2026-07-13T19:09:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10525",
+          "movieId": "scala-thionville-904",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T16:20:00+0200",
+          "endsAtEstimate": "2026-07-14T15:59:00.000Z"
+        }
+      ],
+      "director": "Georgi M. Unkovski",
+      "durationMinutes": 99,
+      "synopsis": "Ahmet, 15 ans, grandit au milieu des montagnes de Macédoine, où il garde les moutons de son père tout en prenant soin de son petit frère. Mais lui, ce qui le fait rêver, c’est la musique. Entre les attentes de son entourage et ses envies d’ailleurs, Ahmet pourra-t-il un jour suivre son propre chemin ?",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1400743.jpg",
+      "version": "VOST",
+      "releaseYear": 2025,
+      "tmdbId": "1400743",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
