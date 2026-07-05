@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T17:07:10.369Z",
+  "generatedAt": "2026-07-05T08:54:16.881Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -19,13 +19,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10461",
-          "movieId": "scala-thionville-903",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-04T20:30:00+0200",
-          "endsAtEstimate": "2026-07-04T20:01:00.000Z"
-        },
         {
           "id": "scala-thionville-10462",
           "movieId": "scala-thionville-903",
