@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T17:12:27.049Z",
+  "generatedAt": "2026-07-06T18:11:52.290Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,6 +11,67 @@
   ],
   "movies": [
     {
+      "id": "scala-thionville-924",
+      "cinemaId": "scala-thionville",
+      "title": "Animo Rigolo",
+      "genres": [
+        "Familial",
+        "Animation"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10509",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-07T15:15:00+0200",
+          "endsAtEstimate": "2026-07-07T13:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10510",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-08T14:15:00+0200",
+          "endsAtEstimate": "2026-07-08T12:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10511",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-09T16:50:00+0200",
+          "endsAtEstimate": "2026-07-09T15:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10512",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-10T15:15:00+0200",
+          "endsAtEstimate": "2026-07-10T13:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10513",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T16:25:00+0200",
+          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10514",
+          "movieId": "scala-thionville-924",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T14:15:00+0200",
+          "endsAtEstimate": "2026-07-14T12:55:00.000Z"
+        }
+      ],
+      "director": "Myriam Schott",
+      "durationMinutes": 40,
+      "synopsis": "Préhistoriques ou domestiques, Rigolos ou ramollos, Minuscules ou noctambules, Ces animaux-là font un sacré gala !",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1443589.jpg",
+      "version": "VF",
+      "releaseYear": 2025,
+      "tmdbId": "1443589",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
       "id": "scala-thionville-903",
       "cinemaId": "scala-thionville",
       "title": "In Waves",
@@ -19,27 +80,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10463",
-          "movieId": "scala-thionville-903",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-05T20:20:00+0200",
-          "endsAtEstimate": "2026-07-05T19:51:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10464",
-          "movieId": "scala-thionville-903",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-06T13:50:00+0200",
-          "endsAtEstimate": "2026-07-06T13:21:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10465",
-          "movieId": "scala-thionville-903",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-06T17:55:00+0200",
-          "endsAtEstimate": "2026-07-06T17:26:00.000Z"
-        },
         {
           "id": "scala-thionville-10466",
           "movieId": "scala-thionville-903",
@@ -216,149 +256,6 @@
       "version": "VOST",
       "releaseYear": 2026,
       "tmdbId": "947502",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-924",
-      "cinemaId": "scala-thionville",
-      "title": "Animo Rigolo",
-      "genres": [
-        "Familial",
-        "Animation"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10508",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-06T13:45:00+0200",
-          "endsAtEstimate": "2026-07-06T12:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10509",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-07T15:15:00+0200",
-          "endsAtEstimate": "2026-07-07T13:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10510",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-08T14:15:00+0200",
-          "endsAtEstimate": "2026-07-08T12:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10511",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-09T16:50:00+0200",
-          "endsAtEstimate": "2026-07-09T15:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10512",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-10T15:15:00+0200",
-          "endsAtEstimate": "2026-07-10T13:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10513",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T16:25:00+0200",
-          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10514",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T14:15:00+0200",
-          "endsAtEstimate": "2026-07-14T12:55:00.000Z"
-        }
-      ],
-      "director": "Myriam Schott",
-      "durationMinutes": 40,
-      "synopsis": "Préhistoriques ou domestiques, Rigolos ou ramollos, Minuscules ou noctambules, Ces animaux-là font un sacré gala !",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1443589.jpg",
-      "version": "VF",
-      "releaseYear": 2025,
-      "tmdbId": "1443589",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-904",
-      "cinemaId": "scala-thionville",
-      "title": "Le Garçon qui faisait danser les collines",
-      "genres": [
-        "Comédie",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10472",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-06T15:50:00+0200",
-          "endsAtEstimate": "2026-07-06T15:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10473",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-07T15:50:00+0200",
-          "endsAtEstimate": "2026-07-07T15:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10520",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-08T18:05:00+0200",
-          "endsAtEstimate": "2026-07-08T17:44:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10521",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-09T19:50:00+0200",
-          "endsAtEstimate": "2026-07-09T19:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10522",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-10T15:40:00+0200",
-          "endsAtEstimate": "2026-07-10T15:19:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10523",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-12T13:50:00+0200",
-          "endsAtEstimate": "2026-07-12T13:29:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10524",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T19:30:00+0200",
-          "endsAtEstimate": "2026-07-13T19:09:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10525",
-          "movieId": "scala-thionville-904",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T16:20:00+0200",
-          "endsAtEstimate": "2026-07-14T15:59:00.000Z"
-        }
-      ],
-      "director": "Georgi M. Unkovski",
-      "durationMinutes": 99,
-      "synopsis": "Ahmet, 15 ans, grandit au milieu des montagnes de Macédoine, où il garde les moutons de son père tout en prenant soin de son petit frère. Mais lui, ce qui le fait rêver, c’est la musique. Entre les attentes de son entourage et ses envies d’ailleurs, Ahmet pourra-t-il un jour suivre son propre chemin ?",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1400743.jpg",
-      "version": "VOST",
-      "releaseYear": 2025,
-      "tmdbId": "1400743",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
