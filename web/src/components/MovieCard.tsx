@@ -1,7 +1,9 @@
-import type { FC } from 'react';
+import { useState, type FC } from 'react';
 import type { Cinema, Movie, Showtime } from '../../../ingest/src/types.js';
 import { css } from '../../styled-system/css';
 import { downloadShowtimeIcs } from '../lib/calendar.js';
+import { useMovieSelectionContext } from '../context/MovieSelectionContext.js';
+import { useToast } from '../context/ToastContext.js';
 
 const dayKeyFormat = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'Europe/Paris',
@@ -9,6 +11,8 @@ const dayKeyFormat = new Intl.DateTimeFormat('en-CA', {
   month: '2-digit',
   day: '2-digit',
 });
+const dayNameFormat = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', weekday: 'short' });
+const dayNumberFormat = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', day: 'numeric' });
 const dayLabelFormat = new Intl.DateTimeFormat('fr-FR', {
   timeZone: 'Europe/Paris',
   weekday: 'long',
@@ -47,6 +51,15 @@ type MovieCardProps = {
 };
 
 export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
+  const { isSelected, toggle } = useMovieSelectionContext();
+  const { showToast } = useToast();
+  const dayGroups = groupShowtimesByDay(movie.showtimes);
+  const [selectedDayKey, setSelectedDayKey] = useState(dayGroups[0]?.[0]);
+  const [addedShowtimeIds, setAddedShowtimeIds] = useState<Set<string>>(new Set());
+
+  const activeGroup = dayGroups.find(([key]) => key === selectedDayKey) ?? dayGroups[0];
+  const followed = isSelected(movie.id);
+
   const meta = [
     movie.director,
     movie.durationMinutes !== undefined ? formatDuration(movie.durationMinutes) : undefined,
@@ -56,117 +69,209 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
     .filter(Boolean)
     .join(' · ');
 
+  const handleFollowToggle = () => {
+    toggle(movie.id);
+    showToast(followed ? 'Film retiré' : `✓ ${movie.title} suivi`);
+  };
+
+  const handleShowtimeClick = (showtime: Showtime) => {
+    downloadShowtimeIcs(cinema, movie, showtime);
+    setAddedShowtimeIds((current) => new Set(current).add(showtime.id));
+    showToast(`✓ Ajouté à ton agenda (${timeFormat.format(new Date(showtime.startsAt))})`);
+  };
+
   return (
     <article
       className={css({
         display: 'flex',
-        gap: '5',
-        bg: 'white',
+        flexDir: 'column',
+        gap: '3',
+        bg: 'surface',
         rounded: '2xl',
-        p: '5',
-        boxShadow: 'sm',
+        p: '4',
+        border: '1px solid',
+        borderColor: 'border',
       })}
     >
-      {movie.posterUrl && (
-        <img
-          src={movie.posterUrl}
-          alt={`Affiche de ${movie.title}`}
-          loading="lazy"
-          onError={(event) => {
-            event.currentTarget.style.display = 'none';
-          }}
-          className={css({
-            w: '110px',
-            h: '165px',
-            objectFit: 'cover',
-            rounded: 'lg',
-            flexShrink: 0,
-            bg: 'stone.200',
-          })}
-        />
-      )}
-
-      <div className={css({ display: 'flex', flexDir: 'column', gap: '2', minW: 0 })}>
-        <h2 className={css({ fontSize: 'xl', fontWeight: 'bold', lineHeight: 'tight' })}>
-          {movie.title}
-          {movie.version && (
-            <span
-              className={css({
-                ml: '2',
-                fontSize: 'xs',
-                fontWeight: 'semibold',
-                bg: 'stone.200',
-                color: 'stone.700',
-                rounded: 'md',
-                px: '1.5',
-                py: '0.5',
-                verticalAlign: 'middle',
-              })}
-            >
-              {movie.version}
-            </span>
-          )}
-        </h2>
-
-        {meta && <p className={css({ fontSize: 'sm', color: 'stone.500' })}>{meta}</p>}
-
-        {movie.synopsis && (
-          <p className={css({ fontSize: 'sm', color: 'stone.600', lineClamp: 3 })}>{movie.synopsis}</p>
+      <div className={css({ display: 'flex', gap: '3' })}>
+        {movie.posterUrl ? (
+          <img
+            src={movie.posterUrl}
+            alt={`Affiche de ${movie.title}`}
+            loading="lazy"
+            onError={(event) => {
+              event.currentTarget.style.display = 'none';
+            }}
+            className={css({ w: '80px', h: '120px', objectFit: 'cover', rounded: 'lg', flexShrink: 0, bg: 'surfaceRaised' })}
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className={css({
+              w: '80px',
+              h: '120px',
+              flexShrink: 0,
+              rounded: 'lg',
+              bg: 'surfaceRaised',
+              backgroundImage:
+                'repeating-linear-gradient(135deg, rgba(246,241,231,0.06) 0 6px, rgba(246,241,231,0.02) 6px 12px)',
+            })}
+          />
         )}
 
-        <div className={css({ display: 'flex', flexDir: 'column', gap: '1.5', mt: '1' })}>
-          {groupShowtimesByDay(movie.showtimes).map(([day, dayShowtimes]) => (
-            <div key={day} className={css({ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '1.5' })}>
+        <div className={css({ minW: 0, display: 'flex', flexDir: 'column', gap: '1.5' })}>
+          <h2 className={css({ fontSize: 'md', fontWeight: 'bold', lineHeight: 'tight', m: '0' })}>
+            {movie.title}
+            {movie.version && (
               <span
                 className={css({
-                  fontSize: 'sm',
+                  ml: '2',
+                  fontSize: '2xs',
                   fontWeight: 'semibold',
-                  color: 'stone.700',
-                  minW: '10rem',
-                  textTransform: 'capitalize',
+                  bg: 'surfaceRaised',
+                  color: 'paperMuted',
+                  rounded: 'md',
+                  px: '1.5',
+                  py: '0.5',
+                  verticalAlign: 'middle',
                 })}
               >
-                {dayLabelFormat.format(new Date(dayShowtimes[0]!.startsAt))}
+                {movie.version}
               </span>
-              {dayShowtimes.map((showtime) => (
+            )}
+          </h2>
+
+          {meta && <p className={css({ fontSize: 'xs', color: 'paperFaint', m: '0' })}>{meta}</p>}
+
+          {movie.synopsis && <p className={css({ fontSize: 'xs', color: 'paperMuted', lineClamp: 2, m: '0' })}>{movie.synopsis}</p>}
+        </div>
+      </div>
+
+      <button
+        type="button"
+        onClick={handleFollowToggle}
+        aria-pressed={followed}
+        className={css({
+          alignSelf: 'flex-start',
+          fontSize: 'xs',
+          fontWeight: 'bold',
+          rounded: 'lg',
+          px: '3',
+          py: '1.5',
+          cursor: 'pointer',
+          border: '1px solid',
+          borderColor: followed ? 'accent' : 'transparent',
+          bg: followed ? 'transparent' : 'accent',
+          color: followed ? 'accent' : 'accentText',
+        })}
+      >
+        {followed ? '✓ Suivi' : '+ Suivre ce film'}
+      </button>
+
+      {activeGroup && (
+        <>
+          <div
+            role="tablist"
+            aria-label={`Choisir un jour pour ${movie.title}`}
+            className={css({ display: 'flex', gap: '1.5', overflowX: 'auto', pb: '0.5' })}
+          >
+            {dayGroups.map(([key, dayShowtimes]) => {
+              const active = key === selectedDayKey;
+              const date = new Date(dayShowtimes[0]!.startsAt);
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  role="tab"
+                  aria-selected={active}
+                  onClick={() => setSelectedDayKey(key)}
+                  className={css({
+                    flexShrink: 0,
+                    w: '10',
+                    h: '12',
+                    display: 'flex',
+                    flexDir: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5',
+                    rounded: 'lg',
+                    cursor: 'pointer',
+                    border: active ? 'none' : '1px solid',
+                    borderColor: 'borderStrong',
+                    bg: active ? 'accent' : 'transparent',
+                  })}
+                >
+                  <span
+                    className={css({
+                      fontSize: '2xs',
+                      fontWeight: 'bold',
+                      textTransform: 'capitalize',
+                      color: active ? 'accentText' : 'paperFaint',
+                    })}
+                  >
+                    {dayNameFormat.format(date).replace(/\.$/, '')}
+                  </span>
+                  <span className={css({ fontSize: 'sm', fontWeight: 'extrabold', color: active ? 'accentText' : 'paper' })}>
+                    {dayNumberFormat.format(date)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div
+            className={css({
+              display: 'flex',
+              gap: '1.5',
+              flexWrap: 'wrap',
+              borderTop: '1px solid',
+              borderColor: 'border',
+              pt: '2.5',
+            })}
+          >
+            <span className={css({ fontSize: 'xs', color: 'paperFaint', textTransform: 'capitalize', alignSelf: 'center' })}>
+              {dayLabelFormat.format(new Date(activeGroup[1][0]!.startsAt))}
+            </span>
+            {activeGroup[1].map((showtime) => {
+              const added = addedShowtimeIds.has(showtime.id);
+              return (
                 <button
                   key={showtime.id}
                   type="button"
-                  title="Ajouter cette séance à mon calendrier (.ics)"
-                  onClick={() => downloadShowtimeIcs(cinema, movie, showtime)}
+                  aria-label={`Ajouter la séance de ${movie.title} du ${dayLabelFormat.format(new Date(showtime.startsAt))} à ${timeFormat.format(new Date(showtime.startsAt))} à mon calendrier`}
+                  onClick={() => handleShowtimeClick(showtime)}
                   className={css({
-                    fontSize: 'sm',
-                    fontWeight: 'medium',
-                    bg: 'amber.100',
-                    color: 'amber.900',
-                    border: '1px solid',
-                    borderColor: 'amber.300',
+                    fontSize: 'xs',
+                    fontWeight: added ? 'bold' : 'medium',
                     rounded: 'lg',
                     px: '2.5',
                     py: '1',
                     cursor: 'pointer',
-                    _hover: { bg: 'amber.200' },
+                    border: '1px solid',
+                    borderColor: added ? 'accent' : 'borderStrong',
+                    bg: added ? 'accent' : 'transparent',
+                    color: added ? 'accentText' : 'paperMuted',
                   })}
                 >
+                  {added && <span aria-hidden="true">✓ </span>}
                   {timeFormat.format(new Date(showtime.startsAt))}
-                  <span aria-hidden="true"> +📅</span>
                 </button>
-              ))}
-            </div>
-          ))}
-        </div>
+              );
+            })}
+          </div>
+        </>
+      )}
 
-        {movie.bookingUrl && (
-          <a
-            href={movie.bookingUrl}
-            target="_blank"
-            rel="noreferrer"
-            className={css({ fontSize: 'sm', color: 'blue.700', _hover: { textDecoration: 'underline' }, mt: '1' })}
-          >
-            Réserver sur le site du cinéma ↗
-          </a>
-        )}
-      </div>
+      {movie.bookingUrl && (
+        <a
+          href={movie.bookingUrl}
+          target="_blank"
+          rel="noreferrer"
+          className={css({ fontSize: 'xs', color: 'accent', _hover: { textDecoration: 'underline' } })}
+        >
+          Réserver sur le site du cinéma ↗
+        </a>
+      )}
     </article>
   );
 };
