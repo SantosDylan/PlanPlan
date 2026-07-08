@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T18:00:44.029Z",
+  "generatedAt": "2026-07-08T08:30:42.343Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -271,60 +271,6 @@
       "version": "VF",
       "releaseYear": 2026,
       "tmdbId": "1492288",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-924",
-      "cinemaId": "scala-thionville",
-      "title": "Animo Rigolo",
-      "genres": [
-        "Familial",
-        "Animation"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10510",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-08T14:15:00+0200",
-          "endsAtEstimate": "2026-07-08T12:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10511",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-09T16:50:00+0200",
-          "endsAtEstimate": "2026-07-09T15:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10512",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-10T15:15:00+0200",
-          "endsAtEstimate": "2026-07-10T13:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10513",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T16:25:00+0200",
-          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10514",
-          "movieId": "scala-thionville-924",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T14:15:00+0200",
-          "endsAtEstimate": "2026-07-14T12:55:00.000Z"
-        }
-      ],
-      "director": "Myriam Schott",
-      "durationMinutes": 40,
-      "synopsis": "Préhistoriques ou domestiques, Rigolos ou ramollos, Minuscules ou noctambules, Ces animaux-là font un sacré gala !",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1443589.jpg",
-      "version": "VF",
-      "releaseYear": 2025,
-      "tmdbId": "1443589",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
@@ -1539,31 +1485,6 @@
       "version": "VF",
       "releaseYear": 1962,
       "tmdbId": "10421",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-923",
-      "cinemaId": "scala-thionville",
-      "title": "Patouille et Momo, les contes de la forêts",
-      "genres": [
-        "Animation"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10381",
-          "movieId": "scala-thionville-923",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-26T16:00:00+0200",
-          "endsAtEstimate": "2026-08-26T14:35:00.000Z"
-        }
-      ],
-      "director": "Inès Bernard-Espina Mélody Boulissière Clémentine Campos",
-      "durationMinutes": 35,
-      "synopsis": "Au fil des saisons, Patouille et Momo s’émerveillent devant les trésors de la forêt. Des petites graines aux plus grands des arbres, en passant par un mystérieux champignon ou un magnifique nénuphar, chaque découverte devient une aventure extraordinaire. Avec curiosité et malice, Patouille et Momo apprennent à observer, à écouter et à comprendre la magie du vivant. Un voyage joyeux et poétique au cœur de la forêt, pour grandir au rythme de la nature.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1710628.jpg",
-      "version": "VF",
-      "releaseYear": 2027,
-      "tmdbId": "1710628",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
