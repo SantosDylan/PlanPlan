@@ -9,6 +9,25 @@
       content="La programmation du cinéma La Scala (Thionville) — et chaque séance dans ton agenda en un clic."
     />
     <title>Plan-Plan — les séances du Scala dans ton agenda</title>
+    <script>
+      // Pre-paint theme resolution — mirrors resolveTheme() in src/lib/theme.ts.
+      // Runs before the bundle so <html data-theme> is set before first paint (no flash).
+      (function () {
+        try {
+          var stored = localStorage.getItem('planplan-theme');
+          var pref = stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system';
+          var theme =
+            pref === 'light' || pref === 'dark'
+              ? pref
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

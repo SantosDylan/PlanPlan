@@ -4,6 +4,7 @@ import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
 import { MovieCard } from '../components/MovieCard.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
+import { ThemeToggle } from '../components/ThemeToggle.js';
 
 const updatedAtFormat = new Intl.DateTimeFormat('fr-FR', {
   timeZone: 'Europe/Paris',
@@ -34,7 +35,7 @@ function CatalogPage() {
           px: '4',
           pt: '2',
           pb: '2.5',
-          bg: 'rgba(15, 13, 11, 0.68)',
+          bg: 'headerBg',
           backdropFilter: 'blur(20px) saturate(180%)',
           boxShadow: '0 1px 0 rgba(0, 0, 0, 0.6), 0 8px 16px -8px rgba(0, 0, 0, 0.5)',
           display: 'flex',
@@ -54,30 +55,33 @@ function CatalogPage() {
             </p>
           )}
         </div>
-        {catalog && catalog.cinemas.length > 0 && (
-          <button
-            ref={subscribeButtonRef}
-            type="button"
-            onClick={() => setDrawerOpen(true)}
-            aria-label="S'abonner au calendrier"
-            className={css({
-              w: '9',
-              h: '9',
-              rounded: 'full',
-              bg: 'accentSoft',
-              border: '1px solid',
-              borderColor: 'accentBorder',
-              color: 'accent',
-              fontSize: 'md',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            })}
-          >
-            📅
-          </button>
-        )}
+        <div className={css({ display: 'flex', alignItems: 'center', gap: '2', flexShrink: '0' })}>
+          <ThemeToggle />
+          {catalog && catalog.cinemas.length > 0 && (
+            <button
+              ref={subscribeButtonRef}
+              type="button"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="S'abonner au calendrier"
+              className={css({
+                w: '9',
+                h: '9',
+                rounded: 'full',
+                bg: 'accentSoft',
+                border: '1px solid',
+                borderColor: 'accentBorder',
+                color: 'accent',
+                fontSize: 'md',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              })}
+            >
+              📅
+            </button>
+          )}
+        </div>
       </header>
 
       {!catalog?.cinemas.length && <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>Les séances du cinéma, direct dans ton agenda.</p>}
@@ -85,7 +89,8 @@ function CatalogPage() {
       {isPending && <p className={css({ color: 'paperMuted' })}>Chargement de la programmation…</p>}
 
       {isError && (
-        <p role="alert" className={css({ color: 'red.400' })}>
+        <p role="alert" className={css({ display: 'flex', alignItems: 'center', gap: '1.5', color: 'danger' })}>
+          <span aria-hidden="true">⚠️</span>
           Impossible de charger la programmation : {error.message}
         </p>
       )}

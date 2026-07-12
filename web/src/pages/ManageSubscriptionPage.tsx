@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
+import { ThemeToggle } from '../components/ThemeToggle.js';
 import { useMovieSelectionContext } from '../context/MovieSelectionContext.js';
 import { downloadFilteredIcs } from '../lib/calendar.js';
 
@@ -54,18 +55,22 @@ function ManageSubscriptionPage() {
   return (
     <div className={css({ h: '100dvh', maxW: '860px', mx: 'auto', display: 'flex', flexDir: 'column', overflow: 'hidden' })}>
       <div className={css({ flexShrink: '0', px: '4', pt: '6', pb: '3', display: 'flex', flexDir: 'column', gap: '3' })}>
-        <header className={css({ display: 'flex', flexDir: 'column', gap: '2' })}>
-          <Link to="/" className={css({ fontSize: 'xs', color: 'paperMuted', _hover: { textDecoration: 'underline' } })}>
-            ← Retour à la programmation
-          </Link>
-          <h1 className={css({ fontSize: 'lg', fontWeight: 'extrabold', m: '0' })}>Gérer mon abonnement</h1>
-          <p role="note" className={css({ fontSize: 'xs', color: 'paperMuted', m: '0', lineHeight: '1.4' })}>
-            <span aria-hidden="true">⚠️</span> Instantané — re-télécharge après chaque mise à jour du programme.
-          </p>
-        </header>
+        <div className={css({ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '2' })}>
+          <header className={css({ display: 'flex', flexDir: 'column', gap: '2', flex: '1', minW: '0' })}>
+            <Link to="/" className={css({ fontSize: 'xs', color: 'paperMuted', _hover: { textDecoration: 'underline' } })}>
+              ← Retour à la programmation
+            </Link>
+            <h1 className={css({ fontSize: 'lg', fontWeight: 'extrabold', m: '0' })}>Gérer mon abonnement</h1>
+            <p role="note" className={css({ fontSize: 'xs', color: 'paperMuted', m: '0', lineHeight: '1.4' })}>
+              <span aria-hidden="true">⚠️</span> Instantané — re-télécharge après chaque mise à jour du programme.
+            </p>
+          </header>
+          <ThemeToggle />
+        </div>
 
         {isError && (
-          <p role="alert" className={css({ color: 'red.400' })}>
+          <p role="alert" className={css({ display: 'flex', alignItems: 'center', gap: '1.5', color: 'danger' })}>
+            <span aria-hidden="true">⚠️</span>
             Impossible de charger la programmation : {error.message}
           </p>
         )}

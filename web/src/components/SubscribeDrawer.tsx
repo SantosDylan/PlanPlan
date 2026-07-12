@@ -157,9 +157,9 @@ export const SubscribeDrawer: FC<SubscribeDrawerProps> = ({ cinemas, open, onClo
                     py: '1.5',
                     cursor: 'pointer',
                     color: copiedCinemaId === cinema.id ? 'success' : 'accent',
-                    bg: copiedCinemaId === cinema.id ? 'rgba(95, 184, 122, 0.12)' : 'accentSoft',
+                    bg: copiedCinemaId === cinema.id ? 'successSoft' : 'accentSoft',
                     border: '1px solid',
-                    borderColor: copiedCinemaId === cinema.id ? 'rgba(95, 184, 122, 0.4)' : 'accentBorder',
+                    borderColor: copiedCinemaId === cinema.id ? 'successBorder' : 'accentBorder',
                   })}
                 >
                   {copiedCinemaId === cinema.id ? '✓ Copié' : '📋 Copier'}

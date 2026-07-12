@@ -36,7 +36,7 @@ export const BottomNav: FC = () => {
         gap: '1',
         p: '1',
         rounded: 'full',
-        bg: 'rgba(26, 22, 19, 0.75)',
+        bg: 'navBg',
         backdropFilter: 'blur(20px) saturate(180%)',
         border: '1px solid',
         borderColor: 'borderStrong',
