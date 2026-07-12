@@ -10,10 +10,6 @@ import { downloadFilteredIcs } from '../lib/calendar.js';
 
 const ALL_GENRES = 'Tous';
 
-function formatDurationHours(totalMinutes: number): string {
-  return `${Math.floor(totalMinutes / 60)}h${String(totalMinutes % 60).padStart(2, '0')}`;
-}
-
 function ManageSubscriptionPage() {
   const { data: catalog, isPending, isError, error } = useCatalog();
   const { selectedIds, toggle, isSelected, selectAll, deselectAll } = useMovieSelectionContext();
@@ -34,16 +30,12 @@ function ManageSubscriptionPage() {
       )
     : [];
   const filteredIds = filteredMovies.map((movie) => movie.id);
-  const allFilteredSelected = filteredIds.length > 0 && filteredIds.every((id) => selectedIds.has(id));
+  const selectedFilteredCount = filteredIds.filter((id) => selectedIds.has(id)).length;
+  const allFilteredSelected = filteredIds.length > 0 && selectedFilteredCount === filteredIds.length;
 
-  const selectedMovies = catalog ? catalog.movies.filter((movie) => isSelected(movie.id)) : [];
-  const selectedShowtimeCount = selectedMovies.reduce((total, movie) => total + movie.showtimes.length, 0);
-  const totalCinemaMinutes = selectedMovies.reduce((total, movie) => total + (movie.durationMinutes ?? 0) * movie.showtimes.length, 0);
-
-  const summaryLine =
-    selectedMovies.length === 0
-      ? 'Aucun film sélectionné'
-      : `${selectedMovies.length} film${selectedMovies.length > 1 ? 's' : ''} · ${selectedShowtimeCount} séance${selectedShowtimeCount > 1 ? 's' : ''} · ≈ ${formatDurationHours(totalCinemaMinutes)} de ciné`;
+  const selectedShowtimeCount = catalog
+    ? catalog.movies.filter((movie) => isSelected(movie.id)).reduce((total, movie) => total + movie.showtimes.length, 0)
+    : 0;
 
   const handleDownload = () => {
     if (!catalog) return;
@@ -56,18 +48,30 @@ function ManageSubscriptionPage() {
   };
 
   return (
-    <div className={css({ h: '100dvh', maxW: '860px', mx: 'auto', display: 'flex', flexDir: 'column', overflow: 'hidden' })}>
-      <div className={css({ flexShrink: '0', px: '4', pt: '6', pb: '3', display: 'flex', flexDir: 'column', gap: '3' })}>
-        <div className={css({ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '2' })}>
-          <header className={css({ display: 'flex', flexDir: 'column', gap: '2', flex: '1', minW: '0' })}>
-            <Link to="/" className={css({ fontSize: 'xs', color: 'paperMuted', _hover: { textDecoration: 'underline' } })}>
-              ← Retour à la programmation
-            </Link>
-            <h1 className={css({ fontSize: 'lg', fontWeight: 'extrabold', m: '0' })}>Gérer mon abonnement</h1>
-            <p role="note" className={css({ fontSize: 'xs', color: 'paperMuted', m: '0', lineHeight: '1.4' })}>
-              <span aria-hidden="true">⚠️</span> Instantané — re-télécharge après chaque mise à jour du programme.
-            </p>
-          </header>
+    <div className={css({ position: 'fixed', inset: '0', maxW: '860px', mx: 'auto', display: 'flex', flexDir: 'column', overflow: 'hidden' })}>
+      <div className={css({ flexShrink: '0', px: '4', pt: '4', pb: '2', display: 'flex', flexDir: 'column', gap: '2' })}>
+        <div className={css({ display: 'flex', alignItems: 'center', gap: '2' })}>
+          <Link
+            to="/"
+            aria-label="Retour à la programmation"
+            className={css({
+              flexShrink: '0',
+              w: '9',
+              h: '9',
+              rounded: 'full',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 'md',
+              color: 'paperMuted',
+              border: '1px solid',
+              borderColor: 'border',
+              _hover: { color: 'paper', borderColor: 'borderStrong' },
+            })}
+          >
+            <span aria-hidden="true">←</span>
+          </Link>
+          <h1 className={css({ fontSize: 'lg', fontWeight: 'extrabold', m: '0', flex: '1', minW: '0' })}>Gérer mon abonnement</h1>
           <button
             ref={optionsButtonRef}
             type="button"
@@ -97,63 +101,40 @@ function ManageSubscriptionPage() {
 
         {catalog && (
           <>
-            <div className={css({ display: 'flex', alignItems: 'center', gap: '2' })}>
-              <label className={css({ flex: '1', minW: '0' })}>
-                <span className={css({ srOnly: true })}>Rechercher un film</span>
-                <div
-                  className={css({
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1.5',
-                    border: '1px solid',
-                    borderColor: 'borderStrong',
-                    rounded: 'lg',
-                    px: '2.5',
-                    py: '2',
-                  })}
-                >
-                  <span aria-hidden="true" className={css({ fontSize: 'xs', color: 'paperFaint' })}>
-                    🔍
-                  </span>
-                  <input
-                    type="search"
-                    value={query}
-                    onChange={(event) => setQuery(event.target.value)}
-                    placeholder="Rechercher un film…"
-                    className={css({
-                      flex: '1',
-                      minW: '0',
-                      border: 'none',
-                      outline: 'none',
-                      bg: 'transparent',
-                      color: 'paper',
-                      fontSize: 'xs',
-                    })}
-                  />
-                </div>
-              </label>
-              <button
-                type="button"
-                disabled={filteredIds.length === 0}
-                onClick={() => (allFilteredSelected ? deselectAll(filteredIds) : selectAll(filteredIds))}
+            <label>
+              <span className={css({ srOnly: true })}>Rechercher un film</span>
+              <div
                 className={css({
-                  flexShrink: '0',
-                  fontSize: 'xs',
-                  fontWeight: 'bold',
-                  color: 'accent',
-                  bg: 'transparent',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1.5',
                   border: '1px solid',
-                  borderColor: 'accentBorder',
+                  borderColor: 'borderStrong',
                   rounded: 'lg',
-                  px: '3',
+                  px: '2.5',
                   py: '2',
-                  cursor: 'pointer',
-                  _disabled: { opacity: '0.5', cursor: 'not-allowed' },
                 })}
               >
-                {allFilteredSelected ? 'Tout décocher' : 'Tout cocher'}
-              </button>
-            </div>
+                <span aria-hidden="true" className={css({ fontSize: 'xs', color: 'paperFaint' })}>
+                  🔍
+                </span>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Rechercher un film…"
+                  className={css({
+                    flex: '1',
+                    minW: '0',
+                    border: 'none',
+                    outline: 'none',
+                    bg: 'transparent',
+                    color: 'paper',
+                    fontSize: 'xs',
+                  })}
+                />
+              </div>
+            </label>
 
             {genres.length > 1 && (
               <div
@@ -205,7 +186,39 @@ function ManageSubscriptionPage() {
         )}
 
         {catalog && filteredMovies.length > 0 && (
-          <ul className={css({ display: 'flex', flexDir: 'column', gap: '1.5', listStyle: 'none', p: '0', m: '0', pb: '3' })}>
+          <div
+            className={css({
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '2',
+              pb: '2',
+            })}
+          >
+            <span className={css({ fontSize: 'xs', color: 'paperMuted' })}>
+              {selectedFilteredCount} / {filteredIds.length} sélectionné{filteredIds.length > 1 ? 's' : ''}
+            </span>
+            <button
+              type="button"
+              onClick={() => (allFilteredSelected ? deselectAll(filteredIds) : selectAll(filteredIds))}
+              className={css({
+                fontSize: 'xs',
+                fontWeight: 'bold',
+                color: 'accent',
+                bg: 'transparent',
+                border: 'none',
+                p: '0',
+                cursor: 'pointer',
+                textDecoration: 'underline',
+              })}
+            >
+              {allFilteredSelected ? 'Tout désélectionner' : 'Tout sélectionner'}
+            </button>
+          </div>
+        )}
+
+        {catalog && filteredMovies.length > 0 && (
+          <ul className={css({ display: 'flex', flexDir: 'column', gap: '1.5', listStyle: 'none', p: '0', m: '0', pb: '24' })}>
             {filteredMovies.map((movie) => {
               const selected = isSelected(movie.id);
               return (
@@ -277,46 +290,48 @@ function ManageSubscriptionPage() {
       </div>
 
       {catalog && (
-        <section
+        <button
+          type="button"
+          disabled={selectedShowtimeCount === 0}
+          onClick={handleDownload}
+          aria-label={
+            selectedShowtimeCount > 0
+              ? `Télécharger mon .ics (${selectedShowtimeCount} séance${selectedShowtimeCount > 1 ? 's' : ''})`
+              : 'Télécharger mon .ics'
+          }
+          title="Télécharger mon .ics"
           className={css({
-            flexShrink: '0',
-            borderTop: '1px solid',
-            borderColor: 'border',
-            px: '4',
-            pt: '3',
-            pb: '24',
+            position: 'fixed',
+            bottom: { base: '20', md: '6' },
+            right: '4',
+            w: '12',
+            h: '12',
+            p: '2.5',
+            rounded: 'full',
             display: 'flex',
-            flexDir: 'column',
-            gap: '2.5',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: 'lg',
+            bg: 'accent',
+            color: 'accentText',
+            border: 'none',
+            boxShadow: '0 10px 30px -4px rgba(0, 0, 0, 0.45)',
+            cursor: 'pointer',
+            zIndex: '30',
+            transition: 'transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease',
+            _hover: { boxShadow: '0 14px 36px -4px rgba(0, 0, 0, 0.5)', transform: 'translateY(-1px)' },
+            _active: { transform: 'scale(0.94)' },
+            _disabled: {
+              opacity: '0.5',
+              cursor: 'not-allowed',
+              boxShadow: 'none',
+              _hover: { transform: 'none' },
+              _active: { transform: 'none' },
+            },
           })}
         >
-          <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>{summaryLine}</p>
-          <button
-            type="button"
-            disabled={selectedShowtimeCount === 0}
-            onClick={handleDownload}
-            aria-describedby="download-help"
-            className={css({
-              fontSize: 'sm',
-              fontWeight: 'bold',
-              bg: 'accent',
-              color: 'accentText',
-              border: 'none',
-              rounded: 'xl',
-              px: '4',
-              py: '2.5',
-              cursor: 'pointer',
-              _disabled: { opacity: '0.5', cursor: 'not-allowed' },
-            })}
-          >
-            Télécharger mon .ics<span aria-hidden="true"> 📅</span>
-          </button>
-          {selectedShowtimeCount === 0 && (
-            <p id="download-help" className={css({ color: 'paperFaint', fontSize: 'xs', m: '0' })}>
-              Sélectionne au moins un film pour activer le téléchargement.
-            </p>
-          )}
-        </section>
+          <span aria-hidden="true">⇩</span>
+        </button>
       )}
 
       <OptionsDrawer open={optionsOpen} onClose={() => setOptionsOpen(false)} triggerRef={optionsButtonRef} />
