@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T16:59:18.150Z",
+  "generatedAt": "2026-07-12T08:20:09.240Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,6 +11,33 @@
   ],
   "movies": [
     {
+      "id": "scala-thionville-905",
+      "cinemaId": "scala-thionville",
+      "title": "Fenêtre sur cour",
+      "genres": [
+        "Thriller",
+        "Mystère",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10320",
+          "movieId": "scala-thionville-905",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-12T16:00:00+0200",
+          "endsAtEstimate": "2026-07-12T15:50:00.000Z"
+        }
+      ],
+      "director": "Alfred Hitchcock",
+      "durationMinutes": 110,
+      "synopsis": "À cause d'une jambe cassée, le reporter-photographe L. B. Jefferies est contraint de rester chez lui dans un fauteuil roulant. Homme d'action et amateur d'aventures, il s'aperçoit qu'il peut tirer parti de son immobilité forcée en étudiant le comportement des habitants de l'immeuble qu'il occupe dans Greenwich Village. Et ses observations l'amènent à la conviction que Lars Thorwald, son voisin d'en face, a assassiné sa femme. Sa fiancée, Lisa Fremont, ne le prend tout d'abord pas au sérieux, ironisant sur l'excitation que lui procure sa surveillance, mais finit par se prendre au jeu.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/567.jpg",
+      "version": "VOST",
+      "releaseYear": 1954,
+      "tmdbId": "567",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
       "id": "scala-thionville-932",
       "cinemaId": "scala-thionville",
       "title": "La chaleur",
@@ -18,13 +45,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10543",
-          "movieId": "scala-thionville-932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-11T19:50:00+0200",
-          "endsAtEstimate": "2026-07-11T19:22:00.000Z"
-        },
         {
           "id": "scala-thionville-10544",
           "movieId": "scala-thionville-932",
@@ -234,13 +254,6 @@
       ],
       "showtimes": [
         {
-          "id": "scala-thionville-10553",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-11T20:00:00+0200",
-          "endsAtEstimate": "2026-07-11T19:20:00.000Z"
-        },
-        {
           "id": "scala-thionville-10554",
           "movieId": "scala-thionville-933",
           "cinemaId": "scala-thionville",
@@ -304,33 +317,6 @@
       "version": "VF",
       "releaseYear": 2026,
       "tmdbId": "1483319",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-905",
-      "cinemaId": "scala-thionville",
-      "title": "Fenêtre sur cour",
-      "genres": [
-        "Thriller",
-        "Mystère",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10320",
-          "movieId": "scala-thionville-905",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-12T16:00:00+0200",
-          "endsAtEstimate": "2026-07-12T15:50:00.000Z"
-        }
-      ],
-      "director": "Alfred Hitchcock",
-      "durationMinutes": 110,
-      "synopsis": "À cause d'une jambe cassée, le reporter-photographe L. B. Jefferies est contraint de rester chez lui dans un fauteuil roulant. Homme d'action et amateur d'aventures, il s'aperçoit qu'il peut tirer parti de son immobilité forcée en étudiant le comportement des habitants de l'immeuble qu'il occupe dans Greenwich Village. Et ses observations l'amènent à la conviction que Lars Thorwald, son voisin d'en face, a assassiné sa femme. Sa fiancée, Lisa Fremont, ne le prend tout d'abord pas au sérieux, ironisant sur l'excitation que lui procure sa surveillance, mais finit par se prendre au jeu.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/567.jpg",
-      "version": "VOST",
-      "releaseYear": 1954,
-      "tmdbId": "567",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
