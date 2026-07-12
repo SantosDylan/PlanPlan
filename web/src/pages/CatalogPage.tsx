@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
+import { ErrorNotice } from '../components/ErrorNotice.js';
 import { MovieCard } from '../components/MovieCard.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
 import { ThemeToggle } from '../components/ThemeToggle.js';
@@ -88,12 +89,7 @@ function CatalogPage() {
 
       {isPending && <p className={css({ color: 'paperMuted' })}>Chargement de la programmation…</p>}
 
-      {isError && (
-        <p role="alert" className={css({ display: 'flex', alignItems: 'center', gap: '1.5', color: 'danger' })}>
-          <span aria-hidden="true">⚠️</span>
-          Impossible de charger la programmation : {error.message}
-        </p>
-      )}
+      {isError && <ErrorNotice message={error.message} />}
 
       {catalog && (
         <>

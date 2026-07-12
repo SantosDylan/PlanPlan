@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
+import { ErrorNotice } from '../components/ErrorNotice.js';
 import { ThemeToggle } from '../components/ThemeToggle.js';
 import { useMovieSelectionContext } from '../context/MovieSelectionContext.js';
 import { downloadFilteredIcs } from '../lib/calendar.js';
@@ -68,12 +69,7 @@ function ManageSubscriptionPage() {
           <ThemeToggle />
         </div>
 
-        {isError && (
-          <p role="alert" className={css({ display: 'flex', alignItems: 'center', gap: '1.5', color: 'danger' })}>
-            <span aria-hidden="true">⚠️</span>
-            Impossible de charger la programmation : {error.message}
-          </p>
-        )}
+        {isError && <ErrorNotice message={error.message} />}
 
         {catalog && (
           <>

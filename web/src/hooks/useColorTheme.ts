@@ -5,7 +5,12 @@ const DARK_QUERY = '(prefers-color-scheme: dark)';
 
 function applyTheme(preference: ThemePreference): void {
   const osPrefersDark = window.matchMedia(DARK_QUERY).matches;
-  document.documentElement.dataset.theme = resolveTheme(preference, osPrefersDark);
+  const next = resolveTheme(preference, osPrefersDark);
+  // Idempotent: setPreference applies immediately (no flash) and the effect
+  // re-applies on mount/change; skip the write when nothing changed so we don't
+  // trigger a redundant style recalc across every themed element.
+  if (document.documentElement.dataset.theme === next) return;
+  document.documentElement.dataset.theme = next;
 }
 
 /**
