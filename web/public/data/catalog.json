@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T16:59:52.531Z",
+  "generatedAt": "2026-07-12T17:49:47.031Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -211,6 +211,37 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
+      "id": "scala-thionville-cot-624758",
+      "cinemaId": "scala-thionville",
+      "title": "Ulysse",
+      "genres": [
+        "Drame",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-624758-1783947900",
+          "movieId": "scala-thionville-cot-624758",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T13:05:00.000Z",
+          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-624758-1784046000",
+          "movieId": "scala-thionville-cot-624758",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T16:20:00.000Z",
+          "endsAtEstimate": "2026-07-14T18:20:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1383287",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/tS0Xwa7Uqd8nlT41Y1KrumHtLeU.jpg",
+      "synopsis": "Alice, chercheuse en sociologie découvre qu’elle est enceinte. Luc, son mari, exulte. Ce sera un garçon ! Ils l’appelleront Ulysse. Sauf qu’à un an, Ulysse ne rentre pas dans les courbes. Trop petit, trop maigre. Les pédiatres s’interrogent et le verdict tombe : syndrome génétique. Ulysse ne sera pas comme les autres. Mais comment sera-t-il ? Mystère. Commence alors la très particulière odyssée d’Ulysse : marcher, parler, apprendre, comprendre, s’épanouir. Alice se lance dans l’aventure, déterminée à ce qu’Ulysse trouve sa place dans le monde.",
+      "releaseYear": 2026
+    },
+    {
       "id": "scala-thionville-933",
       "cinemaId": "scala-thionville",
       "title": "Shana",
@@ -279,6 +310,67 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
+      "id": "scala-thionville-cot-621546",
+      "cinemaId": "scala-thionville",
+      "title": "Animo rigolo",
+      "genres": [
+        "Animation",
+        "Familial"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-621546-1783952700",
+          "movieId": "scala-thionville-cot-621546",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T14:25:00.000Z",
+          "endsAtEstimate": "2026-07-13T16:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-621546-1784031300",
+          "movieId": "scala-thionville-cot-621546",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T12:15:00.000Z",
+          "endsAtEstimate": "2026-07-14T14:15:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1443589",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/kbpPGAQ9Oollri4EUTLuM7qxxlC.jpg",
+      "synopsis": "Préhistoriques ou domestiques, Rigolos ou ramollos, Minuscules ou noctambules, Ces animaux-là font un sacré gala !",
+      "releaseYear": 2025
+    },
+    {
+      "id": "scala-thionville-cot-626519",
+      "cinemaId": "scala-thionville",
+      "title": "L'Illusion de Yakushima",
+      "genres": [
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-626519-1783955100",
+          "movieId": "scala-thionville-cot-626519",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T15:05:00.000Z",
+          "endsAtEstimate": "2026-07-13T17:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-626519-1784030100",
+          "movieId": "scala-thionville-cot-626519",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T11:55:00.000Z",
+          "endsAtEstimate": "2026-07-14T13:55:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1449868",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/39jUDZtRdLq2WlwYqVIf4gsQHIx.jpg",
+      "synopsis": "Corry est française et vit au Japon. Elle partage sa vie avec Jin et s’occupe d’enfants en attente de greffe cardiaque à l’hôpital de Kobé. Alors que la culture Japonaise a du mal à accepter le don d’organe, Corry se bat au quotidien pour faire évoluer les mentalités et trouver plus de donneurs. Quand Jin disparait un jour sans laisser de trace, elle tente de le retrouver, mais doit aussi mener une course contre la montre pour que la greffe de son jeune patient aboutisse…",
+      "releaseYear": 2025
+    },
+    {
       "id": "scala-thionville-930",
       "cinemaId": "scala-thionville",
       "title": "Rita et Crocodile",
@@ -330,6 +422,119 @@
       "version": "VF",
       "releaseYear": 2015,
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-376520",
+      "cinemaId": "scala-thionville",
+      "title": "In Waves",
+      "genres": [
+        "Animation",
+        "Romance",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-376520-1783963800",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T17:30:00.000Z",
+          "endsAtEstimate": "2026-07-13T19:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784045700",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T16:15:00.000Z",
+          "endsAtEstimate": "2026-07-14T18:15:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784133000",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-15T16:30:00.000Z",
+          "endsAtEstimate": "2026-07-15T18:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784219400",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-16T16:30:00.000Z",
+          "endsAtEstimate": "2026-07-16T18:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784312100",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-17T18:15:00.000Z",
+          "endsAtEstimate": "2026-07-17T20:15:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784388600",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-18T15:30:00.000Z",
+          "endsAtEstimate": "2026-07-18T17:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784485200",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-19T18:20:00.000Z",
+          "endsAtEstimate": "2026-07-19T20:20:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784546700",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T11:25:00.000Z",
+          "endsAtEstimate": "2026-07-20T13:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784644500",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T14:35:00.000Z",
+          "endsAtEstimate": "2026-07-21T16:35:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "947502",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/3z3gZ6faikQ81EM19zTX4lHfpwL.jpg",
+      "synopsis": "À Los Angeles, AJ, lycéen discret, rencontre Kristen. Elle est passionnée de surf, lui de skateboard et de dessin. Ils tombent follement amoureux ; un avenir heureux se profile. Mais tout bascule lorsque Kristen tombe malade. Ensemble, ils se lancent dans un combat contre l’adversité, portés par la force de leur amour, leurs amis et leur passion désormais commune pour le surf et l’océan.",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-cot-622070",
+      "cinemaId": "scala-thionville",
+      "title": "Le Garçon qui faisait danser les collines",
+      "genres": [
+        "Drame",
+        "Musique",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-622070-1783963800",
+          "movieId": "scala-thionville-cot-622070",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T17:30:00.000Z",
+          "endsAtEstimate": "2026-07-13T19:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-622070-1784038800",
+          "movieId": "scala-thionville-cot-622070",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T14:20:00.000Z",
+          "endsAtEstimate": "2026-07-14T16:20:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1400743",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9uWxZFfe4Xv7NMXn70sFU6nwZp3.jpg",
+      "synopsis": "Ahmet, 15 ans, grandit au milieu des montagnes de Macédoine, où il garde les moutons de son père tout en prenant soin de son petit frère. Mais lui, ce qui le fait rêver, c’est la musique. Entre les attentes de son entourage et ses envies d’ailleurs, Ahmet pourra-t-il un jour suivre son propre chemin ?",
+      "releaseYear": 2025
     },
     {
       "id": "scala-thionville-934",
@@ -1205,6 +1410,31 @@
       "releaseYear": 2026,
       "tmdbId": "1711490",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-47245",
+      "cinemaId": "scala-thionville",
+      "title": "Les Contrebandiers de Moonfleet",
+      "genres": [
+        "Aventure",
+        "Drame",
+        "Histoire"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-47245-1789308000",
+          "movieId": "scala-thionville-cot-47245",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-09-13T14:00:00.000Z",
+          "endsAtEstimate": "2026-09-13T16:00:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "29967",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/i0BbRfsK7cMjJXOGxJkZfVcC6h5.jpg",
+      "synopsis": "1757 en Angleterre. Le jeune orphelin John Mohune arrive à Moonfleet, petit port isolé, pour retrouver un ami de sa mère, Jeremy Fox, flibustier notoire. Jeremy Fox l'envoie au collège mais John s'échappe et retourne au château de Mohune qui appartint à sa famille et qu'occupe aujourd'hui Fox. John apprend par lord Ashwood l'existence d'un diamant magnifique que son grand-père lui a laissé en héritage. Avec Fox, il se met à la recherche du joyau.",
+      "releaseYear": 1955
     }
   ]
 }
