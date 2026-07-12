@@ -79,7 +79,7 @@ describe('normalizeMovie', () => {
     expect(late?.endsAtEstimate).toBe('2026-07-03T17:37:00.000Z');
   });
 
-  it("retourne null quand plus aucune séance à venir (l'index source contient l'historique)", () => {
+  it('retourne null quand le film est épuisé (plus aucune séance à venir)', () => {
     expect(normalizeMovie(rawMovie, cinema, new Date('2027-01-01T00:00:00Z'))).toBeNull();
   });
 });

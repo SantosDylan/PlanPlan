@@ -25,6 +25,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run ingest
+        env:
+          # Affiches/genres des films rattrapés via la billetterie (cf. tmdb.ts).
+          # Absente → ingestion OK, films rattrapés en placeholder.
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       - name: Commit si la programmation a changé
         id: commit
         run: |

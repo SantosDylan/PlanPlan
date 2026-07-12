@@ -16,8 +16,12 @@ export function parseDurationToMinutes(raw: string | null | undefined): number |
 
 /**
  * Film brut TYPO3 → Movie normalisé, séances futures uniquement.
- * Retourne null si le film n'a plus aucune séance à venir (l'index source
- * contient tout l'historique — vérifié en live, cf. review.md).
+ * Retourne null si le film n'a plus aucune séance à venir.
+ *
+ * ⚠ L'index TYPO3 ne contient PAS tout l'historique : c'est une fenêtre glissante
+ * d'uid récents. Un film peut donc en disparaître alors qu'il a encore des séances
+ * (constaté en 2026-07). Ce trou est comblé en aval par le rattrapage billetterie
+ * (cf. cotecine.ts) ; ici on se contente d'écarter les films réellement épuisés.
  */
 export function normalizeMovie(raw: RawMovie, cinema: Cinema, now: Date): Movie | null {
   const movieId = `${cinema.id}-${raw.uid}`;

@@ -2,6 +2,8 @@ import type { Cinema, Movie } from '../../types.js';
 import type { SourceAdapter } from '../adapter.js';
 import { rawMovieSchema, responseSchema, type RawMovie } from './schema.js';
 import { normalizeMovie } from './normalize.js';
+import { fetchCotecineRescues, normalizeTitleForMatch } from './cotecine.js';
+import { enrichMoviesWithTmdb } from './tmdb.js';
 
 const cinema: Cinema = {
   id: 'scala-thionville',
@@ -61,9 +63,28 @@ export const scalaThionville: SourceAdapter = {
       byUid.set(movie.uid, movie);
     }
 
-    return [...byUid.values()]
+    const primary = [...byUid.values()]
       .map((movie) => normalizeMovie(movie, cinema, now))
-      .filter((movie): movie is Movie => movie !== null)
-      .sort((a, b) => (a.showtimes[0]?.startsAt ?? '').localeCompare(b.showtimes[0]?.startsAt ?? ''));
+      .filter((movie): movie is Movie => movie !== null);
+
+    // Rattrapage billetterie : la programmation TYPO3 laisse tomber des films encore
+    // à l'affiche (cf. cotecine.ts). On complète avec les réservables qu'elle omet.
+    // Best-effort : un échec du rattrapage ne doit pas priver le site de la programmation.
+    const covered = new Set(primary.map((movie) => normalizeTitleForMatch(movie.title)));
+    let rescues: Movie[] = [];
+    try {
+      rescues = await fetchCotecineRescues(cinema, now, (title) => covered.has(normalizeTitleForMatch(title)));
+      if (rescues.length > 0) {
+        console.log(`  ↳ billetterie : ${rescues.length} film(s) rattrapé(s) hors programmation (${rescues.map((m) => m.title).join(', ')})`);
+        // La billetterie ne fournit pas d'affiche : on enrichit ces films via TMDB.
+        rescues = await enrichMoviesWithTmdb(rescues);
+      }
+    } catch (error) {
+      console.warn('⚠ rattrapage billetterie cotecine échoué — programmation TYPO3 conservée', error);
+    }
+
+    return [...primary, ...rescues].sort((a, b) =>
+      (a.showtimes[0]?.startsAt ?? '').localeCompare(b.showtimes[0]?.startsAt ?? ''),
+    );
   },
 };
