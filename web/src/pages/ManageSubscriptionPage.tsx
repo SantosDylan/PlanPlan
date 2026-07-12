@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
 import { ErrorNotice } from '../components/ErrorNotice.js';
-import { ThemeToggle } from '../components/ThemeToggle.js';
+import { OptionsDrawer } from '../components/OptionsDrawer.js';
 import { useMovieSelectionContext } from '../context/MovieSelectionContext.js';
 import { downloadFilteredIcs } from '../lib/calendar.js';
 
@@ -19,6 +19,8 @@ function ManageSubscriptionPage() {
   const { selectedIds, toggle, isSelected, selectAll, deselectAll } = useMovieSelectionContext();
   const [query, setQuery] = useState('');
   const [genreFilter, setGenreFilter] = useState(ALL_GENRES);
+  const [optionsOpen, setOptionsOpen] = useState(false);
+  const optionsButtonRef = useRef<HTMLButtonElement>(null);
 
   const genres = catalog
     ? [ALL_GENRES, ...[...new Set(catalog.movies.flatMap((movie) => movie.genres))]]
@@ -66,7 +68,29 @@ function ManageSubscriptionPage() {
               <span aria-hidden="true">⚠️</span> Instantané — re-télécharge après chaque mise à jour du programme.
             </p>
           </header>
-          <ThemeToggle />
+          <button
+            ref={optionsButtonRef}
+            type="button"
+            onClick={() => setOptionsOpen(true)}
+            aria-label="Apparence"
+            className={css({
+              w: '9',
+              h: '9',
+              rounded: 'full',
+              bg: 'accentSoft',
+              border: '1px solid',
+              borderColor: 'accentBorder',
+              color: 'accent',
+              fontSize: 'md',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: '0',
+            })}
+          >
+            ◐
+          </button>
         </div>
 
         {isError && <ErrorNotice message={error.message} />}
@@ -294,6 +318,8 @@ function ManageSubscriptionPage() {
           )}
         </section>
       )}
+
+      <OptionsDrawer open={optionsOpen} onClose={() => setOptionsOpen(false)} triggerRef={optionsButtonRef} />
 
       <BottomNav />
     </div>

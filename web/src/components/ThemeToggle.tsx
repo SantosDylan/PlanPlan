@@ -3,10 +3,10 @@ import { css } from '../../styled-system/css';
 import { useColorTheme } from '../hooks/useColorTheme.js';
 import type { ThemePreference } from '../lib/theme.js';
 
-const OPTIONS: { value: ThemePreference; label: string; icon: string }[] = [
-  { value: 'system', label: 'Thème système', icon: '◐' },
-  { value: 'light', label: 'Thème clair', icon: '☀' },
-  { value: 'dark', label: 'Thème sombre', icon: '☾' },
+const OPTIONS: { value: ThemePreference; label: string; shortLabel: string; icon: string }[] = [
+  { value: 'system', label: 'Thème système', shortLabel: 'Système', icon: '◐' },
+  { value: 'light', label: 'Thème clair', shortLabel: 'Clair', icon: '☀' },
+  { value: 'dark', label: 'Thème sombre', shortLabel: 'Sombre', icon: '☾' },
 ];
 
 /**
@@ -39,14 +39,14 @@ export const ThemeToggle: FC = () => {
       role="radiogroup"
       aria-label="Thème de couleur"
       className={css({
-        display: 'inline-flex',
+        display: 'flex',
         gap: '0.5',
         p: '0.5',
+        w: 'full',
         rounded: 'full',
         bg: 'accentSoft',
         border: '1px solid',
         borderColor: 'border',
-        flexShrink: '0',
       })}
     >
       {OPTIONS.map((option, index) => {
@@ -66,22 +66,25 @@ export const ThemeToggle: FC = () => {
             onClick={() => setPreference(option.value)}
             onKeyDown={(event) => handleKeyDown(event, index)}
             className={css({
+              flex: '1',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              w: '11',
+              gap: '1.5',
               h: '11',
+              px: '2',
               rounded: 'full',
               border: 'none',
               cursor: 'pointer',
-              fontSize: 'md',
-              lineHeight: '1',
+              fontSize: 'xs',
+              fontWeight: 'semibold',
               bg: active ? 'accent' : 'transparent',
               color: active ? 'accentText' : 'paperMuted',
               transition: 'background-color 0.15s ease, color 0.15s ease',
             })}
           >
             <span aria-hidden="true">{option.icon}</span>
+            <span>{option.shortLabel}</span>
           </button>
         );
       })}

@@ -4,8 +4,8 @@ import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
 import { ErrorNotice } from '../components/ErrorNotice.js';
 import { MovieCard } from '../components/MovieCard.js';
+import { OptionsDrawer } from '../components/OptionsDrawer.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
-import { ThemeToggle } from '../components/ThemeToggle.js';
 
 const updatedAtFormat = new Intl.DateTimeFormat('fr-FR', {
   timeZone: 'Europe/Paris',
@@ -23,7 +23,9 @@ const shortSyncFormat = new Intl.DateTimeFormat('fr-FR', {
 function CatalogPage() {
   const { data: catalog, isPending, isError, error } = useCatalog();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
   const subscribeButtonRef = useRef<HTMLButtonElement>(null);
+  const optionsButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <div className={css({ maxW: '860px', mx: 'auto', px: '4', py: '6', pb: '20', display: 'flex', flexDir: 'column', gap: '4' })}>
@@ -57,7 +59,28 @@ function CatalogPage() {
           )}
         </div>
         <div className={css({ display: 'flex', alignItems: 'center', gap: '2', flexShrink: '0' })}>
-          <ThemeToggle />
+          <button
+            ref={optionsButtonRef}
+            type="button"
+            onClick={() => setOptionsOpen(true)}
+            aria-label="Apparence"
+            className={css({
+              w: '9',
+              h: '9',
+              rounded: 'full',
+              bg: 'accentSoft',
+              border: '1px solid',
+              borderColor: 'accentBorder',
+              color: 'accent',
+              fontSize: 'md',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            })}
+          >
+            ◐
+          </button>
           {catalog && catalog.cinemas.length > 0 && (
             <button
               ref={subscribeButtonRef}
@@ -113,6 +136,8 @@ function CatalogPage() {
           />
         </>
       )}
+
+      <OptionsDrawer open={optionsOpen} onClose={() => setOptionsOpen(false)} triggerRef={optionsButtonRef} />
 
       <BottomNav />
     </div>

@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState, type FC } from 'react';
+import { useRef, useState, type FC } from 'react';
 import { Link } from 'react-router';
 import type { Cinema } from '../../../ingest/src/types.js';
 import { css } from '../../styled-system/css';
+import { useModalFocusTrap } from '../hooks/useModalFocusTrap.js';
 import { cinemaFeedUrls } from '../lib/calendar.js';
 import { useToast } from '../context/ToastContext.js';
-
-const FOCUSABLE_SELECTOR = 'button, a[href], input, [tabindex]:not([tabindex="-1"])';
 
 type SubscribeDrawerProps = {
   cinemas: Cinema[];
@@ -19,41 +18,7 @@ export const SubscribeDrawer: FC<SubscribeDrawerProps> = ({ cinemas, open, onClo
   const [copiedCinemaId, setCopiedCinemaId] = useState<string | null>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (!open) return;
-
-    const sheet = sheetRef.current;
-    const firstFocusable = sheet?.querySelector<HTMLElement>(FOCUSABLE_SELECTOR);
-    firstFocusable?.focus();
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        onClose();
-        return;
-      }
-      if (event.key !== 'Tab' || !sheet) return;
-
-      const focusable = Array.from(sheet.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR));
-      if (focusable.length === 0) return;
-      const first = focusable[0]!;
-      const last = focusable[focusable.length - 1]!;
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-    const trigger = triggerRef.current;
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      trigger?.focus();
-    };
-  }, [open, onClose, triggerRef]);
+  useModalFocusTrap({ open, onClose, containerRef: sheetRef, triggerRef });
 
   if (!open) return null;
 
