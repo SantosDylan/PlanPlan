@@ -2,7 +2,9 @@ import { useRef, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { BottomNav } from '../components/BottomNav.js';
+import { ErrorNotice } from '../components/ErrorNotice.js';
 import { MovieCard } from '../components/MovieCard.js';
+import { OptionsDrawer } from '../components/OptionsDrawer.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
 
 const updatedAtFormat = new Intl.DateTimeFormat('fr-FR', {
@@ -21,7 +23,9 @@ const shortSyncFormat = new Intl.DateTimeFormat('fr-FR', {
 function CatalogPage() {
   const { data: catalog, isPending, isError, error } = useCatalog();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
   const subscribeButtonRef = useRef<HTMLButtonElement>(null);
+  const optionsButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <div className={css({ maxW: '860px', mx: 'auto', px: '4', py: '6', pb: '20', display: 'flex', flexDir: 'column', gap: '4' })}>
@@ -34,7 +38,7 @@ function CatalogPage() {
           px: '4',
           pt: '2',
           pb: '2.5',
-          bg: 'rgba(15, 13, 11, 0.68)',
+          bg: 'headerBg',
           backdropFilter: 'blur(20px) saturate(180%)',
           boxShadow: '0 1px 0 rgba(0, 0, 0, 0.6), 0 8px 16px -8px rgba(0, 0, 0, 0.5)',
           display: 'flex',
@@ -54,12 +58,12 @@ function CatalogPage() {
             </p>
           )}
         </div>
-        {catalog && catalog.cinemas.length > 0 && (
+        <div className={css({ display: 'flex', alignItems: 'center', gap: '2', flexShrink: '0' })}>
           <button
-            ref={subscribeButtonRef}
+            ref={optionsButtonRef}
             type="button"
-            onClick={() => setDrawerOpen(true)}
-            aria-label="S'abonner au calendrier"
+            onClick={() => setOptionsOpen(true)}
+            aria-label="Apparence"
             className={css({
               w: '9',
               h: '9',
@@ -75,20 +79,40 @@ function CatalogPage() {
               justifyContent: 'center',
             })}
           >
-            📅
+            ◐
           </button>
-        )}
+          {catalog && catalog.cinemas.length > 0 && (
+            <button
+              ref={subscribeButtonRef}
+              type="button"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="S'abonner au calendrier"
+              className={css({
+                w: '9',
+                h: '9',
+                rounded: 'full',
+                bg: 'accentSoft',
+                border: '1px solid',
+                borderColor: 'accentBorder',
+                color: 'accent',
+                fontSize: 'md',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              })}
+            >
+              📅
+            </button>
+          )}
+        </div>
       </header>
 
       {!catalog?.cinemas.length && <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>Les séances du cinéma, direct dans ton agenda.</p>}
 
       {isPending && <p className={css({ color: 'paperMuted' })}>Chargement de la programmation…</p>}
 
-      {isError && (
-        <p role="alert" className={css({ color: 'red.400' })}>
-          Impossible de charger la programmation : {error.message}
-        </p>
-      )}
+      {isError && <ErrorNotice message={error.message} />}
 
       {catalog && (
         <>
@@ -112,6 +136,8 @@ function CatalogPage() {
           />
         </>
       )}
+
+      <OptionsDrawer open={optionsOpen} onClose={() => setOptionsOpen(false)} triggerRef={optionsButtonRef} />
 
       <BottomNav />
     </div>

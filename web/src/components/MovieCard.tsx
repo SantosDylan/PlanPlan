@@ -114,7 +114,7 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
               rounded: 'lg',
               bg: 'surfaceRaised',
               backgroundImage:
-                'repeating-linear-gradient(135deg, rgba(246,241,231,0.06) 0 6px, rgba(246,241,231,0.02) 6px 12px)',
+                'repeating-linear-gradient(135deg, {colors.hairline} 0 6px, {colors.hairlineFaint} 6px 12px)',
             })}
           />
         )}
