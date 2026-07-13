@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T17:49:47.031Z",
+  "generatedAt": "2026-07-13T09:29:29.341Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,6 +11,105 @@
   ],
   "movies": [
     {
+      "id": "scala-thionville-cot-624758",
+      "cinemaId": "scala-thionville",
+      "title": "Ulysse",
+      "genres": [
+        "Drame",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-624758-1783947900",
+          "movieId": "scala-thionville-cot-624758",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T13:05:00.000Z",
+          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-624758-1784046000",
+          "movieId": "scala-thionville-cot-624758",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T16:20:00.000Z",
+          "endsAtEstimate": "2026-07-14T18:20:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1383287",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/tS0Xwa7Uqd8nlT41Y1KrumHtLeU.jpg",
+      "synopsis": "Alice, chercheuse en sociologie découvre qu’elle est enceinte. Luc, son mari, exulte. Ce sera un garçon ! Ils l’appelleront Ulysse. Sauf qu’à un an, Ulysse ne rentre pas dans les courbes. Trop petit, trop maigre. Les pédiatres s’interrogent et le verdict tombe : syndrome génétique. Ulysse ne sera pas comme les autres. Mais comment sera-t-il ? Mystère. Commence alors la très particulière odyssée d’Ulysse : marcher, parler, apprendre, comprendre, s’épanouir. Alice se lance dans l’aventure, déterminée à ce qu’Ulysse trouve sa place dans le monde.",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-933",
+      "cinemaId": "scala-thionville",
+      "title": "Shana",
+      "genres": [
+        "Comédie",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10555",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-13T13:20:00+0200",
+          "endsAtEstimate": "2026-07-13T12:40:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10556",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-14T20:20:00+0200",
+          "endsAtEstimate": "2026-07-14T19:40:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10557",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-15T20:30:00+0200",
+          "endsAtEstimate": "2026-07-15T19:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10558",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-17T16:25:00+0200",
+          "endsAtEstimate": "2026-07-17T15:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10559",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-19T15:50:00+0200",
+          "endsAtEstimate": "2026-07-19T15:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10560",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T17:45:00+0200",
+          "endsAtEstimate": "2026-07-20T17:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10561",
+          "movieId": "scala-thionville-933",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T17:45:00+0200",
+          "endsAtEstimate": "2026-07-21T17:05:00.000Z"
+        }
+      ],
+      "director": "Lila Pinell",
+      "durationMinutes": 80,
+      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1483319.jpg",
+      "version": "VF",
+      "releaseYear": 2026,
+      "tmdbId": "1483319",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
       "id": "scala-thionville-932",
       "cinemaId": "scala-thionville",
       "title": "La chaleur",
@@ -18,13 +117,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10545",
-          "movieId": "scala-thionville-932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-12T20:10:00+0200",
-          "endsAtEstimate": "2026-07-12T19:42:00.000Z"
-        },
         {
           "id": "scala-thionville-10546",
           "movieId": "scala-thionville-932",
@@ -208,105 +300,6 @@
       "version": "VF",
       "releaseYear": 2026,
       "tmdbId": "1492288",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-624758",
-      "cinemaId": "scala-thionville",
-      "title": "Ulysse",
-      "genres": [
-        "Drame",
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-624758-1783947900",
-          "movieId": "scala-thionville-cot-624758",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T13:05:00.000Z",
-          "endsAtEstimate": "2026-07-13T15:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-624758-1784046000",
-          "movieId": "scala-thionville-cot-624758",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T16:20:00.000Z",
-          "endsAtEstimate": "2026-07-14T18:20:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1383287",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/tS0Xwa7Uqd8nlT41Y1KrumHtLeU.jpg",
-      "synopsis": "Alice, chercheuse en sociologie découvre qu’elle est enceinte. Luc, son mari, exulte. Ce sera un garçon ! Ils l’appelleront Ulysse. Sauf qu’à un an, Ulysse ne rentre pas dans les courbes. Trop petit, trop maigre. Les pédiatres s’interrogent et le verdict tombe : syndrome génétique. Ulysse ne sera pas comme les autres. Mais comment sera-t-il ? Mystère. Commence alors la très particulière odyssée d’Ulysse : marcher, parler, apprendre, comprendre, s’épanouir. Alice se lance dans l’aventure, déterminée à ce qu’Ulysse trouve sa place dans le monde.",
-      "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-933",
-      "cinemaId": "scala-thionville",
-      "title": "Shana",
-      "genres": [
-        "Comédie",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10555",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-13T13:20:00+0200",
-          "endsAtEstimate": "2026-07-13T12:40:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10556",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-14T20:20:00+0200",
-          "endsAtEstimate": "2026-07-14T19:40:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10557",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-15T20:30:00+0200",
-          "endsAtEstimate": "2026-07-15T19:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10558",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-17T16:25:00+0200",
-          "endsAtEstimate": "2026-07-17T15:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10559",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T15:50:00+0200",
-          "endsAtEstimate": "2026-07-19T15:10:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10560",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T17:45:00+0200",
-          "endsAtEstimate": "2026-07-20T17:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10561",
-          "movieId": "scala-thionville-933",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T17:45:00+0200",
-          "endsAtEstimate": "2026-07-21T17:05:00.000Z"
-        }
-      ],
-      "director": "Lila Pinell",
-      "durationMinutes": 80,
-      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1483319.jpg",
-      "version": "VF",
-      "releaseYear": 2026,
-      "tmdbId": "1483319",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
