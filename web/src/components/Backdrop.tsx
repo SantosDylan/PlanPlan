@@ -5,7 +5,7 @@ import { css } from '../../styled-system/css';
 const backdropClass = css({
   position: 'absolute',
   inset: '0',
-  bg: 'rgba(10, 8, 6, 0.62)',
+  bg: 'scrim',
   pointerEvents: 'auto',
 });
 

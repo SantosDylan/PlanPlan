@@ -102,7 +102,7 @@ export const SubscribeDrawer: FC<SubscribeDrawerProps> = ({ cinemas, open, onClo
                       className={css({
                         flex: '1',
                         minW: '0',
-                        fontFamily: 'ui-monospace, monospace',
+                        fontFamily: 'mono',
                         fontSize: 'xs',
                         color: 'paperMuted',
                         bg: 'rgba(0, 0, 0, 0.25)',

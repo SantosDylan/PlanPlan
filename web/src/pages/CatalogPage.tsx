@@ -1,33 +1,47 @@
 import { CalendarPlusIcon } from '@phosphor-icons/react';
-import { useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
+import { AgendaView } from '../components/AgendaView.js';
 import { ErrorNotice } from '../components/ErrorNotice.js';
+import { GridView, type MovieWithCinema } from '../components/GridView.js';
 import { IconButton } from '../components/IconButton.js';
-import { MovieCard } from '../components/MovieCard.js';
+import { MovieSheet } from '../components/MovieSheet.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
 import { ThemeMenu } from '../components/ThemeMenu.js';
+import { ViewToggle } from '../components/ViewToggle.js';
+import { useAddedShowtimes } from '../hooks/useAddedShowtimes.js';
+import { useCatalogView } from '../hooks/useCatalogView.js';
+import { formatLongSync, formatShortSync } from '../lib/datetime.js';
 
-const updatedAtFormat = new Intl.DateTimeFormat('fr-FR', {
-  timeZone: 'Europe/Paris',
-  dateStyle: 'long',
-  timeStyle: 'short',
-});
-const shortSyncFormat = new Intl.DateTimeFormat('fr-FR', {
-  timeZone: 'Europe/Paris',
-  day: 'numeric',
-  month: 'short',
-  hour: '2-digit',
-  minute: '2-digit',
-});
+const VIEW_PANEL_ID = 'catalog-view-panel';
 
 function CatalogPage() {
   const { data: catalog, isPending, isError, error } = useCatalog();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const subscribeButtonRef = useRef<HTMLButtonElement>(null);
+  const { view, setView } = useCatalogView();
+  const { isAdded, addShowtime, addMovie } = useAddedShowtimes();
+  const [selectedEntry, setSelectedEntry] = useState<MovieWithCinema | null>(null);
+  const selectedTriggerRef = useRef<HTMLButtonElement | null>(null);
+
+  const entries: MovieWithCinema[] = useMemo(() => {
+    if (!catalog) return [];
+    return catalog.movies
+      .filter((movie) => movie.showtimes.length > 0)
+      .flatMap((movie) => {
+        const cinema = catalog.cinemas.find((c) => c.id === movie.cinemaId);
+        return cinema ? [{ movie, cinema }] : [];
+      });
+  }, [catalog]);
+
+  const handleSelectMovie = (entry: MovieWithCinema, trigger: HTMLButtonElement) => {
+    selectedTriggerRef.current = trigger;
+    setSelectedEntry(entry);
+  };
 
   return (
-    <div className={css({ maxW: '860px', mx: 'auto', px: '4', pt: '12', pb: '6', display: 'flex', flexDir: 'column', gap: '4' })}>
+    <div className={css({ h: '100dvh', display: 'flex', flexDir: 'column' })}>
       <header
         className={css({
           position: 'fixed',
@@ -67,41 +81,71 @@ function CatalogPage() {
         </div>
       </header>
 
-      {catalog && (
-        <p className={css({ fontSize: '2xs', color: 'paperFaint', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1', m: '0' })}>
-          <span aria-hidden="true" className={css({ w: '1.5', h: '1.5', rounded: 'full', bg: 'success', flexShrink: '0' })} />
-          Synchronisé le {shortSyncFormat.format(new Date(catalog.generatedAt))}
-        </p>
-      )}
+      <div
+        className={css({
+          flex: '1',
+          minH: '0',
+          w: 'full',
+          maxW: '860px',
+          mx: 'auto',
+          px: '4',
+          pt: '12',
+          pb: '6',
+          display: 'flex',
+          flexDir: 'column',
+          gap: '4',
+        })}
+      >
+        {catalog && (
+          <p className={css({ fontSize: '2xs', color: 'paperFaint', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1', m: '0' })}>
+            <span aria-hidden="true" className={css({ w: '1.5', h: '1.5', rounded: 'full', bg: 'success', flexShrink: '0' })} />
+            Synchronisé le {formatShortSync(catalog.generatedAt)}
+          </p>
+        )}
 
-      {!catalog?.cinemas.length && <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>Les séances du cinéma, direct dans ton agenda.</p>}
+        {!catalog?.cinemas.length && <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>Les séances du cinéma, direct dans ton agenda.</p>}
 
-      {isPending && <p className={css({ color: 'paperMuted' })}>Chargement de la programmation…</p>}
+        {isPending && <p className={css({ color: 'paperMuted' })}>Chargement de la programmation…</p>}
 
-      {isError && <ErrorNotice message={error.message} />}
+        {isError && <ErrorNotice message={error.message} />}
 
-      {catalog && (
-        <>
-          <main className={css({ display: 'flex', flexDir: 'column', gap: '3' })}>
-            {catalog.movies.map((movie) => {
-              const cinema = catalog.cinemas.find((c) => c.id === movie.cinemaId);
-              return cinema ? <MovieCard key={movie.id} movie={movie} cinema={cinema} /> : null;
-            })}
-          </main>
+        {catalog && (
+          <>
+            <ViewToggle view={view} onChange={setView} panelId={VIEW_PANEL_ID} />
 
-          <footer className={css({ color: 'paperFaint', fontSize: 'xs', borderTop: '1px solid', borderColor: 'border', pt: '3' })}>
-            Programmation mise à jour le {updatedAtFormat.format(new Date(catalog.generatedAt))} · données issues du site
-            de la ville de Thionville · projet perso, non affilié au cinéma.
-          </footer>
+            <div className={css({ flex: '1', minH: '0', overflowY: 'auto', display: 'flex', flexDir: 'column', gap: '4' })}>
+              <main id={VIEW_PANEL_ID} role="tabpanel" tabIndex={0} className={css({ display: 'flex', flexDir: 'column', gap: '3' })}>
+                {view === 'grille' ? (
+                  <GridView entries={entries} onSelectMovie={handleSelectMovie} />
+                ) : (
+                  <AgendaView movies={catalog.movies} cinemas={catalog.cinemas} isAdded={isAdded} onAddShowtime={addShowtime} />
+                )}
+              </main>
 
-          <SubscribeDrawer
-            cinemas={catalog.cinemas}
-            open={drawerOpen}
-            onClose={() => setDrawerOpen(false)}
-            triggerRef={subscribeButtonRef}
-          />
-        </>
-      )}
+              <footer className={css({ color: 'paperFaint', fontSize: 'xs', borderTop: '1px solid', borderColor: 'hairline', pt: '3' })}>
+                Programmation mise à jour le {formatLongSync(catalog.generatedAt)} · données issues du site
+                de la ville de Thionville · projet perso, non affilié au cinéma.
+              </footer>
+            </div>
+
+            <MovieSheet
+              entry={selectedEntry}
+              onClose={() => setSelectedEntry(null)}
+              triggerRef={selectedTriggerRef}
+              isAdded={isAdded}
+              onAddShowtime={addShowtime}
+              onAddMovie={addMovie}
+            />
+
+            <SubscribeDrawer
+              cinemas={catalog.cinemas}
+              open={drawerOpen}
+              onClose={() => setDrawerOpen(false)}
+              triggerRef={subscribeButtonRef}
+            />
+          </>
+        )}
+      </div>
     </div>
   );
 }
