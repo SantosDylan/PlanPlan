@@ -61,7 +61,7 @@ const popoverClass = css({
   bg: 'surfaceSheet',
   rounded: 'lg',
   border: '1px solid',
-  borderColor: 'border',
+  borderColor: 'hairline',
   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)',
   p: '1.5',
   display: 'flex',
