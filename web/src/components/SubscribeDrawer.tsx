@@ -1,12 +1,12 @@
 import { AnimatePresence } from 'framer-motion';
 import { useRef, useState, type FC } from 'react';
 import type { Cinema } from '../../../ingest/src/types.js';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 import { Backdrop } from './Backdrop.js';
 import { DraggableSheet } from './DraggableSheet.js';
-import { useModalFocusTrap } from '../hooks/useModalFocusTrap.js';
-import { cinemaFeedUrls } from '../lib/calendar.js';
-import { useToast } from '../context/ToastContext.js';
+import { useModalFocusTrap } from '#src/hooks/useModalFocusTrap.js';
+import { cinemaFeedUrls } from '#src/lib/calendar.js';
+import { useToast } from '#src/context/ToastContext.js';
 
 // Permanently non-interactive: only its visible children (backdrop, sheet) opt back in via
 // pointerEvents: 'auto', so it never blocks the page behind it — mounted or not, animating or not.

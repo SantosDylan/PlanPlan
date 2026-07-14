@@ -1,5 +1,5 @@
 import { useState, type FC } from 'react';
-import { css, cx } from '../../styled-system/css';
+import { css, cx } from '#styled-system/css';
 
 const placeholderClass = css({
   bg: 'surfaceRaised',

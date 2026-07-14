@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import type { FC } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 
 const backdropClass = css({
   position: 'absolute',

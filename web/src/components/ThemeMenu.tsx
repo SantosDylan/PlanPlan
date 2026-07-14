@@ -2,8 +2,8 @@ import { CircleHalfIcon, MoonIcon, SunIcon } from '@phosphor-icons/react';
 import type { FC } from 'react';
 import { Menu, MenuItem } from './Menu.js';
 import { IconButton } from './IconButton.js';
-import { useColorTheme } from '../hooks/useColorTheme.js';
-import type { ThemePreference } from '../lib/theme.js';
+import { useColorTheme } from '#src/hooks/useColorTheme.js';
+import type { ThemePreference } from '#src/lib/theme.js';
 
 const OPTIONS: { value: ThemePreference; label: string; Icon: typeof CircleHalfIcon }[] = [
   { value: 'system', label: 'Thème système', Icon: CircleHalfIcon },

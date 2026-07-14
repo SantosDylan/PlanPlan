@@ -1,5 +1,5 @@
 import { createContext, useContext, useRef, useState, type FC, type ReactNode } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 
 const TOAST_DURATION_MS = 2200;
 

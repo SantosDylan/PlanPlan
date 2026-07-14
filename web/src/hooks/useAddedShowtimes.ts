@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import type { Cinema, Movie, Showtime } from '../../../ingest/src/types.js';
-import { formatTime } from '../lib/datetime.js';
-import { downloadMovieIcs, downloadShowtimeIcs } from '../lib/calendar.js';
-import { seanceCountLabel } from '../lib/showtimes.js';
-import { useToast } from '../context/ToastContext.js';
+import { formatTime } from '#src/lib/datetime.js';
+import { downloadMovieIcs, downloadShowtimeIcs } from '#src/lib/calendar.js';
+import { seanceCountLabel } from '#src/lib/showtimes.js';
+import { useToast } from '#src/context/ToastContext.js';
 
 /**
  * État partagé « séance ajoutée à l'agenda », consommé à la fois par la Grille (fiche détail)

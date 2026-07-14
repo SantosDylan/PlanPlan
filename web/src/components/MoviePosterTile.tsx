@@ -1,7 +1,7 @@
 import { useRef, type FC } from 'react';
-import { css } from '../../styled-system/css';
-import { dayKeyOf } from '../lib/datetime.js';
-import { nextShowtimeShort, seanceCountLabel } from '../lib/showtimes.js';
+import { css } from '#styled-system/css';
+import { dayKeyOf } from '#src/lib/datetime.js';
+import { nextShowtimeShort, seanceCountLabel } from '#src/lib/showtimes.js';
 import type { MovieWithCinema } from './GridView.js';
 import { Poster } from './Poster.js';
 

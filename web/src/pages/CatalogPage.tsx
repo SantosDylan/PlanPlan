@@ -1,18 +1,18 @@
 import { CalendarPlusIcon } from '@phosphor-icons/react';
 import { useMemo, useRef, useState } from 'react';
-import { css } from '../../styled-system/css';
-import { useCatalog } from '../api/useCatalog.js';
-import { AgendaView } from '../components/AgendaView.js';
-import { ErrorNotice } from '../components/ErrorNotice.js';
-import { GridView, type MovieWithCinema } from '../components/GridView.js';
-import { IconButton } from '../components/IconButton.js';
-import { MovieSheet } from '../components/MovieSheet.js';
-import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
-import { ThemeMenu } from '../components/ThemeMenu.js';
-import { ViewToggle } from '../components/ViewToggle.js';
-import { useAddedShowtimes } from '../hooks/useAddedShowtimes.js';
-import { useCatalogView } from '../hooks/useCatalogView.js';
-import { formatLongSync, formatShortSync } from '../lib/datetime.js';
+import { css } from '#styled-system/css';
+import { useCatalog } from '#src/api/useCatalog.js';
+import { AgendaView } from '#src/components/AgendaView.js';
+import { ErrorNotice } from '#src/components/ErrorNotice.js';
+import { GridView, type MovieWithCinema } from '#src/components/GridView.js';
+import { IconButton } from '#src/components/IconButton.js';
+import { MovieSheet } from '#src/components/MovieSheet.js';
+import { SubscribeDrawer } from '#src/components/SubscribeDrawer.js';
+import { ThemeMenu } from '#src/components/ThemeMenu.js';
+import { ViewToggle } from '#src/components/ViewToggle.js';
+import { useAddedShowtimes } from '#src/hooks/useAddedShowtimes.js';
+import { useCatalogView } from '#src/hooks/useCatalogView.js';
+import { formatLongSync, formatShortSync } from '#src/lib/datetime.js';
 
 const VIEW_PANEL_ID = 'catalog-view-panel';
 

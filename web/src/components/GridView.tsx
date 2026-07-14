@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { Cinema, Movie } from '../../../ingest/src/types.js';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 import { MoviePosterTile } from './MoviePosterTile.js';
 
 export type MovieWithCinema = { movie: Movie; cinema: Cinema };

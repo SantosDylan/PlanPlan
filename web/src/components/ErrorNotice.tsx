@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 
 /** Fetch-error banner: danger colour + alert icon so it reads as an error even next to accent-red controls. */
 export const ErrorNotice: FC<{ message: string }> = ({ message }) => (

@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import type { Cinema, Movie, Showtime } from '../../../ingest/src/types.js';
-import { css } from '../../styled-system/css';
-import { dayKeyOf, formatDayHeading, formatTime } from '../lib/datetime.js';
-import { buildAgendaByDay, seanceCountLabel } from '../lib/showtimes.js';
+import { css } from '#styled-system/css';
+import { dayKeyOf, formatDayHeading, formatTime } from '#src/lib/datetime.js';
+import { buildAgendaByDay, seanceCountLabel } from '#src/lib/showtimes.js';
 import { Poster } from './Poster.js';
 
 const dayHeaderClass = css({

@@ -26,10 +26,10 @@ import {
   useListNavigation,
   useRole,
 } from '@floating-ui/react';
-import { css } from '../../styled-system/css';
+import { css } from '#styled-system/css';
 import { Backdrop } from './Backdrop.js';
 import { DraggableSheet } from './DraggableSheet.js';
-import { useIsDesktop } from '../hooks/useIsDesktop.js';
+import { useIsDesktop } from '#src/hooks/useIsDesktop.js';
 
 type MenuContextValue = {
   activeIndex: number | null;

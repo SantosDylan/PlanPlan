@@ -1,6 +1,6 @@
 import { motion, useDragControls } from 'framer-motion';
 import type { ComponentPropsWithRef, FC, ReactNode } from 'react';
-import { css, cx } from '../../styled-system/css';
+import { css, cx } from '#styled-system/css';
 
 // Distance (px) / velocity (px/s) past which a downward drag release dismisses the sheet.
 const DISMISS_THRESHOLD_PX = 80;

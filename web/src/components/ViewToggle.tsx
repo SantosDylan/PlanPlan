@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import { css } from '../../styled-system/css';
-import type { CatalogView } from '../hooks/useCatalogView.js';
+import { css } from '#styled-system/css';
+import type { CatalogView } from '#src/hooks/useCatalogView.js';
 
 const trackClass = css({
   display: 'flex',

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { readStoredPreference, resolveTheme, THEME_STORAGE_KEY, type ThemePreference } from '../lib/theme.js';
+import { readStoredPreference, resolveTheme, THEME_STORAGE_KEY, type ThemePreference } from '#src/lib/theme.js';
 
 const DARK_QUERY = '(prefers-color-scheme: dark)';
 

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import type { ComponentPropsWithRef, FC } from 'react';
-import { css, cx } from '../../styled-system/css';
+import { css, cx } from '#styled-system/css';
 
 const iconButtonClass = css({
   w: '8',

@@ -2,14 +2,14 @@ import { CalendarPlusIcon } from '@phosphor-icons/react';
 import { AnimatePresence } from 'framer-motion';
 import { useEffect, useRef, useState, type FC, type RefObject } from 'react';
 import type { Cinema, Movie, Showtime } from '../../../ingest/src/types.js';
-import { css } from '../../styled-system/css';
-import { formatDayLabel, formatDayTab, formatDuration, formatTime } from '../lib/datetime.js';
-import { groupShowtimesByDay, seanceCountLabel } from '../lib/showtimes.js';
+import { css } from '#styled-system/css';
+import { formatDayLabel, formatDayTab, formatDuration, formatTime } from '#src/lib/datetime.js';
+import { groupShowtimesByDay, seanceCountLabel } from '#src/lib/showtimes.js';
 import { Backdrop } from './Backdrop.js';
 import { DraggableSheet } from './DraggableSheet.js';
 import type { MovieWithCinema } from './GridView.js';
 import { Poster } from './Poster.js';
-import { useModalFocusTrap } from '../hooks/useModalFocusTrap.js';
+import { useModalFocusTrap } from '#src/hooks/useModalFocusTrap.js';
 
 const wrapperClass = css({
   position: 'fixed',
