@@ -1,7 +1,9 @@
+import { CalendarPlusIcon } from '@phosphor-icons/react';
 import { useRef, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
 import { ErrorNotice } from '../components/ErrorNotice.js';
+import { IconButton } from '../components/IconButton.js';
 import { MovieCard } from '../components/MovieCard.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
 import { ThemeMenu } from '../components/ThemeMenu.js';
@@ -25,64 +27,52 @@ function CatalogPage() {
   const subscribeButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={css({ maxW: '860px', mx: 'auto', px: '4', py: '6', display: 'flex', flexDir: 'column', gap: '4' })}>
+    <div className={css({ maxW: '860px', mx: 'auto', px: '4', pt: '12', pb: '6', display: 'flex', flexDir: 'column', gap: '4' })}>
       <header
         className={css({
-          position: 'sticky',
+          position: 'fixed',
           top: '0',
+          left: '0',
+          right: '0',
           zIndex: '20',
-          mx: '-4',
+          h: '11',
           px: '4',
-          pt: '2',
-          pb: '2.5',
           bg: 'headerBg',
           backdropFilter: 'blur(20px) saturate(180%)',
-          boxShadow: '0 1px 0 rgba(0, 0, 0, 0.6), 0 8px 16px -8px rgba(0, 0, 0, 0.5)',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '3',
         })}
       >
-        <div className={css({ minW: '0', display: 'flex', flexDir: 'column', gap: '0.5' })}>
-          <h1 className={css({ fontSize: 'xl', fontWeight: 'extrabold', letterSpacing: 'tight', m: '0' })}>
-            <span aria-hidden="true">🎬</span> Plan-Plan
-          </h1>
-          {catalog && (
-            <p className={css({ fontSize: '2xs', color: 'paperFaint', display: 'flex', alignItems: 'center', gap: '1', m: '0' })}>
-              <span aria-hidden="true" className={css({ w: '1.5', h: '1.5', rounded: 'full', bg: 'success', flexShrink: '0' })} />
-              Synchronisé le {shortSyncFormat.format(new Date(catalog.generatedAt))}
-            </p>
-          )}
-        </div>
-        <div className={css({ display: 'flex', alignItems: 'center', gap: '2', flexShrink: '0' })}>
+        <h1
+          className={css({
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            fontSize: 'md',
+            fontWeight: 'bold',
+            letterSpacing: 'tight',
+            m: '0',
+          })}
+        >
+          Plan-Plan
+        </h1>
+        <div className={css({ display: 'flex', alignItems: 'center', ml: 'auto' })}>
           <ThemeMenu />
           {catalog && catalog.cinemas.length > 0 && (
-            <button
-              ref={subscribeButtonRef}
-              type="button"
-              onClick={() => setDrawerOpen(true)}
-              aria-label="S'abonner au calendrier"
-              className={css({
-                w: '9',
-                h: '9',
-                rounded: 'full',
-                bg: 'accentSoft',
-                border: '1px solid',
-                borderColor: 'accentBorder',
-                color: 'accent',
-                fontSize: 'md',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              })}
-            >
-              📅
-            </button>
+            <IconButton ref={subscribeButtonRef} onClick={() => setDrawerOpen(true)} aria-label="S'abonner au calendrier">
+              <CalendarPlusIcon size={20} />
+            </IconButton>
           )}
         </div>
       </header>
+
+      {catalog && (
+        <p className={css({ fontSize: '2xs', color: 'paperFaint', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1', m: '0' })}>
+          <span aria-hidden="true" className={css({ w: '1.5', h: '1.5', rounded: 'full', bg: 'success', flexShrink: '0' })} />
+          Synchronisé le {shortSyncFormat.format(new Date(catalog.generatedAt))}
+        </p>
+      )}
 
       {!catalog?.cinemas.length && <p className={css({ color: 'paperMuted', fontSize: 'sm', m: '0' })}>Les séances du cinéma, direct dans ton agenda.</p>}
 

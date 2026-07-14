@@ -1,29 +1,15 @@
+import { CircleHalfIcon, MoonIcon, SunIcon } from '@phosphor-icons/react';
 import type { FC } from 'react';
-import { css } from '../../styled-system/css';
 import { Menu, MenuItem } from './Menu.js';
+import { IconButton } from './IconButton.js';
 import { useColorTheme } from '../hooks/useColorTheme.js';
 import type { ThemePreference } from '../lib/theme.js';
 
-const OPTIONS: { value: ThemePreference; label: string; icon: string }[] = [
-  { value: 'system', label: 'Thème système', icon: '◐' },
-  { value: 'light', label: 'Thème clair', icon: '☀' },
-  { value: 'dark', label: 'Thème sombre', icon: '☾' },
+const OPTIONS: { value: ThemePreference; label: string; Icon: typeof CircleHalfIcon }[] = [
+  { value: 'system', label: 'Thème système', Icon: CircleHalfIcon },
+  { value: 'light', label: 'Thème clair', Icon: SunIcon },
+  { value: 'dark', label: 'Thème sombre', Icon: MoonIcon },
 ];
-
-const triggerClass = css({
-  w: '9',
-  h: '9',
-  rounded: 'full',
-  bg: 'accentSoft',
-  border: '1px solid',
-  borderColor: 'accentBorder',
-  color: 'accent',
-  fontSize: 'md',
-  cursor: 'pointer',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
 
 /**
  * Color-theme picker (Système / Clair / Sombre) built on the responsive {@link Menu}
@@ -37,19 +23,15 @@ export const ThemeMenu: FC = () => {
       label="Apparence"
       title="Apparence"
       trigger={(props) => (
-        <button type="button" className={triggerClass} {...props}>
-          ◐
-        </button>
+        <IconButton {...props}>
+          <CircleHalfIcon size={20} />
+        </IconButton>
       )}
     >
-      {OPTIONS.map((option) => (
-        <MenuItem
-          key={option.value}
-          selected={preference === option.value}
-          onSelect={() => setPreference(option.value)}
-        >
-          <span aria-hidden="true">{option.icon}</span>
-          <span>{option.label}</span>
+      {OPTIONS.map(({ value, label, Icon }) => (
+        <MenuItem key={value} selected={preference === value} onSelect={() => setPreference(value)}>
+          <Icon size={18} aria-hidden="true" />
+          <span>{label}</span>
         </MenuItem>
       ))}
     </Menu>

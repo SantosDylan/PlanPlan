@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import {
   createContext,
   useContext,
@@ -6,7 +7,6 @@ import {
   useState,
   type ButtonHTMLAttributes,
   type FC,
-  type PointerEvent as ReactPointerEvent,
   type ReactNode,
 } from 'react';
 import {
@@ -27,6 +27,8 @@ import {
   useRole,
 } from '@floating-ui/react';
 import { css } from '../../styled-system/css';
+import { Backdrop } from './Backdrop.js';
+import { DraggableSheet } from './DraggableSheet.js';
 import { useIsDesktop } from '../hooks/useIsDesktop.js';
 
 type MenuContextValue = {
@@ -69,12 +71,14 @@ const popoverClass = css({
   outline: 'none',
 });
 
+// Permanently non-interactive: only its visible children (backdrop, sheet) opt back in via
+// pointerEvents: 'auto', so it never blocks the page behind it — mounted or not, animating or not.
 const overlayClass = css({
   zIndex: '40',
   display: 'flex',
   alignItems: 'flex-end',
   justifyContent: 'center',
-  bg: 'rgba(10, 8, 6, 0.62)',
+  pointerEvents: 'none',
 });
 
 const sheetClass = css({
@@ -88,25 +92,10 @@ const sheetClass = css({
   display: 'flex',
   flexDir: 'column',
   gap: '2',
-  boxShadow: '0 -4px 16px rgba(0, 0, 0, 0.2)',
   outline: 'none',
 });
 
 const sheetTitleClass = css({ fontSize: 'md', fontWeight: 'bold', m: '0', px: '3' });
-
-const handleClass = css({
-  alignSelf: 'center',
-  w: '9',
-  h: '1',
-  rounded: 'full',
-  bg: 'borderStrong',
-  mb: '1',
-  touchAction: 'none',
-  cursor: 'grab',
-});
-
-// Distance (px) the sheet must be dragged down before release counts as "dismiss".
-const DISMISS_THRESHOLD_PX = 80;
 
 /**
  * Responsive menu primitive: an anchored popover on desktop (≥md) and a
@@ -119,9 +108,6 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const listRef = useRef<Array<HTMLElement | null>>([]);
-  const [dragY, setDragY] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-  const dragStartYRef = useRef(0);
 
   const { refs, floatingStyles, context } = useFloating({
     open,
@@ -149,22 +135,6 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
     [activeIndex, getItemProps],
   );
 
-  const handleDragStart = (event: ReactPointerEvent<HTMLSpanElement>) => {
-    dragStartYRef.current = event.clientY;
-    setIsDragging(true);
-    event.currentTarget.setPointerCapture(event.pointerId);
-  };
-  const handleDragMove = (event: ReactPointerEvent<HTMLSpanElement>) => {
-    if (!isDragging) return;
-    setDragY(Math.max(0, event.clientY - dragStartYRef.current));
-  };
-  const handleDragEnd = () => {
-    if (!isDragging) return;
-    setIsDragging(false);
-    if (dragY > DISMISS_THRESHOLD_PX) close();
-    setDragY(0);
-  };
-
   const triggerNode = trigger(
     {
       ref: refs.setReference,
@@ -179,57 +149,45 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
   return (
     <>
       {triggerNode}
-      {open && (
-        <MenuContext.Provider value={menuContext}>
-          <FloatingList elementsRef={listRef}>
-            <FloatingPortal>
-              {isDesktop ? (
-                <FloatingFocusManager context={context} modal={false}>
-                  <div
-                    ref={refs.setFloating}
-                    style={floatingStyles}
-                    aria-label={label}
-                    className={popoverClass}
-                    {...getFloatingProps()}
-                  >
-                    {children}
-                  </div>
-                </FloatingFocusManager>
-              ) : (
-                <FloatingOverlay
-                  lockScroll
-                  className={overlayClass}
-                  style={{ opacity: 1 - Math.min(dragY / (DISMISS_THRESHOLD_PX * 3), 0.6) }}
-                >
-                  <FloatingFocusManager context={context} modal>
+      <AnimatePresence>
+        {open && (
+          <MenuContext.Provider value={menuContext}>
+            <FloatingList elementsRef={listRef}>
+              <FloatingPortal>
+                {isDesktop ? (
+                  <FloatingFocusManager context={context} modal={false}>
                     <div
                       ref={refs.setFloating}
+                      style={floatingStyles}
                       aria-label={label}
-                      className={sheetClass}
-                      style={{
-                        transform: `translateY(${dragY}px)`,
-                        transition: isDragging ? 'none' : 'transform 0.2s ease',
-                      }}
+                      className={popoverClass}
                       {...getFloatingProps()}
                     >
-                      <span
-                        aria-hidden="true"
-                        className={handleClass}
-                        onPointerDown={handleDragStart}
-                        onPointerMove={handleDragMove}
-                        onPointerUp={handleDragEnd}
-                        onPointerCancel={handleDragEnd}
-                      />
-                      {(title ?? label) && <h2 className={sheetTitleClass}>{title ?? label}</h2>}
                       {children}
                     </div>
                   </FloatingFocusManager>
-                </FloatingOverlay>
-              )}
-            </FloatingPortal>
-          </FloatingList>
-        </MenuContext.Provider>
-      )}
+                ) : (
+                  <FloatingOverlay lockScroll className={overlayClass}>
+                    <Backdrop />
+                    <FloatingFocusManager context={context} modal>
+                      <DraggableSheet
+                        ref={refs.setFloating}
+                        onClose={close}
+                        aria-label={label}
+                        className={sheetClass}
+                        {...getFloatingProps()}
+                      >
+                        {(title ?? label) && <h2 className={sheetTitleClass}>{title ?? label}</h2>}
+                        {children}
+                      </DraggableSheet>
+                    </FloatingFocusManager>
+                  </FloatingOverlay>
+                )}
+              </FloatingPortal>
+            </FloatingList>
+          </MenuContext.Provider>
+        )}
+      </AnimatePresence>
     </>
   );
 };
