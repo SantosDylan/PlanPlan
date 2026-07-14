@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { useCatalog } from '../api/useCatalog.js';
-import { BottomNav } from '../components/BottomNav.js';
 import { ErrorNotice } from '../components/ErrorNotice.js';
 import { MovieCard } from '../components/MovieCard.js';
 import { SubscribeDrawer } from '../components/SubscribeDrawer.js';
@@ -26,7 +25,7 @@ function CatalogPage() {
   const subscribeButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={css({ maxW: '860px', mx: 'auto', px: '4', py: '6', pb: '20', display: 'flex', flexDir: 'column', gap: '4' })}>
+    <div className={css({ maxW: '860px', mx: 'auto', px: '4', py: '6', display: 'flex', flexDir: 'column', gap: '4' })}>
       <header
         className={css({
           position: 'sticky',
@@ -113,8 +112,6 @@ function CatalogPage() {
           />
         </>
       )}
-
-      <BottomNav />
     </div>
   );
 }

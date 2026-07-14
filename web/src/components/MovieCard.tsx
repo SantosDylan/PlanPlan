@@ -2,7 +2,6 @@ import { useState, type FC } from 'react';
 import type { Cinema, Movie, Showtime } from '../../../ingest/src/types.js';
 import { css } from '../../styled-system/css';
 import { downloadShowtimeIcs } from '../lib/calendar.js';
-import { useMovieSelectionContext } from '../context/MovieSelectionContext.js';
 import { useToast } from '../context/ToastContext.js';
 
 const dayKeyFormat = new Intl.DateTimeFormat('en-CA', {
@@ -51,14 +50,12 @@ type MovieCardProps = {
 };
 
 export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
-  const { isSelected, toggle } = useMovieSelectionContext();
   const { showToast } = useToast();
   const dayGroups = groupShowtimesByDay(movie.showtimes);
   const [selectedDayKey, setSelectedDayKey] = useState(dayGroups[0]?.[0]);
   const [addedShowtimeIds, setAddedShowtimeIds] = useState<Set<string>>(new Set());
 
   const activeGroup = dayGroups.find(([key]) => key === selectedDayKey) ?? dayGroups[0];
-  const followed = isSelected(movie.id);
 
   const meta = [
     movie.director,
@@ -68,11 +65,6 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
   ]
     .filter(Boolean)
     .join(' · ');
-
-  const handleFollowToggle = () => {
-    toggle(movie.id);
-    showToast(followed ? 'Film retiré' : `✓ ${movie.title} suivi`);
-  };
 
   const handleShowtimeClick = (showtime: Showtime) => {
     downloadShowtimeIcs(cinema, movie, showtime);
@@ -146,27 +138,6 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
           {movie.synopsis && <p className={css({ fontSize: 'xs', color: 'paperMuted', lineClamp: 2, m: '0' })}>{movie.synopsis}</p>}
         </div>
       </div>
-
-      <button
-        type="button"
-        onClick={handleFollowToggle}
-        aria-pressed={followed}
-        className={css({
-          alignSelf: 'flex-start',
-          fontSize: 'xs',
-          fontWeight: 'bold',
-          rounded: 'lg',
-          px: '3',
-          py: '1.5',
-          cursor: 'pointer',
-          border: '1px solid',
-          borderColor: followed ? 'accent' : 'transparent',
-          bg: followed ? 'transparent' : 'accent',
-          color: followed ? 'accent' : 'accentText',
-        })}
-      >
-        {followed ? '✓ Suivi' : '+ Suivre ce film'}
-      </button>
 
       {activeGroup && (
         <>
@@ -260,17 +231,6 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, cinema }) => {
             })}
           </div>
         </>
-      )}
-
-      {movie.bookingUrl && (
-        <a
-          href={movie.bookingUrl}
-          target="_blank"
-          rel="noreferrer"
-          className={css({ fontSize: 'xs', color: 'accent', _hover: { textDecoration: 'underline' } })}
-        >
-          Réserver sur le site du cinéma ↗
-        </a>
       )}
     </article>
   );

@@ -1,5 +1,4 @@
 import { useRef, useState, type FC } from 'react';
-import { Link } from 'react-router';
 import type { Cinema } from '../../../ingest/src/types.js';
 import { css } from '../../styled-system/css';
 import { useModalFocusTrap } from '../hooks/useModalFocusTrap.js';
@@ -133,20 +132,6 @@ export const SubscribeDrawer: FC<SubscribeDrawerProps> = ({ cinemas, open, onClo
             </div>
           );
         })}
-
-        <Link
-          to="/gerer"
-          onClick={onClose}
-          className={css({
-            textAlign: 'center',
-            fontSize: 'xs',
-            color: 'paperMuted',
-            textDecoration: 'underline',
-            textDecorationColor: 'paperFaint',
-          })}
-        >
-          Suivre certains films seulement →
-        </Link>
 
         <button
           type="button"
