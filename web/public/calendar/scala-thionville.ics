@@ -23,78 +23,8 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:scala-thionville-cot-627932-1784140200@planplan
-DTSTAMP:20260715T171859Z
-DTSTART;TZID=Europe/Paris:20260715T203000
-DTEND;TZID=Europe/Paris:20260715T223000
-SUMMARY:Shana (VF)
-DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
- ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
- ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
-  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
- er/
-LOCATION:La Scala\, Thionville
-URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
-END:VEVENT
-BEGIN:VEVENT
-UID:scala-thionville-cot-627932-1784298300@planplan
-DTSTAMP:20260715T171859Z
-DTSTART;TZID=Europe/Paris:20260717T162500
-DTEND;TZID=Europe/Paris:20260717T182500
-SUMMARY:Shana (VF)
-DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
- ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
- ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
-  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
- er/
-LOCATION:La Scala\, Thionville
-URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
-END:VEVENT
-BEGIN:VEVENT
-UID:scala-thionville-cot-627932-1784469000@planplan
-DTSTAMP:20260715T171859Z
-DTSTART;TZID=Europe/Paris:20260719T155000
-DTEND;TZID=Europe/Paris:20260719T175000
-SUMMARY:Shana (VF)
-DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
- ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
- ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
-  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
- er/
-LOCATION:La Scala\, Thionville
-URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
-END:VEVENT
-BEGIN:VEVENT
-UID:scala-thionville-cot-627932-1784562300@planplan
-DTSTAMP:20260715T171859Z
-DTSTART;TZID=Europe/Paris:20260720T174500
-DTEND;TZID=Europe/Paris:20260720T194500
-SUMMARY:Shana (VF)
-DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
- ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
- ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
-  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
- er/
-LOCATION:La Scala\, Thionville
-URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
-END:VEVENT
-BEGIN:VEVENT
-UID:scala-thionville-cot-627932-1784648700@planplan
-DTSTAMP:20260715T171859Z
-DTSTART;TZID=Europe/Paris:20260721T174500
-DTEND;TZID=Europe/Paris:20260721T194500
-SUMMARY:Shana (VF)
-DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
- ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
- ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
-  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
- er/
-LOCATION:La Scala\, Thionville
-URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
-END:VEVENT
-BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784201700@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T133500
 DTEND;TZID=Europe/Paris:20260716T153500
 SUMMARY:La Chaleur (VF)
@@ -107,7 +37,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784226600@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T203000
 DTEND;TZID=Europe/Paris:20260716T223000
 SUMMARY:La Chaleur (VF)
@@ -120,7 +50,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784302500@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T173500
 DTEND;TZID=Europe/Paris:20260717T193500
 SUMMARY:La Chaleur (VF)
@@ -133,7 +63,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784398200@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T201000
 DTEND;TZID=Europe/Paris:20260718T221000
 SUMMARY:La Chaleur (VF)
@@ -146,7 +76,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784460300@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T132500
 DTEND;TZID=Europe/Paris:20260719T152500
 SUMMARY:La Chaleur (VF)
@@ -159,7 +89,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784478300@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T182500
 DTEND;TZID=Europe/Paris:20260719T202500
 SUMMARY:La Chaleur (VF)
@@ -172,7 +102,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784548200@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T135000
 DTEND;TZID=Europe/Paris:20260720T155000
 SUMMARY:La Chaleur (VF)
@@ -185,7 +115,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784565000@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T183000
 DTEND;TZID=Europe/Paris:20260720T203000
 SUMMARY:La Chaleur (VF)
@@ -198,7 +128,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-627832-1784651400@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T183000
 DTEND;TZID=Europe/Paris:20260721T203000
 SUMMARY:La Chaleur (VF)
@@ -211,7 +141,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10612@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T134500
 DTEND;TZID=Europe/Paris:20260716T151200
 SUMMARY:Jour de fête (VF)
@@ -224,7 +154,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10613@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T173500
 DTEND;TZID=Europe/Paris:20260719T190200
 SUMMARY:Jour de fête (VF)
@@ -237,7 +167,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10614@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T160500
 DTEND;TZID=Europe/Paris:20260721T173200
 SUMMARY:Jour de fête (VF)
@@ -250,7 +180,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10617@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T152500
 DTEND;TZID=Europe/Paris:20260716T180600
 SUMMARY:L'aventure rêvée (VOST)
@@ -264,7 +194,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10618@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T193000
 DTEND;TZID=Europe/Paris:20260716T221100
 SUMMARY:L'aventure rêvée (VOST)
@@ -278,7 +208,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10619@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T143500
 DTEND;TZID=Europe/Paris:20260717T171600
 SUMMARY:L'aventure rêvée (VOST)
@@ -292,7 +222,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10620@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T193000
 DTEND;TZID=Europe/Paris:20260717T221100
 SUMMARY:L'aventure rêvée (VOST)
@@ -306,7 +236,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10621@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T170000
 DTEND;TZID=Europe/Paris:20260718T194100
 SUMMARY:L'aventure rêvée (VOST)
@@ -320,7 +250,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10622@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T193000
 DTEND;TZID=Europe/Paris:20260718T221100
 SUMMARY:L'aventure rêvée (VOST)
@@ -334,7 +264,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10623@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T152000
 DTEND;TZID=Europe/Paris:20260719T180100
 SUMMARY:L'aventure rêvée (VOST)
@@ -348,7 +278,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10624@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T192000
 DTEND;TZID=Europe/Paris:20260719T220100
 SUMMARY:L'aventure rêvée (VOST)
@@ -362,7 +292,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10625@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T152500
 DTEND;TZID=Europe/Paris:20260720T180600
 SUMMARY:L'aventure rêvée (VOST)
@@ -376,7 +306,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10626@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T193000
 DTEND;TZID=Europe/Paris:20260720T221100
 SUMMARY:L'aventure rêvée (VOST)
@@ -390,7 +320,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10627@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T133000
 DTEND;TZID=Europe/Paris:20260721T161100
 SUMMARY:L'aventure rêvée (VOST)
@@ -404,7 +334,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10628@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T193000
 DTEND;TZID=Europe/Paris:20260721T221100
 SUMMARY:L'aventure rêvée (VOST)
@@ -418,7 +348,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10629@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260722T143500
 DTEND;TZID=Europe/Paris:20260722T171600
 SUMMARY:L'aventure rêvée (VOST)
@@ -432,7 +362,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10630@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260723T193500
 DTEND;TZID=Europe/Paris:20260723T221600
 SUMMARY:L'aventure rêvée (VOST)
@@ -446,7 +376,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10631@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260724T133500
 DTEND;TZID=Europe/Paris:20260724T161600
 SUMMARY:L'aventure rêvée (VOST)
@@ -460,7 +390,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10603@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T153000
 DTEND;TZID=Europe/Paris:20260716T170000
 SUMMARY:Des Minions et des monstres (VF)
@@ -474,7 +404,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10604@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T153500
 DTEND;TZID=Europe/Paris:20260718T170500
 SUMMARY:Des Minions et des monstres (VF)
@@ -488,7 +418,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10605@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T155000
 DTEND;TZID=Europe/Paris:20260720T172000
 SUMMARY:Des Minions et des monstres (VF)
@@ -502,7 +432,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10606@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260723T152500
 DTEND;TZID=Europe/Paris:20260723T165500
 SUMMARY:Des Minions et des monstres (VF)
@@ -516,7 +446,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10607@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260725T153000
 DTEND;TZID=Europe/Paris:20260725T170000
 SUMMARY:Des Minions et des monstres (VF)
@@ -530,7 +460,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10608@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260728T154500
 DTEND;TZID=Europe/Paris:20260728T171500
 SUMMARY:Des Minions et des monstres (VF)
@@ -544,7 +474,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10609@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260730T143500
 DTEND;TZID=Europe/Paris:20260730T160500
 SUMMARY:Des Minions et des monstres (VF)
@@ -558,7 +488,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10610@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260801T154500
 DTEND;TZID=Europe/Paris:20260801T171500
 SUMMARY:Des Minions et des monstres (VF)
@@ -572,7 +502,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10611@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260803T094500
 DTEND;TZID=Europe/Paris:20260803T111500
 SUMMARY:Des Minions et des monstres (VF)
@@ -586,7 +516,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784219400@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T183000
 DTEND;TZID=Europe/Paris:20260716T203000
 SUMMARY:In Waves (VF)
@@ -599,7 +529,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784312100@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T201500
 DTEND;TZID=Europe/Paris:20260717T221500
 SUMMARY:In Waves (VF)
@@ -612,7 +542,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784388600@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T173000
 DTEND;TZID=Europe/Paris:20260718T193000
 SUMMARY:In Waves (VF)
@@ -625,7 +555,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784485200@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T202000
 DTEND;TZID=Europe/Paris:20260719T222000
 SUMMARY:In Waves (VF)
@@ -638,7 +568,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784546700@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T132500
 DTEND;TZID=Europe/Paris:20260720T152500
 SUMMARY:In Waves (VF)
@@ -651,7 +581,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-376520-1784644500@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T163500
 DTEND;TZID=Europe/Paris:20260721T183500
 SUMMARY:In Waves (VF)
@@ -664,7 +594,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10589@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260716T172500
 DTEND;TZID=Europe/Paris:20260716T190700
 SUMMARY:L'Étrangère (VO)
@@ -677,7 +607,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10590@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T181000
 DTEND;TZID=Europe/Paris:20260717T195200
 SUMMARY:L'Étrangère (VO)
@@ -690,7 +620,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10591@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T133000
 DTEND;TZID=Europe/Paris:20260718T151200
 SUMMARY:L'Étrangère (VO)
@@ -703,7 +633,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10592@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260719T134500
 DTEND;TZID=Europe/Paris:20260719T152700
 SUMMARY:L'Étrangère (VO)
@@ -716,7 +646,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10593@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260720T203000
 DTEND;TZID=Europe/Paris:20260720T221200
 SUMMARY:L'Étrangère (VO)
@@ -729,7 +659,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10594@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T202500
 DTEND;TZID=Europe/Paris:20260721T220700
 SUMMARY:L'Étrangère (VO)
@@ -742,7 +672,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-226074-1784288100@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T133500
 DTEND;TZID=Europe/Paris:20260717T153500
 SUMMARY:Rita et Crocodile (VF)
@@ -755,7 +685,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-226074-1784373900@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T132500
 DTEND;TZID=Europe/Paris:20260718T152500
 SUMMARY:Rita et Crocodile (VF)
@@ -768,7 +698,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10580@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260717T141500
 DTEND;TZID=Europe/Paris:20260717T161500
 SUMMARY:Toy Story 5 (VF)
@@ -781,7 +711,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10581@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260721T140000
 DTEND;TZID=Europe/Paris:20260721T160000
 SUMMARY:Toy Story 5 (VF)
@@ -794,7 +724,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10582@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260722T153500
 DTEND;TZID=Europe/Paris:20260722T173500
 SUMMARY:Toy Story 5 (VF)
@@ -807,7 +737,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10583@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260724T134500
 DTEND;TZID=Europe/Paris:20260724T154500
 SUMMARY:Toy Story 5 (VF)
@@ -820,7 +750,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10584@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260727T140000
 DTEND;TZID=Europe/Paris:20260727T160000
 SUMMARY:Toy Story 5 (VF)
@@ -833,7 +763,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10585@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260729T134000
 DTEND;TZID=Europe/Paris:20260729T154000
 SUMMARY:Toy Story 5 (VF)
@@ -846,7 +776,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10586@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260731T155000
 DTEND;TZID=Europe/Paris:20260731T175000
 SUMMARY:Toy Story 5 (VF)
@@ -859,7 +789,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10587@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260804T094500
 DTEND;TZID=Europe/Paris:20260804T114500
 SUMMARY:Toy Story 5 (VF)
@@ -871,8 +801,64 @@ LOCATION:La Scala\, Thionville
 URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
+UID:scala-thionville-cot-627932-1784298300@planplan
+DTSTAMP:20260716T081519Z
+DTSTART;TZID=Europe/Paris:20260717T162500
+DTEND;TZID=Europe/Paris:20260717T182500
+SUMMARY:Shana (VF)
+DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
+ ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
+ ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
+  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
+ er/
+LOCATION:La Scala\, Thionville
+URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
+END:VEVENT
+BEGIN:VEVENT
+UID:scala-thionville-cot-627932-1784469000@planplan
+DTSTAMP:20260716T081519Z
+DTSTART;TZID=Europe/Paris:20260719T155000
+DTEND;TZID=Europe/Paris:20260719T175000
+SUMMARY:Shana (VF)
+DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
+ ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
+ ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
+  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
+ er/
+LOCATION:La Scala\, Thionville
+URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
+END:VEVENT
+BEGIN:VEVENT
+UID:scala-thionville-cot-627932-1784562300@planplan
+DTSTAMP:20260716T081519Z
+DTSTART;TZID=Europe/Paris:20260720T174500
+DTEND;TZID=Europe/Paris:20260720T194500
+SUMMARY:Shana (VF)
+DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
+ ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
+ ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
+  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
+ er/
+LOCATION:La Scala\, Thionville
+URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
+END:VEVENT
+BEGIN:VEVENT
+UID:scala-thionville-cot-627932-1784648700@planplan
+DTSTAMP:20260716T081519Z
+DTSTART;TZID=Europe/Paris:20260721T174500
+DTEND;TZID=Europe/Paris:20260721T194500
+SUMMARY:Shana (VF)
+DESCRIPTION:Shana traverse les galères du quotidien avec une énergie déb
+ ordante et le soutien de sa bande de copines. Lorsque sa grand-mère déc
+ ède\, elle hérite d’une bague censée protéger du mauvais œil. Shana
+  a …\nRéservation : https://www.thionville-scala-vad.cotecine.fr/reserv
+ er/
+LOCATION:La Scala\, Thionville
+URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
+END:VEVENT
+BEGIN:VEVENT
 UID:scala-thionville-10318@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260718T143000
 DTEND;TZID=Europe/Paris:20260718T162500
 SUMMARY:E.T. l'extra-terrestre (VF)
@@ -885,7 +871,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10678@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260722T133000
 DTEND;TZID=Europe/Paris:20260722T141300
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -898,7 +884,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10679@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260723T171500
 DTEND;TZID=Europe/Paris:20260723T175800
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -911,7 +897,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10680@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260727T161000
 DTEND;TZID=Europe/Paris:20260727T165300
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -924,7 +910,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10681@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260728T132500
 DTEND;TZID=Europe/Paris:20260728T140800
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -937,7 +923,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10682@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260730T133000
 DTEND;TZID=Europe/Paris:20260730T141300
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -950,7 +936,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10683@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260731T103000
 DTEND;TZID=Europe/Paris:20260731T111300
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -963,7 +949,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10684@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260801T132500
 DTEND;TZID=Europe/Paris:20260801T140800
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -976,7 +962,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10685@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260803T103000
 DTEND;TZID=Europe/Paris:20260803T111300
 SUMMARY:Les Nouvelles aventures de Gros-pois et Petit-point
@@ -989,7 +975,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10449@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260722T194500
 DTEND;TZID=Europe/Paris:20260722T221000
 SUMMARY:Disclosure Day (VOST)
@@ -1001,7 +987,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10450@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260724T164000
 DTEND;TZID=Europe/Paris:20260724T190500
 SUMMARY:Disclosure Day (VOST)
@@ -1013,7 +999,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10451@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260725T200000
 DTEND;TZID=Europe/Paris:20260725T222500
 SUMMARY:Disclosure Day (VOST)
@@ -1025,7 +1011,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10452@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260726T154000
 DTEND;TZID=Europe/Paris:20260726T180500
 SUMMARY:Disclosure Day (VOST)
@@ -1037,7 +1023,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10453@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260727T200000
 DTEND;TZID=Europe/Paris:20260727T222500
 SUMMARY:Disclosure Day (VOST)
@@ -1049,7 +1035,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10666@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260729T174000
 DTEND;TZID=Europe/Paris:20260729T200500
 SUMMARY:Disclosure Day (VOST)
@@ -1061,7 +1047,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10667@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260731T094500
 DTEND;TZID=Europe/Paris:20260731T121000
 SUMMARY:Disclosure Day (VOST)
@@ -1073,7 +1059,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10668@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260801T174000
 DTEND;TZID=Europe/Paris:20260801T200500
 SUMMARY:Disclosure Day (VOST)
@@ -1085,7 +1071,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10669@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260803T195000
 DTEND;TZID=Europe/Paris:20260803T221500
 SUMMARY:Disclosure Day (VOST)
@@ -1097,7 +1083,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10442@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260722T201500
 DTEND;TZID=Europe/Paris:20260722T220000
 SUMMARY:Backrooms (VOST)
@@ -1109,7 +1095,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10443@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260723T202500
 DTEND;TZID=Europe/Paris:20260723T221000
 SUMMARY:Backrooms (VOST)
@@ -1121,7 +1107,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10444@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260724T155000
 DTEND;TZID=Europe/Paris:20260724T173500
 SUMMARY:Backrooms (VOST)
@@ -1133,7 +1119,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10445@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260725T203500
 DTEND;TZID=Europe/Paris:20260725T222000
 SUMMARY:Backrooms (VOST)
@@ -1145,7 +1131,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10446@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260726T203000
 DTEND;TZID=Europe/Paris:20260726T221500
 SUMMARY:Backrooms (VOST)
@@ -1157,7 +1143,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10447@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260727T202500
 DTEND;TZID=Europe/Paris:20260727T221000
 SUMMARY:Backrooms (VOST)
@@ -1169,7 +1155,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10448@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260728T201500
 DTEND;TZID=Europe/Paris:20260728T220000
 SUMMARY:Backrooms (VOST)
@@ -1181,7 +1167,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10675@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260723T132500
 DTEND;TZID=Europe/Paris:20260723T145300
 SUMMARY:Les Vacances de monsieur Hulot (VF)
@@ -1194,7 +1180,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10676@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260726T175000
 DTEND;TZID=Europe/Paris:20260726T191800
 SUMMARY:Les Vacances de monsieur Hulot (VF)
@@ -1207,7 +1193,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10677@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260728T100000
 DTEND;TZID=Europe/Paris:20260728T112800
 SUMMARY:Les Vacances de monsieur Hulot (VF)
@@ -1220,7 +1206,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10686@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260730T154500
 DTEND;TZID=Europe/Paris:20260730T174100
 SUMMARY:Mon oncle (VF)
@@ -1233,7 +1219,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10687@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260802T181500
 DTEND;TZID=Europe/Paris:20260802T201100
 SUMMARY:Mon oncle (VF)
@@ -1246,7 +1232,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10688@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260804T094500
 DTEND;TZID=Europe/Paris:20260804T114100
 SUMMARY:Mon oncle (VF)
@@ -1259,7 +1245,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10319@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260801T143000
 DTEND;TZID=Europe/Paris:20260801T160500
 SUMMARY:L'Histoire sans fin (VF)
@@ -1272,7 +1258,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10314@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260812T143000
 DTEND;TZID=Europe/Paris:20260812T155600
 SUMMARY:L'odyssée de Céleste (VF)
@@ -1286,7 +1272,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10315@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260822T143000
 DTEND;TZID=Europe/Paris:20260822T160000
 SUMMARY:La Guerre des boutons (VF)
@@ -1299,7 +1285,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-10316@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260827T190000
 DTEND;TZID=Europe/Paris:20260827T220700
 SUMMARY:Barry Lyndon
@@ -1312,7 +1298,7 @@ URL:https://www.thionville-scala-vad.cotecine.fr/reserver/
 END:VEVENT
 BEGIN:VEVENT
 UID:scala-thionville-cot-47245-1789308000@planplan
-DTSTAMP:20260715T171859Z
+DTSTAMP:20260716T081519Z
 DTSTART;TZID=Europe/Paris:20260913T160000
 DTEND;TZID=Europe/Paris:20260913T180000
 SUMMARY:Les Contrebandiers de Moonfleet (VO)

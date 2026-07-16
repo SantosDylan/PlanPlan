@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T17:18:59.959Z",
+  "generatedAt": "2026-07-16T08:15:19.860Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -10,58 +10,6 @@
     }
   ],
   "movies": [
-    {
-      "id": "scala-thionville-cot-627932",
-      "cinemaId": "scala-thionville",
-      "title": "Shana",
-      "genres": [
-        "Drame",
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-627932-1784140200",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-15T18:30:00.000Z",
-          "endsAtEstimate": "2026-07-15T20:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784298300",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-17T14:25:00.000Z",
-          "endsAtEstimate": "2026-07-17T16:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784469000",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T13:50:00.000Z",
-          "endsAtEstimate": "2026-07-19T15:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784562300",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784648700",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1483319",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
-      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
-      "releaseYear": 2026
-    },
     {
       "id": "scala-thionville-cot-627832",
       "cinemaId": "scala-thionville",
@@ -618,6 +566,51 @@
       "releaseYear": 2026,
       "tmdbId": "1084244",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-627932",
+      "cinemaId": "scala-thionville",
+      "title": "Shana",
+      "genres": [
+        "Drame",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-627932-1784298300",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-17T14:25:00.000Z",
+          "endsAtEstimate": "2026-07-17T16:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784469000",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-19T13:50:00.000Z",
+          "endsAtEstimate": "2026-07-19T15:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784562300",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784648700",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1483319",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
+      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
+      "releaseYear": 2026
     },
     {
       "id": "scala-thionville-910",
