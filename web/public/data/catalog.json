@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T08:20:43.703Z",
+  "generatedAt": "2026-07-19T16:58:56.000Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,216 +11,77 @@
   ],
   "movies": [
     {
-      "id": "scala-thionville-cot-627832",
+      "id": "scala-thionville-cot-376520",
       "cinemaId": "scala-thionville",
-      "title": "La Chaleur",
+      "title": "In Waves",
       "genres": [
-        "Drame",
-        "Thriller"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-627832-1784460300",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T11:25:00.000Z",
-          "endsAtEstimate": "2026-07-19T13:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784478300",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T16:25:00.000Z",
-          "endsAtEstimate": "2026-07-19T18:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784548200",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T11:50:00.000Z",
-          "endsAtEstimate": "2026-07-20T13:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784565000",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T16:30:00.000Z",
-          "endsAtEstimate": "2026-07-20T18:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784651400",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T16:30:00.000Z",
-          "endsAtEstimate": "2026-07-21T18:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784720400",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-22T11:40:00.000Z",
-          "endsAtEstimate": "2026-07-22T13:40:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784813100",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T13:25:00.000Z",
-          "endsAtEstimate": "2026-07-23T15:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784909700",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-24T16:15:00.000Z",
-          "endsAtEstimate": "2026-07-24T18:15:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1784979300",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T11:35:00.000Z",
-          "endsAtEstimate": "2026-07-25T13:35:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1785083100",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T16:25:00.000Z",
-          "endsAtEstimate": "2026-07-26T18:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1785168300",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T16:05:00.000Z",
-          "endsAtEstimate": "2026-07-27T18:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627832-1785225600",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T08:00:00.000Z",
-          "endsAtEstimate": "2026-07-28T10:00:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1492288",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/8IcgFgUKHWnVamGPSXQQ8cLHjew.jpg",
-      "synopsis": "Il fait anormalement chaud sur les plages des Landes et Marouane, 17 ans, passe sa dernière journée au camping avec une angoisse : le corps qu’il a enseveli la veille sur la plage va-t-il apparaître au grand jour ? Marouane se demande par ailleurs s’il n’est pas en train de tomber amoureux de la charmante Giulia.",
-      "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-935",
-      "cinemaId": "scala-thionville",
-      "title": "L'Étrangère",
-      "genres": [
+        "Animation",
+        "Romance",
         "Drame"
       ],
       "showtimes": [
         {
-          "id": "scala-thionville-10592",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1784485200",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T13:45:00+0200",
-          "endsAtEstimate": "2026-07-19T13:27:00.000Z"
+          "startsAt": "2026-07-19T18:20:00.000Z",
+          "endsAtEstimate": "2026-07-19T20:20:00.000Z"
         },
         {
-          "id": "scala-thionville-10593",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1784546700",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T20:30:00+0200",
-          "endsAtEstimate": "2026-07-20T20:12:00.000Z"
+          "startsAt": "2026-07-20T11:25:00.000Z",
+          "endsAtEstimate": "2026-07-20T13:25:00.000Z"
         },
         {
-          "id": "scala-thionville-10594",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1784644500",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T20:25:00+0200",
-          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
+          "startsAt": "2026-07-21T14:35:00.000Z",
+          "endsAtEstimate": "2026-07-21T16:35:00.000Z"
         },
         {
-          "id": "scala-thionville-10689",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1784735100",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T17:20:00+0200",
-          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
+          "startsAt": "2026-07-22T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-22T17:45:00.000Z"
         },
         {
-          "id": "scala-thionville-10690",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1784978700",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T15:25:00+0200",
-          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
+          "startsAt": "2026-07-25T11:25:00.000Z",
+          "endsAtEstimate": "2026-07-25T13:25:00.000Z"
         },
         {
-          "id": "scala-thionville-10691",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1785065400",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T13:20:00+0200",
-          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
+          "startsAt": "2026-07-26T11:30:00.000Z",
+          "endsAtEstimate": "2026-07-26T13:30:00.000Z"
         },
         {
-          "id": "scala-thionville-10692",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1785139200",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T16:05:00+0200",
-          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
+          "startsAt": "2026-07-27T08:00:00.000Z",
+          "endsAtEstimate": "2026-07-27T10:00:00.000Z"
         },
         {
-          "id": "scala-thionville-10693",
-          "movieId": "scala-thionville-935",
+          "id": "scala-thionville-cot-376520-1785252900",
+          "movieId": "scala-thionville-cot-376520",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T13:35:00+0200",
-          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
-        }
-      ],
-      "director": "Gaya Jiji",
-      "durationMinutes": 102,
-      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
-      "version": "VO",
-      "releaseYear": 2026,
-      "tmdbId": "567080",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-627932",
-      "cinemaId": "scala-thionville",
-      "title": "Shana",
-      "genres": [
-        "Drame",
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-627932-1784469000",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T13:50:00.000Z",
-          "endsAtEstimate": "2026-07-19T15:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784562300",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784648700",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
+          "startsAt": "2026-07-28T15:35:00.000Z",
+          "endsAtEstimate": "2026-07-28T17:35:00.000Z"
         }
       ],
       "version": "VF",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1483319",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
-      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
+      "tmdbId": "947502",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/3z3gZ6faikQ81EM19zTX4lHfpwL.jpg",
+      "synopsis": "À Los Angeles, AJ, lycéen discret, rencontre Kristen. Elle est passionnée de surf, lui de skateboard et de dessin. Ils tombent follement amoureux ; un avenir heureux se profile. Mais tout bascule lorsque Kristen tombe malade. Ensemble, ils se lancent dans un combat contre l’adversité, portés par la force de leur amour, leurs amis et leur passion désormais commune pour le surf et l’océan.",
       "releaseYear": 2026
     },
     {
@@ -234,13 +95,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10623",
-          "movieId": "scala-thionville-934",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T15:20:00+0200",
-          "endsAtEstimate": "2026-07-19T16:01:00.000Z"
-        },
         {
           "id": "scala-thionville-10624",
           "movieId": "scala-thionville-934",
@@ -345,6 +199,48 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-28T19:30:00+0200",
           "endsAtEstimate": "2026-07-28T20:11:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10780",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T17:45:00+0200",
+          "endsAtEstimate": "2026-07-29T18:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10781",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T09:30:00+0200",
+          "endsAtEstimate": "2026-07-30T10:11:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10782",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T15:10:00+0200",
+          "endsAtEstimate": "2026-07-31T15:51:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10783",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T13:25:00+0200",
+          "endsAtEstimate": "2026-08-02T14:06:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10784",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T19:35:00+0200",
+          "endsAtEstimate": "2026-08-03T20:16:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10785",
+          "movieId": "scala-thionville-934",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T13:25:00+0200",
+          "endsAtEstimate": "2026-08-04T14:06:00.000Z"
         }
       ],
       "director": "Valeska Grisebach",
@@ -357,109 +253,90 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
-      "id": "scala-thionville-909",
+      "id": "scala-thionville-cot-627832",
       "cinemaId": "scala-thionville",
-      "title": "Jour de fête",
+      "title": "La Chaleur",
       "genres": [
-        "Comédie"
+        "Drame",
+        "Thriller"
       ],
       "showtimes": [
         {
-          "id": "scala-thionville-10613",
-          "movieId": "scala-thionville-909",
+          "id": "scala-thionville-cot-627832-1784548200",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T17:35:00+0200",
-          "endsAtEstimate": "2026-07-19T17:02:00.000Z"
+          "startsAt": "2026-07-20T11:50:00.000Z",
+          "endsAtEstimate": "2026-07-20T13:50:00.000Z"
         },
         {
-          "id": "scala-thionville-10614",
-          "movieId": "scala-thionville-909",
+          "id": "scala-thionville-cot-627832-1784565000",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T16:05:00+0200",
-          "endsAtEstimate": "2026-07-21T15:32:00.000Z"
-        }
-      ],
-      "director": "Jacques Tati",
-      "durationMinutes": 87,
-      "synopsis": "Un petit village de province prépare sa fête patronale. Les enfants se réjouissent et les adultes s'affairent, tandis que les forains installent leurs attractions. Gentil mais maladroit, François, le facteur, offre à tout le monde une aide embarrassante. Sa contribution à l'élévation du mât de cocagne l'emplit de fierté et de commentaires pour le reste de la journée. Le grand jour venu, François voit dans une baraque foraine un documentaire sur la poste aérienne aux États-Unis. Piqué au vif par les quolibets, il annonce son intention de faire une tournée «à l'américaine» et s'élance aussitôt sur son vélo. Le résultat tient plus de la comédie burlesque que de l'exploit technologique...",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/4595.jpg",
-      "version": "VF",
-      "releaseYear": 1949,
-      "tmdbId": "4595",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-376520",
-      "cinemaId": "scala-thionville",
-      "title": "In Waves",
-      "genres": [
-        "Animation",
-        "Romance",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-376520-1784485200",
-          "movieId": "scala-thionville-cot-376520",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T18:20:00.000Z",
-          "endsAtEstimate": "2026-07-19T20:20:00.000Z"
+          "startsAt": "2026-07-20T16:30:00.000Z",
+          "endsAtEstimate": "2026-07-20T18:30:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1784546700",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1784651400",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T11:25:00.000Z",
-          "endsAtEstimate": "2026-07-20T13:25:00.000Z"
+          "startsAt": "2026-07-21T16:30:00.000Z",
+          "endsAtEstimate": "2026-07-21T18:30:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1784644500",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1784720400",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T14:35:00.000Z",
-          "endsAtEstimate": "2026-07-21T16:35:00.000Z"
+          "startsAt": "2026-07-22T11:40:00.000Z",
+          "endsAtEstimate": "2026-07-22T13:40:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1784735100",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1784813100",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-22T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-22T17:45:00.000Z"
+          "startsAt": "2026-07-23T13:25:00.000Z",
+          "endsAtEstimate": "2026-07-23T15:25:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1784978700",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1784909700",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T11:25:00.000Z",
-          "endsAtEstimate": "2026-07-25T13:25:00.000Z"
+          "startsAt": "2026-07-24T16:15:00.000Z",
+          "endsAtEstimate": "2026-07-24T18:15:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1785065400",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1784979300",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T11:30:00.000Z",
-          "endsAtEstimate": "2026-07-26T13:30:00.000Z"
+          "startsAt": "2026-07-25T11:35:00.000Z",
+          "endsAtEstimate": "2026-07-25T13:35:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1785139200",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1785083100",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T08:00:00.000Z",
-          "endsAtEstimate": "2026-07-27T10:00:00.000Z"
+          "startsAt": "2026-07-26T16:25:00.000Z",
+          "endsAtEstimate": "2026-07-26T18:25:00.000Z"
         },
         {
-          "id": "scala-thionville-cot-376520-1785252900",
-          "movieId": "scala-thionville-cot-376520",
+          "id": "scala-thionville-cot-627832-1785168300",
+          "movieId": "scala-thionville-cot-627832",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T15:35:00.000Z",
-          "endsAtEstimate": "2026-07-28T17:35:00.000Z"
+          "startsAt": "2026-07-27T16:05:00.000Z",
+          "endsAtEstimate": "2026-07-27T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1785225600",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T08:00:00.000Z",
+          "endsAtEstimate": "2026-07-28T10:00:00.000Z"
         }
       ],
       "version": "VF",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "947502",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/3z3gZ6faikQ81EM19zTX4lHfpwL.jpg",
-      "synopsis": "À Los Angeles, AJ, lycéen discret, rencontre Kristen. Elle est passionnée de surf, lui de skateboard et de dessin. Ils tombent follement amoureux ; un avenir heureux se profile. Mais tout bascule lorsque Kristen tombe malade. Ensemble, ils se lancent dans un combat contre l’adversité, portés par la force de leur amour, leurs amis et leur passion désormais commune pour le surf et l’océan.",
+      "tmdbId": "1492288",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/8IcgFgUKHWnVamGPSXQQ8cLHjew.jpg",
+      "synopsis": "Il fait anormalement chaud sur les plages des Landes et Marouane, 17 ans, passe sa dernière journée au camping avec une angoisse : le corps qu’il a enseveli la veille sur la plage va-t-il apparaître au grand jour ? Marouane se demande par ailleurs s’il n’est pas en train de tomber amoureux de la charmante Giulia.",
       "releaseYear": 2026
     },
     {
@@ -511,6 +388,104 @@
       "releaseYear": 2026
     },
     {
+      "id": "scala-thionville-cot-627932",
+      "cinemaId": "scala-thionville",
+      "title": "Shana",
+      "genres": [
+        "Drame",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-627932-1784562300",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784648700",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1483319",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
+      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-935",
+      "cinemaId": "scala-thionville",
+      "title": "L'Étrangère",
+      "genres": [
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10593",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T20:30:00+0200",
+          "endsAtEstimate": "2026-07-20T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10594",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T20:25:00+0200",
+          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10689",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T17:20:00+0200",
+          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10690",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T15:25:00+0200",
+          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10691",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T13:20:00+0200",
+          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10692",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T16:05:00+0200",
+          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10693",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T13:35:00+0200",
+          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
+        }
+      ],
+      "director": "Gaya Jiji",
+      "durationMinutes": 102,
+      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
+      "version": "VO",
+      "releaseYear": 2026,
+      "tmdbId": "567080",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
       "id": "scala-thionville-cot-573784",
       "cinemaId": "scala-thionville",
       "title": "Toy Story 5",
@@ -556,6 +531,31 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/b2bt3UomRX41rHHZmIsSNmXzidU.jpg",
       "synopsis": "Buzz, Woody, Jessie et le reste de la bande verront leur travail remis en question lorsqu'ils découvriront que ce qui obsède les enfants d'aujourd'hui s’appelle… l'électronique !",
       "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-909",
+      "cinemaId": "scala-thionville",
+      "title": "Jour de fête",
+      "genres": [
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10614",
+          "movieId": "scala-thionville-909",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T16:05:00+0200",
+          "endsAtEstimate": "2026-07-21T15:32:00.000Z"
+        }
+      ],
+      "director": "Jacques Tati",
+      "durationMinutes": 87,
+      "synopsis": "Un petit village de province prépare sa fête patronale. Les enfants se réjouissent et les adultes s'affairent, tandis que les forains installent leurs attractions. Gentil mais maladroit, François, le facteur, offre à tout le monde une aide embarrassante. Sa contribution à l'élévation du mât de cocagne l'emplit de fierté et de commentaires pour le reste de la journée. Le grand jour venu, François voit dans une baraque foraine un documentaire sur la poste aérienne aux États-Unis. Piqué au vif par les quolibets, il annonce son intention de faire une tournée «à l'américaine» et s'élance aussitôt sur son vélo. Le résultat tient plus de la comédie burlesque que de l'exploit technologique...",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/4595.jpg",
+      "version": "VF",
+      "releaseYear": 1949,
+      "tmdbId": "4595",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-926",
@@ -687,6 +687,55 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-28T17:35:00+0200",
           "endsAtEstimate": "2026-07-28T17:43:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10773",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T09:45:00+0200",
+          "endsAtEstimate": "2026-07-29T09:53:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10774",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T20:05:00+0200",
+          "endsAtEstimate": "2026-07-30T20:13:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10775",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T20:05:00+0200",
+          "endsAtEstimate": "2026-07-31T20:13:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10776",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T18:15:00+0200",
+          "endsAtEstimate": "2026-08-01T18:23:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10777",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T13:45:00+0200",
+          "endsAtEstimate": "2026-08-02T13:53:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10778",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T15:10:00+0200",
+          "endsAtEstimate": "2026-08-03T15:18:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10779",
+          "movieId": "scala-thionville-931",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T15:35:00+0200",
+          "endsAtEstimate": "2026-08-04T15:43:00.000Z"
         }
       ],
       "director": "AKIKO OHKU",
@@ -742,6 +791,34 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-27T20:00:00+0200",
           "endsAtEstimate": "2026-07-27T20:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10764",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T17:40:00+0200",
+          "endsAtEstimate": "2026-07-29T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10765",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T09:45:00+0200",
+          "endsAtEstimate": "2026-07-31T10:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10766",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T17:40:00+0200",
+          "endsAtEstimate": "2026-08-01T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10767",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T19:50:00+0200",
+          "endsAtEstimate": "2026-08-03T20:15:00.000Z"
         }
       ],
       "director": "Steven Spielberg",
@@ -811,6 +888,41 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-28T20:10:00+0200",
           "endsAtEstimate": "2026-07-28T19:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10768",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T15:20:00+0200",
+          "endsAtEstimate": "2026-07-29T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10769",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T09:45:00+0200",
+          "endsAtEstimate": "2026-07-30T09:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10770",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T20:10:00+0200",
+          "endsAtEstimate": "2026-07-31T19:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10771",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T15:20:00+0200",
+          "endsAtEstimate": "2026-08-03T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10772",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T20:10:00+0200",
+          "endsAtEstimate": "2026-08-04T19:55:00.000Z"
         }
       ],
       "director": "Kane Parsons",
@@ -909,6 +1021,240 @@
       "version": "VF",
       "releaseYear": 2024,
       "tmdbId": "1259477",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-936",
+      "cinemaId": "scala-thionville",
+      "title": "The ugly",
+      "genres": [
+        "Thriller",
+        "Mystère"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10736",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T13:20:00+0200",
+          "endsAtEstimate": "2026-07-29T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10737",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T20:30:00+0200",
+          "endsAtEstimate": "2026-07-29T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10738",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T16:30:00+0200",
+          "endsAtEstimate": "2026-07-30T16:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10739",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T20:30:00+0200",
+          "endsAtEstimate": "2026-07-30T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10740",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T13:40:00+0200",
+          "endsAtEstimate": "2026-07-31T13:22:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10741",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T18:00:00+0200",
+          "endsAtEstimate": "2026-07-31T17:42:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10742",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T13:45:00+0200",
+          "endsAtEstimate": "2026-08-01T13:27:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10743",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T20:30:00+0200",
+          "endsAtEstimate": "2026-08-01T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10744",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T16:30:00+0200",
+          "endsAtEstimate": "2026-08-02T16:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10745",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T20:30:00+0200",
+          "endsAtEstimate": "2026-08-02T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10746",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T13:20:00+0200",
+          "endsAtEstimate": "2026-08-03T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10747",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T17:40:00+0200",
+          "endsAtEstimate": "2026-08-03T17:22:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10748",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T16:30:00+0200",
+          "endsAtEstimate": "2026-08-04T16:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10749",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T20:30:00+0200",
+          "endsAtEstimate": "2026-08-04T20:12:00.000Z"
+        }
+      ],
+      "director": "Yeon Sang-ho",
+      "durationMinutes": 102,
+      "synopsis": "Aveugle de naissance, un maître artisan, admiré pour la beauté des sceaux qu’il grave, vit reclus avec son fils unique. Mais cette paix vole en éclats lorsque les ossements de sa femme, disparue quarante ans plus tôt, sont découverts. Son fils entreprend alors de mener l’enquête sur ce passé. Cette quête de vérité va dévoiler de lourds secrets, de ceux qui touchent à la laideur humaine.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1316719.jpg",
+      "version": "VOST",
+      "releaseYear": 2025,
+      "tmdbId": "1316719",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-937",
+      "cinemaId": "scala-thionville",
+      "title": "I Want Your Sex",
+      "genres": [
+        "Comédie",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10750",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T15:45:00+0200",
+          "endsAtEstimate": "2026-07-29T15:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10751",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T20:45:00+0200",
+          "endsAtEstimate": "2026-07-29T20:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10752",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T13:50:00+0200",
+          "endsAtEstimate": "2026-07-30T13:31:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10753",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T18:10:00+0200",
+          "endsAtEstimate": "2026-07-30T17:51:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10754",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T13:20:00+0200",
+          "endsAtEstimate": "2026-07-31T13:01:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10755",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T18:15:00+0200",
+          "endsAtEstimate": "2026-07-31T17:56:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10756",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T16:25:00+0200",
+          "endsAtEstimate": "2026-08-01T16:06:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10757",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T20:45:00+0200",
+          "endsAtEstimate": "2026-08-01T20:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10758",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T16:20:00+0200",
+          "endsAtEstimate": "2026-08-02T16:01:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10759",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-02T20:40:00+0200",
+          "endsAtEstimate": "2026-08-02T20:21:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10760",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T13:20:00+0200",
+          "endsAtEstimate": "2026-08-03T13:01:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10761",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T17:45:00+0200",
+          "endsAtEstimate": "2026-08-03T17:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10762",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T13:35:00+0200",
+          "endsAtEstimate": "2026-08-04T13:16:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10763",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T18:10:00+0200",
+          "endsAtEstimate": "2026-08-04T17:51:00.000Z"
+        }
+      ],
+      "director": "Gregg Araki",
+      "durationMinutes": 101,
+      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1288059.jpg",
+      "version": "VOST",
+      "releaseYear": 2026,
+      "tmdbId": "1288059",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
