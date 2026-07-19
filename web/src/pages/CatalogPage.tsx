@@ -51,8 +51,7 @@ function CatalogPage() {
           zIndex: '20',
           h: '11',
           px: '4',
-          bg: 'headerBg',
-          backdropFilter: 'blur(20px) saturate(180%)',
+          bg: 'ink',
           display: 'flex',
           alignItems: 'center',
         })}
