@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="76" viewBox="0 0 360 76" fill="none" font-family="Schibsted Grotesk, sans-serif">
+  <rect x="2" y="2" width="72" height="72" rx="20" fill="#1b1a17"></rect>
+  <rect x="18" y="18" width="17" height="17" rx="4" fill="#efe8da"></rect>
+  <rect x="41" y="18" width="17" height="17" rx="4" fill="#a4192c"></rect>
+  <rect x="18" y="41" width="17" height="17" rx="4" fill="#efe8da"></rect>
+  <rect x="41" y="41" width="17" height="17" rx="4" fill="#efe8da"></rect>
+  <text x="92" y="52" font-size="46" font-weight="700" letter-spacing="-1.4" fill="#1b1a17">Plan-Plan</text>
+</svg>
