@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T16:58:48.170Z",
+  "generatedAt": "2026-07-19T08:20:43.703Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -19,13 +19,6 @@
         "Thriller"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-cot-627832-1784398200",
-          "movieId": "scala-thionville-cot-627832",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-18T18:10:00.000Z",
-          "endsAtEstimate": "2026-07-18T20:10:00.000Z"
-        },
         {
           "id": "scala-thionville-cot-627832-1784460300",
           "movieId": "scala-thionville-cot-627832",
@@ -60,6 +53,55 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-21T16:30:00.000Z",
           "endsAtEstimate": "2026-07-21T18:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1784720400",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-22T11:40:00.000Z",
+          "endsAtEstimate": "2026-07-22T13:40:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1784813100",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T13:25:00.000Z",
+          "endsAtEstimate": "2026-07-23T15:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1784909700",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-24T16:15:00.000Z",
+          "endsAtEstimate": "2026-07-24T18:15:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1784979300",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T11:35:00.000Z",
+          "endsAtEstimate": "2026-07-25T13:35:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1785083100",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T16:25:00.000Z",
+          "endsAtEstimate": "2026-07-26T18:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1785168300",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T16:05:00.000Z",
+          "endsAtEstimate": "2026-07-27T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627832-1785225600",
+          "movieId": "scala-thionville-cot-627832",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T08:00:00.000Z",
+          "endsAtEstimate": "2026-07-28T10:00:00.000Z"
         }
       ],
       "version": "VF",
@@ -67,6 +109,118 @@
       "tmdbId": "1492288",
       "posterUrl": "https://image.tmdb.org/t/p/w500/8IcgFgUKHWnVamGPSXQQ8cLHjew.jpg",
       "synopsis": "Il fait anormalement chaud sur les plages des Landes et Marouane, 17 ans, passe sa dernière journée au camping avec une angoisse : le corps qu’il a enseveli la veille sur la plage va-t-il apparaître au grand jour ? Marouane se demande par ailleurs s’il n’est pas en train de tomber amoureux de la charmante Giulia.",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-935",
+      "cinemaId": "scala-thionville",
+      "title": "L'Étrangère",
+      "genres": [
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10592",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-19T13:45:00+0200",
+          "endsAtEstimate": "2026-07-19T13:27:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10593",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T20:30:00+0200",
+          "endsAtEstimate": "2026-07-20T20:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10594",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T20:25:00+0200",
+          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10689",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T17:20:00+0200",
+          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10690",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T15:25:00+0200",
+          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10691",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T13:20:00+0200",
+          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10692",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T16:05:00+0200",
+          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10693",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T13:35:00+0200",
+          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
+        }
+      ],
+      "director": "Gaya Jiji",
+      "durationMinutes": 102,
+      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
+      "version": "VO",
+      "releaseYear": 2026,
+      "tmdbId": "567080",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-627932",
+      "cinemaId": "scala-thionville",
+      "title": "Shana",
+      "genres": [
+        "Drame",
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-627932-1784469000",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-19T13:50:00.000Z",
+          "endsAtEstimate": "2026-07-19T15:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784562300",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-20T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627932-1784648700",
+          "movieId": "scala-thionville-cot-627932",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1483319",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
+      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
       "releaseYear": 2026
     },
     {
@@ -80,13 +234,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10622",
-          "movieId": "scala-thionville-934",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-18T19:30:00+0200",
-          "endsAtEstimate": "2026-07-18T20:11:00.000Z"
-        },
         {
           "id": "scala-thionville-10623",
           "movieId": "scala-thionville-934",
@@ -210,118 +357,6 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
-      "id": "scala-thionville-935",
-      "cinemaId": "scala-thionville",
-      "title": "L'Étrangère",
-      "genres": [
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10592",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T13:45:00+0200",
-          "endsAtEstimate": "2026-07-19T13:27:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10593",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T20:30:00+0200",
-          "endsAtEstimate": "2026-07-20T20:12:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10594",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T20:25:00+0200",
-          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10689",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T17:20:00+0200",
-          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10690",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T15:25:00+0200",
-          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10691",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T13:20:00+0200",
-          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10692",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T16:05:00+0200",
-          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10693",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T13:35:00+0200",
-          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
-        }
-      ],
-      "director": "Gaya Jiji",
-      "durationMinutes": 102,
-      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
-      "version": "VO",
-      "releaseYear": 2026,
-      "tmdbId": "567080",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-627932",
-      "cinemaId": "scala-thionville",
-      "title": "Shana",
-      "genres": [
-        "Drame",
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-627932-1784469000",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-19T13:50:00.000Z",
-          "endsAtEstimate": "2026-07-19T15:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784562300",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-20T17:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627932-1784648700",
-          "movieId": "scala-thionville-cot-627932",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T15:45:00.000Z",
-          "endsAtEstimate": "2026-07-21T17:45:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1483319",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/pXgr7YW8TKKOCigWM7VY7MB7bm3.jpg",
-      "synopsis": "Shana traverse les galères du quotidien avec une énergie débordante et le soutien de sa bande de copines. Lorsque sa grand-mère décède, elle hérite d’une bague censée protéger du mauvais œil. Shana a bien besoin de ce coup de pouce. D’autant qu’avec la sortie de prison de son compagnon toxique, les mésaventures s’accumulent !",
-      "releaseYear": 2026
-    },
-    {
       "id": "scala-thionville-909",
       "cinemaId": "scala-thionville",
       "title": "Jour de fête",
@@ -383,6 +418,41 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-21T14:35:00.000Z",
           "endsAtEstimate": "2026-07-21T16:35:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784735100",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-22T15:45:00.000Z",
+          "endsAtEstimate": "2026-07-22T17:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1784978700",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T11:25:00.000Z",
+          "endsAtEstimate": "2026-07-25T13:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1785065400",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T11:30:00.000Z",
+          "endsAtEstimate": "2026-07-26T13:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1785139200",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T08:00:00.000Z",
+          "endsAtEstimate": "2026-07-27T10:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-376520-1785252900",
+          "movieId": "scala-thionville-cot-376520",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T15:35:00.000Z",
+          "endsAtEstimate": "2026-07-28T17:35:00.000Z"
         }
       ],
       "version": "VF",
@@ -410,6 +480,27 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-20T13:50:00.000Z",
           "endsAtEstimate": "2026-07-20T15:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608454-1784813400",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T13:30:00.000Z",
+          "endsAtEstimate": "2026-07-23T15:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608454-1784986200",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T13:30:00.000Z",
+          "endsAtEstimate": "2026-07-25T15:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608454-1785246000",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T13:40:00.000Z",
+          "endsAtEstimate": "2026-07-28T15:40:00.000Z"
         }
       ],
       "version": "VF",
@@ -436,6 +527,27 @@
           "cinemaId": "scala-thionville",
           "startsAt": "2026-07-21T12:00:00.000Z",
           "endsAtEstimate": "2026-07-21T14:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-573784-1784727300",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-22T13:35:00.000Z",
+          "endsAtEstimate": "2026-07-22T15:35:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-573784-1784893200",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-24T11:40:00.000Z",
+          "endsAtEstimate": "2026-07-24T13:40:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-573784-1785153600",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T12:00:00.000Z",
+          "endsAtEstimate": "2026-07-27T14:00:00.000Z"
         }
       ],
       "version": "VF",
@@ -709,6 +821,29 @@
       "releaseYear": 2026,
       "tmdbId": "1083381",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-625763",
+      "cinemaId": "scala-thionville",
+      "title": "Maya, donne-moi un autre titre",
+      "genres": [
+        "Animation"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-625763-1784808000",
+          "movieId": "scala-thionville-cot-625763",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T12:00:00.000Z",
+          "endsAtEstimate": "2026-07-23T14:00:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1444665",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/eU13lnD53Mt5dUa7l8UiqteV0ef.jpg",
+      "synopsis": "Après, Maya donne-moi un titre, la suite des aventures de Maya racontées par Blanche Gardin. Maya et son papa vivent dans deux pays différents. Pour maintenir le lien avec sa fille et continuer à lui raconter des histoires, son papa lui demande chaque mois « Maya, donne-moi un titre ». À partir de ce titre, il lui fabrique un dessin animé dont elle est l’héroïne. Michel Gondry donne alors vie à un voyage poétique et amusant qui fera rêver les petits...et sourire les grands.",
+      "releaseYear": 2025
     },
     {
       "id": "scala-thionville-908",
