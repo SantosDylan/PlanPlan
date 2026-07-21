@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T18:04:53.036Z",
+  "generatedAt": "2026-07-21T08:30:35.620Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -10,73 +10,6 @@
     }
   ],
   "movies": [
-    {
-      "id": "scala-thionville-935",
-      "cinemaId": "scala-thionville",
-      "title": "L'Étrangère",
-      "genres": [
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10593",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-20T20:30:00+0200",
-          "endsAtEstimate": "2026-07-20T20:12:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10594",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-21T20:25:00+0200",
-          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10689",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T17:20:00+0200",
-          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10690",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T15:25:00+0200",
-          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10691",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T13:20:00+0200",
-          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10692",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T16:05:00+0200",
-          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10693",
-          "movieId": "scala-thionville-935",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T13:35:00+0200",
-          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
-        }
-      ],
-      "director": "Gaya Jiji",
-      "durationMinutes": 102,
-      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
-      "version": "VO",
-      "releaseYear": 2026,
-      "tmdbId": "567080",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
     {
       "id": "scala-thionville-cot-573784",
       "cinemaId": "scala-thionville",
@@ -452,6 +385,66 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/8IcgFgUKHWnVamGPSXQQ8cLHjew.jpg",
       "synopsis": "Il fait anormalement chaud sur les plages des Landes et Marouane, 17 ans, passe sa dernière journée au camping avec une angoisse : le corps qu’il a enseveli la veille sur la plage va-t-il apparaître au grand jour ? Marouane se demande par ailleurs s’il n’est pas en train de tomber amoureux de la charmante Giulia.",
       "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-935",
+      "cinemaId": "scala-thionville",
+      "title": "L'Étrangère",
+      "genres": [
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10594",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-21T20:25:00+0200",
+          "endsAtEstimate": "2026-07-21T20:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10689",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T17:20:00+0200",
+          "endsAtEstimate": "2026-07-23T17:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10690",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T15:25:00+0200",
+          "endsAtEstimate": "2026-07-25T15:07:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10691",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T13:20:00+0200",
+          "endsAtEstimate": "2026-07-26T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10692",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T16:05:00+0200",
+          "endsAtEstimate": "2026-07-27T15:47:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10693",
+          "movieId": "scala-thionville-935",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T13:35:00+0200",
+          "endsAtEstimate": "2026-07-28T13:17:00.000Z"
+        }
+      ],
+      "director": "Gaya Jiji",
+      "durationMinutes": 102,
+      "synopsis": "Selma fuit la Syrie en laissant derrière elle un fils de 6 ans et un mari disparu dans les geôles du régime. Arrivée à Bordeaux après un périple dangereux, elle enchaîne les heures de travail au noir, alors qu’un nouveau combat commence pour obtenir le droit d’asile et faire venir son fils Rami. Selma fait bientôt la connaissance d’un avocat, Jérôme. Leur histoire d’amour va tout remettre en question…",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/l_etrangere.jpg",
+      "version": "VO",
+      "releaseYear": 2026,
+      "tmdbId": "567080",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-926",
