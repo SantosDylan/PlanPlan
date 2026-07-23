@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T17:20:51.448Z",
+  "generatedAt": "2026-07-23T08:31:56.175Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -10,260 +10,6 @@
     }
   ],
   "movies": [
-    {
-      "id": "scala-thionville-cot-574404",
-      "cinemaId": "scala-thionville",
-      "title": "Backrooms",
-      "genres": [
-        "Horreur",
-        "Mystère",
-        "Science-Fiction"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-574404-1784743200",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-22T18:00:00.000Z",
-          "endsAtEstimate": "2026-07-22T20:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1784829600",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T18:00:00.000Z",
-          "endsAtEstimate": "2026-07-23T20:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1784900700",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-24T13:45:00.000Z",
-          "endsAtEstimate": "2026-07-24T15:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1785004500",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T18:35:00.000Z",
-          "endsAtEstimate": "2026-07-25T20:35:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1785090300",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T18:25:00.000Z",
-          "endsAtEstimate": "2026-07-26T20:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1785176100",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T18:15:00.000Z",
-          "endsAtEstimate": "2026-07-27T20:15:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-574404-1785262200",
-          "movieId": "scala-thionville-cot-574404",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T18:10:00.000Z",
-          "endsAtEstimate": "2026-07-28T20:10:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1083381",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/thQQ3BBBhGDtWm3UTtabhyDJd8U.jpg",
-      "synopsis": "Une étrange porte apparaît dans le sous-sol d'un magasin de meubles.",
-      "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-922",
-      "cinemaId": "scala-thionville",
-      "title": "Disclosure Day",
-      "genres": [
-        "Thriller",
-        "Mystère",
-        "Science-Fiction"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10694",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-22T19:45:00+0200",
-          "endsAtEstimate": "2026-07-22T20:10:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10695",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-24T16:40:00+0200",
-          "endsAtEstimate": "2026-07-24T17:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10696",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T20:00:00+0200",
-          "endsAtEstimate": "2026-07-25T20:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10697",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T15:35:00+0200",
-          "endsAtEstimate": "2026-07-26T16:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10698",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T20:00:00+0200",
-          "endsAtEstimate": "2026-07-27T20:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10764",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-29T17:40:00+0200",
-          "endsAtEstimate": "2026-07-29T18:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10765",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-31T09:45:00+0200",
-          "endsAtEstimate": "2026-07-31T10:10:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10766",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-01T17:40:00+0200",
-          "endsAtEstimate": "2026-08-01T18:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10767",
-          "movieId": "scala-thionville-922",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T19:50:00+0200",
-          "endsAtEstimate": "2026-08-03T20:15:00.000Z"
-        }
-      ],
-      "director": "Steven Spielberg",
-      "durationMinutes": 145,
-      "synopsis": "Si vous découvriez que nous ne sommes pas seuls, si quelqu'un vous le montrait, vous le prouvait, cela vous effraierait-il ?",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1275779.jpg",
-      "version": "VOST",
-      "releaseYear": 2026,
-      "tmdbId": "1275779",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-940",
-      "cinemaId": "scala-thionville",
-      "title": "Backrooms : tout doit disparaître",
-      "genres": [
-        "Horreur",
-        "Mystère",
-        "Science-Fiction"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10699",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-22T20:00:00+0200",
-          "endsAtEstimate": "2026-07-22T19:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10700",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-23T20:00:00+0200",
-          "endsAtEstimate": "2026-07-23T19:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10701",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-24T15:45:00+0200",
-          "endsAtEstimate": "2026-07-24T15:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10702",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-25T20:35:00+0200",
-          "endsAtEstimate": "2026-07-25T20:20:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10703",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-26T20:25:00+0200",
-          "endsAtEstimate": "2026-07-26T20:10:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10704",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-27T20:15:00+0200",
-          "endsAtEstimate": "2026-07-27T20:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10705",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-28T20:10:00+0200",
-          "endsAtEstimate": "2026-07-28T19:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10768",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-29T15:20:00+0200",
-          "endsAtEstimate": "2026-07-29T15:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10769",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-30T09:45:00+0200",
-          "endsAtEstimate": "2026-07-30T09:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10770",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-07-31T20:10:00+0200",
-          "endsAtEstimate": "2026-07-31T19:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10771",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T15:20:00+0200",
-          "endsAtEstimate": "2026-08-03T15:05:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10772",
-          "movieId": "scala-thionville-940",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T20:10:00+0200",
-          "endsAtEstimate": "2026-08-04T19:55:00.000Z"
-        }
-      ],
-      "director": "Kane Parsons",
-      "durationMinutes": 105,
-      "synopsis": "Une étrange porte apparaît dans le sous-sol d'un magasin de meubles.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1083381.jpg",
-      "version": "VOST",
-      "releaseYear": 2026,
-      "tmdbId": "1083381",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
     {
       "id": "scala-thionville-cot-625763",
       "cinemaId": "scala-thionville",
@@ -766,6 +512,163 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
+      "id": "scala-thionville-cot-574404",
+      "cinemaId": "scala-thionville",
+      "title": "Backrooms",
+      "genres": [
+        "Horreur",
+        "Mystère",
+        "Science-Fiction"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-574404-1784829600",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T18:00:00.000Z",
+          "endsAtEstimate": "2026-07-23T20:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-574404-1784900700",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-24T13:45:00.000Z",
+          "endsAtEstimate": "2026-07-24T15:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-574404-1785004500",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T18:35:00.000Z",
+          "endsAtEstimate": "2026-07-25T20:35:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-574404-1785090300",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T18:25:00.000Z",
+          "endsAtEstimate": "2026-07-26T20:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-574404-1785176100",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T18:15:00.000Z",
+          "endsAtEstimate": "2026-07-27T20:15:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-574404-1785262200",
+          "movieId": "scala-thionville-cot-574404",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T18:10:00.000Z",
+          "endsAtEstimate": "2026-07-28T20:10:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1083381",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/thQQ3BBBhGDtWm3UTtabhyDJd8U.jpg",
+      "synopsis": "Une étrange porte apparaît dans le sous-sol d'un magasin de meubles.",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-940",
+      "cinemaId": "scala-thionville",
+      "title": "Backrooms : tout doit disparaître",
+      "genres": [
+        "Horreur",
+        "Mystère",
+        "Science-Fiction"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10700",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-23T20:00:00+0200",
+          "endsAtEstimate": "2026-07-23T19:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10701",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-24T15:45:00+0200",
+          "endsAtEstimate": "2026-07-24T15:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10702",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T20:35:00+0200",
+          "endsAtEstimate": "2026-07-25T20:20:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10703",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T20:25:00+0200",
+          "endsAtEstimate": "2026-07-26T20:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10704",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T20:15:00+0200",
+          "endsAtEstimate": "2026-07-27T20:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10705",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-28T20:10:00+0200",
+          "endsAtEstimate": "2026-07-28T19:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10768",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T15:20:00+0200",
+          "endsAtEstimate": "2026-07-29T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10769",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-30T09:45:00+0200",
+          "endsAtEstimate": "2026-07-30T09:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10770",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T20:10:00+0200",
+          "endsAtEstimate": "2026-07-31T19:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10771",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T15:20:00+0200",
+          "endsAtEstimate": "2026-08-03T15:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10772",
+          "movieId": "scala-thionville-940",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T20:10:00+0200",
+          "endsAtEstimate": "2026-08-04T19:55:00.000Z"
+        }
+      ],
+      "director": "Kane Parsons",
+      "durationMinutes": 105,
+      "synopsis": "Une étrange porte apparaît dans le sous-sol d'un magasin de meubles.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1083381.jpg",
+      "version": "VOST",
+      "releaseYear": 2026,
+      "tmdbId": "1083381",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
       "id": "scala-thionville-cot-573784",
       "cinemaId": "scala-thionville",
       "title": "Toy Story 5",
@@ -797,6 +700,82 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/b2bt3UomRX41rHHZmIsSNmXzidU.jpg",
       "synopsis": "Buzz, Woody, Jessie et le reste de la bande verront leur travail remis en question lorsqu'ils découvriront que ce qui obsède les enfants d'aujourd'hui s’appelle… l'électronique !",
       "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-922",
+      "cinemaId": "scala-thionville",
+      "title": "Disclosure Day",
+      "genres": [
+        "Thriller",
+        "Mystère",
+        "Science-Fiction"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10695",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-24T16:40:00+0200",
+          "endsAtEstimate": "2026-07-24T17:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10696",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-25T20:00:00+0200",
+          "endsAtEstimate": "2026-07-25T20:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10697",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-26T15:35:00+0200",
+          "endsAtEstimate": "2026-07-26T16:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10698",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-27T20:00:00+0200",
+          "endsAtEstimate": "2026-07-27T20:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10764",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-29T17:40:00+0200",
+          "endsAtEstimate": "2026-07-29T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10765",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-07-31T09:45:00+0200",
+          "endsAtEstimate": "2026-07-31T10:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10766",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-01T17:40:00+0200",
+          "endsAtEstimate": "2026-08-01T18:05:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10767",
+          "movieId": "scala-thionville-922",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T19:50:00+0200",
+          "endsAtEstimate": "2026-08-03T20:15:00.000Z"
+        }
+      ],
+      "director": "Steven Spielberg",
+      "durationMinutes": 145,
+      "synopsis": "Si vous découvriez que nous ne sommes pas seuls, si quelqu'un vous le montrait, vous le prouvait, cela vous effraierait-il ?",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1275779.jpg",
+      "version": "VOST",
+      "releaseYear": 2026,
+      "tmdbId": "1275779",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-cot-376520",
