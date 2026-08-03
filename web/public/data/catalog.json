@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T17:00:07.820Z",
+  "generatedAt": "2026-08-03T09:47:32.307Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -10,187 +10,6 @@
     }
   ],
   "movies": [
-    {
-      "id": "scala-thionville-936",
-      "cinemaId": "scala-thionville",
-      "title": "The ugly",
-      "genres": [
-        "Thriller",
-        "Mystère"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10745",
-          "movieId": "scala-thionville-936",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-02T20:30:00+0200",
-          "endsAtEstimate": "2026-08-02T20:12:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10746",
-          "movieId": "scala-thionville-936",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T13:20:00+0200",
-          "endsAtEstimate": "2026-08-03T13:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10747",
-          "movieId": "scala-thionville-936",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T17:40:00+0200",
-          "endsAtEstimate": "2026-08-03T17:22:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10748",
-          "movieId": "scala-thionville-936",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T16:30:00+0200",
-          "endsAtEstimate": "2026-08-04T16:12:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10749",
-          "movieId": "scala-thionville-936",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T20:30:00+0200",
-          "endsAtEstimate": "2026-08-04T20:12:00.000Z"
-        }
-      ],
-      "director": "Yeon Sang-ho",
-      "durationMinutes": 102,
-      "synopsis": "Aveugle de naissance, un maître artisan, admiré pour la beauté des sceaux qu’il grave, vit reclus avec son fils unique. Mais cette paix vole en éclats lorsque les ossements de sa femme, disparue quarante ans plus tôt, sont découverts. Son fils entreprend alors de mener l’enquête sur ce passé. Cette quête de vérité va dévoiler de lourds secrets, de ceux qui touchent à la laideur humaine.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1316719.jpg",
-      "version": "VOST",
-      "releaseYear": 2025,
-      "tmdbId": "1316719",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-937",
-      "cinemaId": "scala-thionville",
-      "title": "I Want Your Sex",
-      "genres": [
-        "Comédie",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10759",
-          "movieId": "scala-thionville-937",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-02T20:40:00+0200",
-          "endsAtEstimate": "2026-08-02T20:21:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10760",
-          "movieId": "scala-thionville-937",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T13:20:00+0200",
-          "endsAtEstimate": "2026-08-03T13:01:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10761",
-          "movieId": "scala-thionville-937",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T17:45:00+0200",
-          "endsAtEstimate": "2026-08-03T17:26:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10762",
-          "movieId": "scala-thionville-937",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T13:35:00+0200",
-          "endsAtEstimate": "2026-08-04T13:16:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10763",
-          "movieId": "scala-thionville-937",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T18:10:00+0200",
-          "endsAtEstimate": "2026-08-04T17:51:00.000Z"
-        }
-      ],
-      "director": "Gregg Araki",
-      "durationMinutes": 101,
-      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1288059.jpg",
-      "version": "VOST",
-      "releaseYear": 2026,
-      "tmdbId": "1288059",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-608454",
-      "cinemaId": "scala-thionville",
-      "title": "Des Minions et des monstres",
-      "genres": [
-        "Aventure",
-        "Animation",
-        "Comédie",
-        "Familial",
-        "Fantastique"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-608454-1785743100",
-          "movieId": "scala-thionville-cot-608454",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T07:45:00.000Z",
-          "endsAtEstimate": "2026-08-03T09:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608454-1785936000",
-          "movieId": "scala-thionville-cot-608454",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-05T13:20:00.000Z",
-          "endsAtEstimate": "2026-08-05T15:20:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608454-1786089600",
-          "movieId": "scala-thionville-cot-608454",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-07T08:00:00.000Z",
-          "endsAtEstimate": "2026-08-07T10:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608454-1786448700",
-          "movieId": "scala-thionville-cot-608454",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-11T11:45:00.000Z",
-          "endsAtEstimate": "2026-08-11T13:45:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1315772",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/jMOf0SSthlNp5uXhEXz4e3tqDX5.jpg",
-      "synopsis": "L’histoire turbulente, absurde et évidemment vraie des Minions et la manière dont ils ont conquis Hollywood, sont devenus de véritables stars de cinéma, ont tout perdu, ont libéré des monstres dans notre monde, puis ont tenté de sauver la planète du chaos qu’ils avaient créé.",
-      "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-926",
-      "cinemaId": "scala-thionville",
-      "title": "Les Nouvelles aventures de Gros-pois et Petit-point",
-      "genres": [
-        "Familial",
-        "Animation"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10685",
-          "movieId": "scala-thionville-926",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-03T10:30:00+0200",
-          "endsAtEstimate": "2026-08-03T09:13:00.000Z"
-        }
-      ],
-      "director": "Uzi Geffenblad Lotta Geffenblad",
-      "durationMinutes": 43,
-      "synopsis": "Gros-pois a toujours ses pois, Petit-point a toujours ses points…et ils sont toujours très heureux comme ça ! C'est avec un grand plaisir que nous retrouvons nos deux lapins si drôles et attachants, dans six nouvelles aventures encore plus burlesques et pleines de fantaisie.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/258128.jpg",
-      "releaseYear": 2014,
-      "tmdbId": "258128",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
     {
       "id": "scala-thionville-cot-574404",
       "cinemaId": "scala-thionville",
@@ -243,6 +62,100 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/thQQ3BBBhGDtWm3UTtabhyDJd8U.jpg",
       "synopsis": "Une étrange porte apparaît dans le sous-sol d'un magasin de meubles.",
       "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-936",
+      "cinemaId": "scala-thionville",
+      "title": "The ugly",
+      "genres": [
+        "Thriller",
+        "Mystère"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10746",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T13:20:00+0200",
+          "endsAtEstimate": "2026-08-03T13:02:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10747",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T17:40:00+0200",
+          "endsAtEstimate": "2026-08-03T17:22:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10748",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T16:30:00+0200",
+          "endsAtEstimate": "2026-08-04T16:12:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10749",
+          "movieId": "scala-thionville-936",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T20:30:00+0200",
+          "endsAtEstimate": "2026-08-04T20:12:00.000Z"
+        }
+      ],
+      "director": "Yeon Sang-ho",
+      "durationMinutes": 102,
+      "synopsis": "Aveugle de naissance, un maître artisan, admiré pour la beauté des sceaux qu’il grave, vit reclus avec son fils unique. Mais cette paix vole en éclats lorsque les ossements de sa femme, disparue quarante ans plus tôt, sont découverts. Son fils entreprend alors de mener l’enquête sur ce passé. Cette quête de vérité va dévoiler de lourds secrets, de ceux qui touchent à la laideur humaine.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1316719.jpg",
+      "version": "VOST",
+      "releaseYear": 2025,
+      "tmdbId": "1316719",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-937",
+      "cinemaId": "scala-thionville",
+      "title": "I Want Your Sex",
+      "genres": [
+        "Comédie",
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10760",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T13:20:00+0200",
+          "endsAtEstimate": "2026-08-03T13:01:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10761",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-03T17:45:00+0200",
+          "endsAtEstimate": "2026-08-03T17:26:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10762",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T13:35:00+0200",
+          "endsAtEstimate": "2026-08-04T13:16:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10763",
+          "movieId": "scala-thionville-937",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-04T18:10:00+0200",
+          "endsAtEstimate": "2026-08-04T17:51:00.000Z"
+        }
+      ],
+      "director": "Gregg Araki",
+      "durationMinutes": 101,
+      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/1288059.jpg",
+      "version": "VOST",
+      "releaseYear": 2026,
+      "tmdbId": "1288059",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-931",
@@ -467,7 +380,7 @@
       "version": "VF",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
       "tmdbId": "1084244",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/b2bt3UomRX41rHHZmIsSNmXzidU.jpg",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bxFstXYF4wf6brpm9oZsarxI6AT.jpg",
       "synopsis": "Buzz, Woody, Jessie et le reste de la bande verront leur travail remis en question lorsqu'ils découvriront que ce qui obsède les enfants d'aujourd'hui s’appelle… l'électronique !",
       "releaseYear": 2026
     },
@@ -518,6 +431,47 @@
       "tmdbId": "1492288",
       "posterUrl": "https://image.tmdb.org/t/p/w500/8IcgFgUKHWnVamGPSXQQ8cLHjew.jpg",
       "synopsis": "Il fait anormalement chaud sur les plages des Landes et Marouane, 17 ans, passe sa dernière journée au camping avec une angoisse : le corps qu’il a enseveli la veille sur la plage va-t-il apparaître au grand jour ? Marouane se demande par ailleurs s’il n’est pas en train de tomber amoureux de la charmante Giulia.",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-cot-608454",
+      "cinemaId": "scala-thionville",
+      "title": "Des Minions et des monstres",
+      "genres": [
+        "Aventure",
+        "Animation",
+        "Comédie",
+        "Familial",
+        "Fantastique"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-608454-1785936000",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-05T13:20:00.000Z",
+          "endsAtEstimate": "2026-08-05T15:20:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608454-1786089600",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-07T08:00:00.000Z",
+          "endsAtEstimate": "2026-08-07T10:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608454-1786448700",
+          "movieId": "scala-thionville-cot-608454",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-11T11:45:00.000Z",
+          "endsAtEstimate": "2026-08-11T13:45:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1315772",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/jMOf0SSthlNp5uXhEXz4e3tqDX5.jpg",
+      "synopsis": "L’histoire turbulente, absurde et évidemment vraie des Minions et la manière dont ils ont conquis Hollywood, sont devenus de véritables stars de cinéma, ont tout perdu, ont libéré des monstres dans notre monde, puis ont tenté de sauver la planète du chaos qu’ils avaient créé.",
       "releaseYear": 2026
     },
     {
