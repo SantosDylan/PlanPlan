@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T17:51:53.815Z",
+  "generatedAt": "2026-08-04T08:38:16.541Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -10,78 +10,6 @@
     }
   ],
   "movies": [
-    {
-      "id": "scala-thionville-cot-573784",
-      "cinemaId": "scala-thionville",
-      "title": "Toy Story 5",
-      "genres": [
-        "Animation",
-        "Familial",
-        "Comédie",
-        "Aventure"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-573784-1785829500",
-          "movieId": "scala-thionville-cot-573784",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T07:45:00.000Z",
-          "endsAtEstimate": "2026-08-04T09:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-573784-1786023900",
-          "movieId": "scala-thionville-cot-573784",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-06T13:45:00.000Z",
-          "endsAtEstimate": "2026-08-06T15:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-573784-1786196100",
-          "movieId": "scala-thionville-cot-573784",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-08T13:35:00.000Z",
-          "endsAtEstimate": "2026-08-08T15:35:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-573784-1786347900",
-          "movieId": "scala-thionville-cot-573784",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-10T07:45:00.000Z",
-          "endsAtEstimate": "2026-08-10T09:45:00.000Z"
-        }
-      ],
-      "version": "VF",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1084244",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/bxFstXYF4wf6brpm9oZsarxI6AT.jpg",
-      "synopsis": "Buzz, Woody, Jessie et le reste de la bande verront leur travail remis en question lorsqu'ils découvriront que ce qui obsède les enfants d'aujourd'hui s’appelle… l'électronique !",
-      "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-907",
-      "cinemaId": "scala-thionville",
-      "title": "Mon oncle",
-      "genres": [
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10688",
-          "movieId": "scala-thionville-907",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-04T09:45:00+0200",
-          "endsAtEstimate": "2026-08-04T09:41:00.000Z"
-        }
-      ],
-      "director": "Jacques Tati",
-      "durationMinutes": 116,
-      "synopsis": "Monsieur Arpel est féru de modernisme. Directeur d'une fabrique de tuyaux en plastique, il a doté sa maison de tous les perfectionnements techniques possibles à ce jour. Pourtant, cette maison pourvue de robots est loin d'apporter une atmosphère détendue à son fils, Gérard, 10 ans. Le beau-frère de monsieur Arpel, monsieur Hulot, fantasque et bohème, occupe un modeste deux pièces dans un quartier populaire. Il invite de temps à autre son jeune neveu, dressé à l'ordre rigoureux qui règne chez lui, à découvrir son domaine de fantaisie et de liberté. Sa sœur, maintenant madame Arpel, espère secrètement qu'il épousera sa voisine, mais c'est compter sans l'esprit discrètement récalcitrant et frondeur de Hulot, résolument épris de liberté...",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/427.jpg",
-      "version": "VF",
-      "releaseYear": 1958,
-      "tmdbId": "427",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
     {
       "id": "scala-thionville-cot-562752",
       "cinemaId": "scala-thionville",
@@ -1147,6 +1075,46 @@
       "tmdbId": "1275779",
       "posterUrl": "https://image.tmdb.org/t/p/w500/8GRMeKaDFnuzXBzqGiDMzCFDnwQ.jpg",
       "synopsis": "Si vous découvriez que nous ne sommes pas seuls, si quelqu'un vous le montrait, vous le prouvait, cela vous effraierait-il ?",
+      "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-cot-573784",
+      "cinemaId": "scala-thionville",
+      "title": "Toy Story 5",
+      "genres": [
+        "Animation",
+        "Familial",
+        "Comédie",
+        "Aventure"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-573784-1786023900",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-06T13:45:00.000Z",
+          "endsAtEstimate": "2026-08-06T15:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-573784-1786196100",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-08T13:35:00.000Z",
+          "endsAtEstimate": "2026-08-08T15:35:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-573784-1786347900",
+          "movieId": "scala-thionville-cot-573784",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-10T07:45:00.000Z",
+          "endsAtEstimate": "2026-08-10T09:45:00.000Z"
+        }
+      ],
+      "version": "VF",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1084244",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bxFstXYF4wf6brpm9oZsarxI6AT.jpg",
+      "synopsis": "Buzz, Woody, Jessie et le reste de la bande verront leur travail remis en question lorsqu'ils découvriront que ce qui obsède les enfants d'aujourd'hui s’appelle… l'électronique !",
       "releaseYear": 2026
     },
     {
