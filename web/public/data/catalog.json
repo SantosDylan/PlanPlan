@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T16:58:08.159Z",
+  "generatedAt": "2026-08-12T07:26:07.555Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,30 +11,6 @@
   ],
   "movies": [
     {
-      "id": "scala-thionville-cot-603010",
-      "cinemaId": "scala-thionville",
-      "title": "Disclosure Day",
-      "genres": [
-        "Science-Fiction",
-        "Thriller"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-603010-1786470300",
-          "movieId": "scala-thionville-cot-603010",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-11T17:45:00.000Z",
-          "endsAtEstimate": "2026-08-11T19:45:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1275779",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/8GRMeKaDFnuzXBzqGiDMzCFDnwQ.jpg",
-      "synopsis": "Si vous découvriez que nous ne sommes pas seuls, si quelqu'un vous le montrait, vous le prouvait, cela vous effraierait-il ?",
-      "releaseYear": 2026
-    },
-    {
       "id": "scala-thionville-cot-616860",
       "cinemaId": "scala-thionville",
       "title": "Sous le ciel de Kyoto",
@@ -43,13 +19,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-cot-616860-1786471500",
-          "movieId": "scala-thionville-cot-616860",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-11T18:05:00.000Z",
-          "endsAtEstimate": "2026-08-11T20:05:00.000Z"
-        },
         {
           "id": "scala-thionville-cot-616860-1786520700",
           "movieId": "scala-thionville-cot-616860",
@@ -429,6 +398,59 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
+      "id": "scala-thionville-cot-615318",
+      "cinemaId": "scala-thionville",
+      "title": "L'Odyssée",
+      "genres": [
+        "Aventure",
+        "Action",
+        "Fantastique"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-615318-1786545000",
+          "movieId": "scala-thionville-cot-615318",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-12T14:30:00.000Z",
+          "endsAtEstimate": "2026-08-12T16:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-615318-1786627800",
+          "movieId": "scala-thionville-cot-615318",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-13T13:30:00.000Z",
+          "endsAtEstimate": "2026-08-13T15:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-615318-1786731000",
+          "movieId": "scala-thionville-cot-615318",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-14T18:10:00.000Z",
+          "endsAtEstimate": "2026-08-14T20:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-615318-1786886100",
+          "movieId": "scala-thionville-cot-615318",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-16T13:15:00.000Z",
+          "endsAtEstimate": "2026-08-16T15:15:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-615318-1787052900",
+          "movieId": "scala-thionville-cot-615318",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-18T11:35:00.000Z",
+          "endsAtEstimate": "2026-08-18T13:35:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1368337",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/6dfr9o52w9AVYJSlSA1IBUlLCyU.jpg",
+      "synopsis": "Vingt ans après son départ pour la guerre de Troie, le roi Ulysse rentre enfin à Ithaque, mais son voyage est parsemé d'aventures et d'épreuves.",
+      "releaseYear": 2026
+    },
+    {
       "id": "scala-thionville-918",
       "cinemaId": "scala-thionville",
       "title": "L'odyssée de Céleste",
@@ -512,82 +534,6 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/z4iVSwpZUSmIxilSfgvciDJROdX.jpg",
       "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
       "releaseYear": 2026
-    },
-    {
-      "id": "scala-thionville-938",
-      "cinemaId": "scala-thionville",
-      "title": "L'Odyssée",
-      "genres": [
-        "Action",
-        "Aventure",
-        "Fantastique"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10872",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-12T16:30:00+0200",
-          "endsAtEstimate": "2026-08-12T17:22:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10873",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-13T15:30:00+0200",
-          "endsAtEstimate": "2026-08-13T16:22:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10874",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-14T20:10:00+0200",
-          "endsAtEstimate": "2026-08-14T21:02:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10875",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-16T15:15:00+0200",
-          "endsAtEstimate": "2026-08-16T16:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10876",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-18T13:35:00+0200",
-          "endsAtEstimate": "2026-08-18T14:27:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10943",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-19T16:15:00+0200",
-          "endsAtEstimate": "2026-08-19T17:07:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10944",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-23T13:20:00+0200",
-          "endsAtEstimate": "2026-08-23T14:12:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10945",
-          "movieId": "scala-thionville-938",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-25T19:00:00+0200",
-          "endsAtEstimate": "2026-08-25T19:52:00.000Z"
-        }
-      ],
-      "director": "Christopher Nolan",
-      "durationMinutes": 172,
-      "synopsis": "Vingt ans après son départ pour la guerre de Troie, le roi Ulysse rentre enfin à Ithaque, mais son voyage est parsemé d'aventures et d'épreuves.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/2025/a770a3822c90a655af05961cda53f3a1.webp",
-      "version": "VOST",
-      "releaseYear": 2026,
-      "tmdbId": "1368337",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-941",
