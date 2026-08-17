@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T16:25:21.941Z",
+  "generatedAt": "2026-08-17T06:57:02.246Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,60 +11,176 @@
   ],
   "movies": [
     {
-      "id": "scala-thionville-cot-616860",
+      "id": "scala-thionville-cot-635974",
       "cinemaId": "scala-thionville",
-      "title": "Sous le ciel de Kyoto",
-      "genres": [
-        "Romance",
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-616860-1786905000",
-          "movieId": "scala-thionville-cot-616860",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-16T18:30:00.000Z",
-          "endsAtEstimate": "2026-08-16T20:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-616860-1786989600",
-          "movieId": "scala-thionville-cot-616860",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-17T18:00:00.000Z",
-          "endsAtEstimate": "2026-08-17T20:00:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1361156",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/ukr6oEsxoFP23lrLyDhyT0CVgIP.jpg",
-      "synopsis": "À Kyoto, entre l’université et un petit boulot dans des bains publics, Toru garde toujours ses parapluies à portée de main, tels des boucliers contre le monde extérieur. Quand il rencontre Hana, mystérieuse, lumineuse, fragile, l’évidence naît entre eux… avant qu’elle ne disparaisse soudainement.",
-      "releaseYear": 2025
-    },
-    {
-      "id": "scala-thionville-919",
-      "cinemaId": "scala-thionville",
-      "title": "Trafic",
+      "title": "Le Héros de Berlin",
       "genres": [
         "Comédie"
       ],
       "showtimes": [
         {
-          "id": "scala-thionville-11028",
-          "movieId": "scala-thionville-919",
+          "id": "scala-thionville-cot-635974-1786967700",
+          "movieId": "scala-thionville-cot-635974",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-16T18:30:00+0200",
-          "endsAtEstimate": "2026-08-16T18:02:00.000Z"
+          "startsAt": "2026-08-17T11:55:00.000Z",
+          "endsAtEstimate": "2026-08-17T13:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-635974-1787076900",
+          "movieId": "scala-thionville-cot-635974",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-18T18:15:00.000Z",
+          "endsAtEstimate": "2026-08-18T20:15:00.000Z"
         }
       ],
-      "director": "Jacques Tati",
-      "durationMinutes": 92,
-      "synopsis": "Dessinateur chez Altra, une petite entreprise parisienne en pleine expansion, monsieur Hulot a inventé une voiture de camping révolutionnaire, équipée d'une tente et de multiples gadgets. Ses employeurs tiennent absolument à présenter cette merveille d'ingéniosité au Salon de l'automobile qui se tiendra bientôt à Amsterdam. Après avoir chargé le prototype sur un camion, monsieur Hulot prend la direction des Pays-Bas, accompagné d'une attachée de presse. Dès la sortie de Paris, le convoi s'engage sur une autoroute surchargée. Embouteillages, crevaison, panne d'essence, accident, contrôle des douanes : la fatalité n'épargnera rien au génial inventeur...",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/11378.jpg",
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1248217",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/gmPute26B4JnsQNMZdgyWAfYfYj.jpg",
+      "synopsis": "Micha Hartung, propriétaire d'un vidéoclub berlinois au bord de la faillite, voit sa vie basculer : à l'occasion du 30e anniversaire de la chute du mur de Berlin un journaliste le présente comme le cerveau d'une évasion massive historique de la RDA. Devenu un héros malgré lui, il se retrouve pris dans un engrenage de semi-vérités et de mensonges éhontés.",
+      "releaseYear": 2025
+    },
+    {
+      "id": "scala-thionville-cot-629144",
+      "cinemaId": "scala-thionville",
+      "title": "The Ugly",
+      "genres": [
+        "Mystère",
+        "Thriller"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-629144-1786971000",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-17T12:50:00.000Z",
+          "endsAtEstimate": "2026-08-17T14:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-629144-1787069400",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-18T16:10:00.000Z",
+          "endsAtEstimate": "2026-08-18T18:10:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-629144-1787325900",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-21T15:25:00.000Z",
+          "endsAtEstimate": "2026-08-21T17:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-629144-1787412300",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-22T15:25:00.000Z",
+          "endsAtEstimate": "2026-08-22T17:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-629144-1787582400",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T14:40:00.000Z",
+          "endsAtEstimate": "2026-08-24T16:40:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-629144-1787658000",
+          "movieId": "scala-thionville-cot-629144",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-25T11:40:00.000Z",
+          "endsAtEstimate": "2026-08-25T13:40:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1316719",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/hrZxMi0QbXZBXPzQagLuV9szzb.jpg",
+      "synopsis": "Aveugle de naissance, un maître artisan, admiré pour la beauté des sceaux qu’il grave, vit reclus avec son fils unique. Mais cette paix vole en éclats lorsque les ossements de sa femme, disparue quarante ans plus tôt, sont découverts. Son fils entreprend alors de mener l’enquête sur ce passé. Cette quête de vérité va dévoiler de lourds secrets, de ceux qui touchent à la laideur humaine.",
+      "releaseYear": 2025
+    },
+    {
+      "id": "scala-thionville-927",
+      "cinemaId": "scala-thionville",
+      "title": "Un Petit Air De Famille",
+      "genres": [
+        "Familial",
+        "Animation"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10908",
+          "movieId": "scala-thionville-927",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-17T13:45:00+0200",
+          "endsAtEstimate": "2026-08-17T12:28:00.000Z"
+        }
+      ],
+      "durationMinutes": 43,
+      "synopsis": "La famille, ce n’est que du bonheur ! Enfin, à condition de ne pas se disputer ni de faire de caprices ! Et si prendre soin les uns des autres était la plus belle des aventures ? Cinq histoires de familles pour les enfants, leurs parents et leurs grands-parents !",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/750369.jpg",
       "version": "VF",
-      "releaseYear": 1971,
-      "tmdbId": "11378",
+      "releaseYear": 2019,
+      "tmdbId": "750369",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
+    },
+    {
+      "id": "scala-thionville-cot-608104",
+      "cinemaId": "scala-thionville",
+      "title": "I Want Your Sex",
+      "genres": [
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-608104-1786978500",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-17T14:55:00.000Z",
+          "endsAtEstimate": "2026-08-17T16:55:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787065200",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-18T15:00:00.000Z",
+          "endsAtEstimate": "2026-08-18T17:00:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787237100",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-20T14:45:00.000Z",
+          "endsAtEstimate": "2026-08-20T16:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787329200",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-21T16:20:00.000Z",
+          "endsAtEstimate": "2026-08-21T18:20:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787415900",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-22T16:25:00.000Z",
+          "endsAtEstimate": "2026-08-22T18:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787596200",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T18:30:00.000Z",
+          "endsAtEstimate": "2026-08-24T20:30:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1288059",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/z4iVSwpZUSmIxilSfgvciDJROdX.jpg",
+      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
+      "releaseYear": 2026
     },
     {
       "id": "scala-thionville-947",
@@ -74,13 +190,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10867",
-          "movieId": "scala-thionville-947",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-16T19:20:00+0200",
-          "endsAtEstimate": "2026-08-16T20:20:00.000Z"
-        },
         {
           "id": "scala-thionville-10868",
           "movieId": "scala-thionville-947",
@@ -266,176 +375,28 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
-      "id": "scala-thionville-cot-635974",
+      "id": "scala-thionville-cot-616860",
       "cinemaId": "scala-thionville",
-      "title": "Le Héros de Berlin",
+      "title": "Sous le ciel de Kyoto",
       "genres": [
-        "Comédie"
+        "Romance",
+        "Drame"
       ],
       "showtimes": [
         {
-          "id": "scala-thionville-cot-635974-1786967700",
-          "movieId": "scala-thionville-cot-635974",
+          "id": "scala-thionville-cot-616860-1786989600",
+          "movieId": "scala-thionville-cot-616860",
           "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-17T11:55:00.000Z",
-          "endsAtEstimate": "2026-08-17T13:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-635974-1787076900",
-          "movieId": "scala-thionville-cot-635974",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-18T18:15:00.000Z",
-          "endsAtEstimate": "2026-08-18T20:15:00.000Z"
+          "startsAt": "2026-08-17T18:00:00.000Z",
+          "endsAtEstimate": "2026-08-17T20:00:00.000Z"
         }
       ],
       "version": "VO",
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1248217",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/gmPute26B4JnsQNMZdgyWAfYfYj.jpg",
-      "synopsis": "Micha Hartung, propriétaire d'un vidéoclub berlinois au bord de la faillite, voit sa vie basculer : à l'occasion du 30e anniversaire de la chute du mur de Berlin un journaliste le présente comme le cerveau d'une évasion massive historique de la RDA. Devenu un héros malgré lui, il se retrouve pris dans un engrenage de semi-vérités et de mensonges éhontés.",
+      "tmdbId": "1361156",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/ukr6oEsxoFP23lrLyDhyT0CVgIP.jpg",
+      "synopsis": "À Kyoto, entre l’université et un petit boulot dans des bains publics, Toru garde toujours ses parapluies à portée de main, tels des boucliers contre le monde extérieur. Quand il rencontre Hana, mystérieuse, lumineuse, fragile, l’évidence naît entre eux… avant qu’elle ne disparaisse soudainement.",
       "releaseYear": 2025
-    },
-    {
-      "id": "scala-thionville-cot-629144",
-      "cinemaId": "scala-thionville",
-      "title": "The Ugly",
-      "genres": [
-        "Mystère",
-        "Thriller"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-629144-1786971000",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-17T12:50:00.000Z",
-          "endsAtEstimate": "2026-08-17T14:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-629144-1787069400",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-18T16:10:00.000Z",
-          "endsAtEstimate": "2026-08-18T18:10:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-629144-1787325900",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-21T15:25:00.000Z",
-          "endsAtEstimate": "2026-08-21T17:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-629144-1787412300",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-22T15:25:00.000Z",
-          "endsAtEstimate": "2026-08-22T17:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-629144-1787582400",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T14:40:00.000Z",
-          "endsAtEstimate": "2026-08-24T16:40:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-629144-1787658000",
-          "movieId": "scala-thionville-cot-629144",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-25T11:40:00.000Z",
-          "endsAtEstimate": "2026-08-25T13:40:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1316719",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/hrZxMi0QbXZBXPzQagLuV9szzb.jpg",
-      "synopsis": "Aveugle de naissance, un maître artisan, admiré pour la beauté des sceaux qu’il grave, vit reclus avec son fils unique. Mais cette paix vole en éclats lorsque les ossements de sa femme, disparue quarante ans plus tôt, sont découverts. Son fils entreprend alors de mener l’enquête sur ce passé. Cette quête de vérité va dévoiler de lourds secrets, de ceux qui touchent à la laideur humaine.",
-      "releaseYear": 2025
-    },
-    {
-      "id": "scala-thionville-927",
-      "cinemaId": "scala-thionville",
-      "title": "Un Petit Air De Famille",
-      "genres": [
-        "Familial",
-        "Animation"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10908",
-          "movieId": "scala-thionville-927",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-17T13:45:00+0200",
-          "endsAtEstimate": "2026-08-17T12:28:00.000Z"
-        }
-      ],
-      "durationMinutes": 43,
-      "synopsis": "La famille, ce n’est que du bonheur ! Enfin, à condition de ne pas se disputer ni de faire de caprices ! Et si prendre soin les uns des autres était la plus belle des aventures ? Cinq histoires de familles pour les enfants, leurs parents et leurs grands-parents !",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/750369.jpg",
-      "version": "VF",
-      "releaseYear": 2019,
-      "tmdbId": "750369",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-608104",
-      "cinemaId": "scala-thionville",
-      "title": "I Want Your Sex",
-      "genres": [
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-608104-1786978500",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-17T14:55:00.000Z",
-          "endsAtEstimate": "2026-08-17T16:55:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787065200",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-18T15:00:00.000Z",
-          "endsAtEstimate": "2026-08-18T17:00:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787237100",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T14:45:00.000Z",
-          "endsAtEstimate": "2026-08-20T16:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787329200",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-21T16:20:00.000Z",
-          "endsAtEstimate": "2026-08-21T18:20:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787415900",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-22T16:25:00.000Z",
-          "endsAtEstimate": "2026-08-22T18:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787596200",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T18:30:00.000Z",
-          "endsAtEstimate": "2026-08-24T20:30:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1288059",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/z4iVSwpZUSmIxilSfgvciDJROdX.jpg",
-      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
-      "releaseYear": 2026
     },
     {
       "id": "scala-thionville-cot-615318",
