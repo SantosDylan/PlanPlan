@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T06:46:59.329Z",
+  "generatedAt": "2026-08-20T16:35:38.121Z",
   "cinemas": [
     {
       "id": "scala-thionville",
@@ -11,106 +11,6 @@
   ],
   "movies": [
     {
-      "id": "scala-thionville-cot-627218",
-      "cinemaId": "scala-thionville",
-      "title": "Soudain",
-      "genres": [
-        "Drame"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-627218-1787233800",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T13:50:00.000Z",
-          "endsAtEstimate": "2026-08-20T15:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787244300",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T16:45:00.000Z",
-          "endsAtEstimate": "2026-08-20T18:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787312700",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-21T11:45:00.000Z",
-          "endsAtEstimate": "2026-08-21T13:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787333400",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-21T17:30:00.000Z",
-          "endsAtEstimate": "2026-08-21T19:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787419800",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-22T17:30:00.000Z",
-          "endsAtEstimate": "2026-08-22T19:30:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787489400",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-23T12:50:00.000Z",
-          "endsAtEstimate": "2026-08-23T14:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787505900",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-23T17:25:00.000Z",
-          "endsAtEstimate": "2026-08-23T19:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787557500",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T07:45:00.000Z",
-          "endsAtEstimate": "2026-08-24T09:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787572200",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T11:50:00.000Z",
-          "endsAtEstimate": "2026-08-24T13:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787590200",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T16:50:00.000Z",
-          "endsAtEstimate": "2026-08-24T18:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787643900",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-25T07:45:00.000Z",
-          "endsAtEstimate": "2026-08-25T09:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-627218-1787665500",
-          "movieId": "scala-thionville-cot-627218",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-25T13:45:00.000Z",
-          "endsAtEstimate": "2026-08-25T15:45:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1476614",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/6g9mHfhUm3D47Z5F1qTw1q13H98.jpg",
-      "synopsis": "Directrice d'un établissement pour personnes âgées, Marie-Lou tente d'y instaurer une philosophie de soins innovante basée sur l'écoute et la dignité des résidents, malgré la réticence d’une partie de ses équipes. Sa rencontre avec Mari, une metteuse en scène japonaise qui se bat contre un cancer, va bouleverser sa trajectoire. En nouant une amitié profonde, les deux femmes engagent ensemble un combat pour “rendre possible l’impossible”.",
-      "releaseYear": 2026
-    },
-    {
       "id": "scala-thionville-939",
       "cinemaId": "scala-thionville",
       "title": "Fjord",
@@ -118,13 +18,6 @@
         "Drame"
       ],
       "showtimes": [
-        {
-          "id": "scala-thionville-10916",
-          "movieId": "scala-thionville-939",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T13:50:00+0200",
-          "endsAtEstimate": "2026-08-20T14:16:00.000Z"
-        },
         {
           "id": "scala-thionville-10917",
           "movieId": "scala-thionville-939",
@@ -317,89 +210,6 @@
       "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
-      "id": "scala-thionville-916",
-      "cinemaId": "scala-thionville",
-      "title": "Parade",
-      "genres": [
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-10954",
-          "movieId": "scala-thionville-916",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T14:00:00+0200",
-          "endsAtEstimate": "2026-08-20T13:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10955",
-          "movieId": "scala-thionville-916",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-23T18:25:00+0200",
-          "endsAtEstimate": "2026-08-23T17:50:00.000Z"
-        },
-        {
-          "id": "scala-thionville-10956",
-          "movieId": "scala-thionville-916",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-25T10:00:00+0200",
-          "endsAtEstimate": "2026-08-25T09:25:00.000Z"
-        }
-      ],
-      "director": "Jacques Tati",
-      "durationMinutes": 85,
-      "synopsis": "L'histoire d'une grande fête au cours de laquelle Jacques Tati organise une rencontre entre spectateurs, artistes, clowns, enfants et lui-même. Tout au long du film, adultes et jeunes forment une seule masse enthousiaste et unie par le spectacle. Dès le début, une petite fille et un petit garçon symbolisent, en un seul regard échangé, la joie d'être ensemble. Le public participe directement au spectacle qui tient à la fois du music-hall et du cirque, et Jacques Tati, en Monsieur Loyal, dirige et anime la représentation.",
-      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/58655.jpg",
-      "version": "VF",
-      "releaseYear": 1974,
-      "tmdbId": "58655",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
-    },
-    {
-      "id": "scala-thionville-cot-608104",
-      "cinemaId": "scala-thionville",
-      "title": "I Want Your Sex",
-      "genres": [
-        "Comédie"
-      ],
-      "showtimes": [
-        {
-          "id": "scala-thionville-cot-608104-1787237100",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-20T14:45:00.000Z",
-          "endsAtEstimate": "2026-08-20T16:45:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787329200",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-21T16:20:00.000Z",
-          "endsAtEstimate": "2026-08-21T18:20:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787415900",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-22T16:25:00.000Z",
-          "endsAtEstimate": "2026-08-22T18:25:00.000Z"
-        },
-        {
-          "id": "scala-thionville-cot-608104-1787596200",
-          "movieId": "scala-thionville-cot-608104",
-          "cinemaId": "scala-thionville",
-          "startsAt": "2026-08-24T18:30:00.000Z",
-          "endsAtEstimate": "2026-08-24T20:30:00.000Z"
-        }
-      ],
-      "version": "VO",
-      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
-      "tmdbId": "1288059",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/z4iVSwpZUSmIxilSfgvciDJROdX.jpg",
-      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
-      "releaseYear": 2026
-    },
-    {
       "id": "scala-thionville-cot-599100",
       "cinemaId": "scala-thionville",
       "title": "Non-Non dans l'espace",
@@ -441,6 +251,92 @@
       "tmdbId": "1056274",
       "posterUrl": "https://image.tmdb.org/t/p/w500/xcMxlAivp1kaZVfd6m65ueqGZfN.jpg",
       "releaseYear": 2022
+    },
+    {
+      "id": "scala-thionville-cot-627218",
+      "cinemaId": "scala-thionville",
+      "title": "Soudain",
+      "genres": [
+        "Drame"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-627218-1787312700",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-21T11:45:00.000Z",
+          "endsAtEstimate": "2026-08-21T13:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787333400",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-21T17:30:00.000Z",
+          "endsAtEstimate": "2026-08-21T19:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787419800",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-22T17:30:00.000Z",
+          "endsAtEstimate": "2026-08-22T19:30:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787489400",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-23T12:50:00.000Z",
+          "endsAtEstimate": "2026-08-23T14:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787505900",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-23T17:25:00.000Z",
+          "endsAtEstimate": "2026-08-23T19:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787557500",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T07:45:00.000Z",
+          "endsAtEstimate": "2026-08-24T09:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787572200",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T11:50:00.000Z",
+          "endsAtEstimate": "2026-08-24T13:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787590200",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T16:50:00.000Z",
+          "endsAtEstimate": "2026-08-24T18:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787643900",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-25T07:45:00.000Z",
+          "endsAtEstimate": "2026-08-25T09:45:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-627218-1787665500",
+          "movieId": "scala-thionville-cot-627218",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-25T13:45:00.000Z",
+          "endsAtEstimate": "2026-08-25T15:45:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1476614",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/6g9mHfhUm3D47Z5F1qTw1q13H98.jpg",
+      "synopsis": "Directrice d'un établissement pour personnes âgées, Marie-Lou tente d'y instaurer une philosophie de soins innovante basée sur l'écoute et la dignité des résidents, malgré la réticence d’une partie de ses équipes. Sa rencontre avec Mari, une metteuse en scène japonaise qui se bat contre un cancer, va bouleverser sa trajectoire. En nouant une amitié profonde, les deux femmes engagent ensemble un combat pour “rendre possible l’impossible”.",
+      "releaseYear": 2026
     },
     {
       "id": "scala-thionville-929",
@@ -585,6 +481,43 @@
       "releaseYear": 2025
     },
     {
+      "id": "scala-thionville-cot-608104",
+      "cinemaId": "scala-thionville",
+      "title": "I Want Your Sex",
+      "genres": [
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-cot-608104-1787329200",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-21T16:20:00.000Z",
+          "endsAtEstimate": "2026-08-21T18:20:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787415900",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-22T16:25:00.000Z",
+          "endsAtEstimate": "2026-08-22T18:25:00.000Z"
+        },
+        {
+          "id": "scala-thionville-cot-608104-1787596200",
+          "movieId": "scala-thionville-cot-608104",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-24T18:30:00.000Z",
+          "endsAtEstimate": "2026-08-24T20:30:00.000Z"
+        }
+      ],
+      "version": "VO",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/",
+      "tmdbId": "1288059",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/z4iVSwpZUSmIxilSfgvciDJROdX.jpg",
+      "synopsis": "Lorsque le jeune et innocent Elliot décroche un emploi de rêve auprès d'Erika Tracy, artiste de renom, icône et provocatrice, ses fantasmes deviennent réalité : Erika fait de lui sa muse. Mais Elliot se retrouve vite dépassé par les événements, entraîné par Erika dans un voyage bien plus profond qu'il n'aurait jamais pu l'imaginer, un monde de sexe, d'obsession, de pouvoir, de trahison et de meurtre.",
+      "releaseYear": 2026
+    },
+    {
       "id": "scala-thionville-917",
       "cinemaId": "scala-thionville",
       "title": "La Guerre des boutons",
@@ -642,6 +575,38 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/kP8jJIkmX0vWEYiqQ9c5zU0dvcn.jpg",
       "synopsis": "Vingt ans après son départ pour la guerre de Troie, le roi Ulysse rentre enfin à Ithaque, mais son voyage est parsemé d'aventures et d'épreuves.",
       "releaseYear": 2026
+    },
+    {
+      "id": "scala-thionville-916",
+      "cinemaId": "scala-thionville",
+      "title": "Parade",
+      "genres": [
+        "Comédie"
+      ],
+      "showtimes": [
+        {
+          "id": "scala-thionville-10955",
+          "movieId": "scala-thionville-916",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-23T18:25:00+0200",
+          "endsAtEstimate": "2026-08-23T17:50:00.000Z"
+        },
+        {
+          "id": "scala-thionville-10956",
+          "movieId": "scala-thionville-916",
+          "cinemaId": "scala-thionville",
+          "startsAt": "2026-08-25T10:00:00+0200",
+          "endsAtEstimate": "2026-08-25T09:25:00.000Z"
+        }
+      ],
+      "director": "Jacques Tati",
+      "durationMinutes": 85,
+      "synopsis": "L'histoire d'une grande fête au cours de laquelle Jacques Tati organise une rencontre entre spectateurs, artistes, clowns, enfants et lui-même. Tout au long du film, adultes et jeunes forment une seule masse enthousiaste et unie par le spectacle. Dès le début, une petite fille et un petit garçon symbolisent, en un seul regard échangé, la joie d'être ensemble. Le public participe directement au spectacle qui tient à la fois du music-hall et du cirque, et Jacques Tati, en Monsieur Loyal, dirige et anime la représentation.",
+      "posterUrl": "https://www.thionville.fr/fileadmin/user_upload/tx_cimtmdb/58655.jpg",
+      "version": "VF",
+      "releaseYear": 1974,
+      "tmdbId": "58655",
+      "bookingUrl": "https://www.thionville-scala-vad.cotecine.fr/reserver/"
     },
     {
       "id": "scala-thionville-942",
