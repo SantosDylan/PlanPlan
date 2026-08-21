@@ -5,3 +5,7 @@ styled-system/
 *.log
 *.local
 coverage/
+
+# Worktrees créés par Claude Code : des checkouts complets (~600 Mo avec leurs
+# node_modules) qu'on n'a aucune raison de versionner.
+.claude/worktrees/
