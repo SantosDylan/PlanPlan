@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/styled-system
+# Contrairement à pm-book, rien ici ne lit le SHA git au build : 4 Mo de contexte
+# inutiles en moins.
+.git
+.github
+docs
+*.log
