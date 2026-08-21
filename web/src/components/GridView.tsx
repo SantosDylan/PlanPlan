@@ -13,7 +13,7 @@ const gridClass = css({
 
 type GridViewProps = {
   entries: MovieWithCinema[];
-  onSelectMovie: (entry: MovieWithCinema, trigger: HTMLButtonElement) => void;
+  onSelectMovie: (entry: MovieWithCinema) => void;
 };
 
 /** Vue « butinage visuel » : grille d'affiches, 2 colonnes sur mobile. */

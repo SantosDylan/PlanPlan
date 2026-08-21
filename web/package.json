@@ -8,6 +8,10 @@
     "#styled-system/css": {
       "types": "./styled-system/css/index.d.ts",
       "default": "./styled-system/css/index.mjs"
+    },
+    "#styled-system/types": {
+      "types": "./styled-system/types/index.d.ts",
+      "default": "./styled-system/types/index.d.ts"
     }
   },
   "scripts": {
@@ -24,9 +28,9 @@
     "@fontsource-variable/spline-sans-mono": "^5.2.8",
     "@phosphor-icons/react": "^2.1.10",
     "@tanstack/react-query": "^5.101.2",
-    "framer-motion": "^12.42.2",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@pandacss/dev": "^1.11.4",

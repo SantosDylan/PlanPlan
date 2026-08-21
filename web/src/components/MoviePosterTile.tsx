@@ -1,4 +1,4 @@
-import { useRef, type FC } from 'react';
+import type { FC } from 'react';
 import { css } from '#styled-system/css';
 import { dayKeyOf } from '#src/lib/datetime.js';
 import { nextShowtimeShort, seanceCountLabel } from '#src/lib/showtimes.js';
@@ -63,22 +63,20 @@ const countPillClass = css({
 
 type MoviePosterTileProps = {
   entry: MovieWithCinema;
-  onSelect: (entry: MovieWithCinema, trigger: HTMLButtonElement) => void;
+  onSelect: (entry: MovieWithCinema) => void;
 };
 
 /** Tuile d'affiche de la Grille — tap → ouvre la fiche détail (bottom-sheet) du film. */
 export const MoviePosterTile: FC<MoviePosterTileProps> = ({ entry, onSelect }) => {
   const { movie } = entry;
-  const buttonRef = useRef<HTMLButtonElement>(null);
   const todayKey = dayKeyOf(new Date().toISOString());
 
   return (
     <button
-      ref={buttonRef}
       type="button"
       aria-haspopup="dialog"
       aria-label={`${movie.title} — ${seanceCountLabel(movie.showtimes.length)}, voir les séances`}
-      onClick={() => buttonRef.current && onSelect(entry, buttonRef.current)}
+      onClick={() => onSelect(entry)}
       className={tileClass}
     >
       <div className={posterBoxClass}>

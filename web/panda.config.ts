@@ -23,6 +23,14 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
+      keyframes: {
+        // vaul ne donne aucune animation d'entrée au voile d'une sheet à snap points, et son
+        // `opacity` y est forcée en dur (cf. Sheet.tsx) : on fond donc la couleur, pas l'opacité.
+        scrimIn: {
+          from: { backgroundColor: 'transparent' },
+          to: { backgroundColor: 'var(--colors-scrim)' },
+        },
+      },
       tokens: {
         radii: {
           poster: { value: '12px' },

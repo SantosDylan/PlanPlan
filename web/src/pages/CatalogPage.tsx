@@ -1,5 +1,5 @@
 import { CalendarPlusIcon } from '@phosphor-icons/react';
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { css } from '#styled-system/css';
 import { useCatalog } from '#src/api/useCatalog.js';
 import { AgendaView } from '#src/components/AgendaView.js';
@@ -19,11 +19,9 @@ const VIEW_PANEL_ID = 'catalog-view-panel';
 function CatalogPage() {
   const { data: catalog, isPending, isError, error } = useCatalog();
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const subscribeButtonRef = useRef<HTMLButtonElement>(null);
   const { view, setView } = useCatalogView();
   const { isAdded, addShowtime, addMovie } = useAddedShowtimes();
   const [selectedEntry, setSelectedEntry] = useState<MovieWithCinema | null>(null);
-  const selectedTriggerRef = useRef<HTMLButtonElement | null>(null);
 
   const entries: MovieWithCinema[] = useMemo(() => {
     if (!catalog) return [];
@@ -35,13 +33,11 @@ function CatalogPage() {
       });
   }, [catalog]);
 
-  const handleSelectMovie = (entry: MovieWithCinema, trigger: HTMLButtonElement) => {
-    selectedTriggerRef.current = trigger;
-    setSelectedEntry(entry);
-  };
-
   return (
-    <div className={css({ h: '100dvh', display: 'flex', flexDir: 'column' })}>
+    <div className={css({ minH: '100dvh', display: 'flex', flexDir: 'column' })}>
+      {/* `viewport-fit=cover` lets the page paint under the notch and the home indicator, so the
+          chrome pays the insets back: the bar keeps its 11 units of height *below* the status bar,
+          and the row inside it stays the positioning context of the centred title. */}
       <header
         className={css({
           position: 'fixed',
@@ -49,47 +45,55 @@ function CatalogPage() {
           left: '0',
           right: '0',
           zIndex: '20',
-          h: '11',
-          px: '4',
           bg: 'ink',
-          display: 'flex',
-          alignItems: 'center',
+          pt: 'env(safe-area-inset-top)',
         })}
       >
-        <h1
+        <div
           className={css({
-            position: 'absolute',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            fontSize: 'md',
-            fontWeight: 'bold',
-            letterSpacing: 'tight',
-            m: '0',
+            position: 'relative',
+            h: '11',
+            pl: 'max(token(spacing.4), env(safe-area-inset-left))',
+            pr: 'max(token(spacing.4), env(safe-area-inset-right))',
+            display: 'flex',
+            alignItems: 'center',
           })}
         >
-          Plan-Plan
-        </h1>
-        <div className={css({ display: 'flex', alignItems: 'center', ml: 'auto' })}>
-          <ThemeMenu />
-          {catalog && catalog.cinemas.length > 0 && (
-            <IconButton ref={subscribeButtonRef} onClick={() => setDrawerOpen(true)} aria-label="S'abonner au calendrier">
-              <CalendarPlusIcon size={20} />
-            </IconButton>
-          )}
+          <h1
+            className={css({
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              fontSize: 'md',
+              fontWeight: 'bold',
+              letterSpacing: 'tight',
+              m: '0',
+            })}
+          >
+            Plan-Plan
+          </h1>
+          <div className={css({ display: 'flex', alignItems: 'center', ml: 'auto' })}>
+            <ThemeMenu />
+            {catalog && catalog.cinemas.length > 0 && (
+              <IconButton onClick={() => setDrawerOpen(true)} aria-label="S'abonner au calendrier">
+                <CalendarPlusIcon size={20} />
+              </IconButton>
+            )}
+          </div>
         </div>
       </header>
 
       <div
         className={css({
           flex: '1',
-          minH: '0',
           w: 'full',
           maxW: '860px',
           mx: 'auto',
-          px: '4',
-          pt: '12',
-          pb: '6',
+          pl: 'max(token(spacing.4), env(safe-area-inset-left))',
+          pr: 'max(token(spacing.4), env(safe-area-inset-right))',
+          pt: 'calc(token(spacing.12) + env(safe-area-inset-top))',
+          pb: 'calc(token(spacing.6) + env(safe-area-inset-bottom))',
           display: 'flex',
           flexDir: 'column',
           gap: '4',
@@ -110,12 +114,25 @@ function CatalogPage() {
 
         {catalog && (
           <>
-            <ViewToggle view={view} onChange={setView} panelId={VIEW_PANEL_ID} />
+            {/* Sticky under the fixed header now that the document scrolls: switching views
+                stays one tap away wherever you are in the list. */}
+            <div
+              className={css({
+                position: 'sticky',
+                top: 'calc(token(sizes.11) + env(safe-area-inset-top))',
+                zIndex: '10',
+                bg: 'ink',
+                pt: '2',
+                pb: '3',
+              })}
+            >
+              <ViewToggle view={view} onChange={setView} panelId={VIEW_PANEL_ID} />
+            </div>
 
-            <div className={css({ flex: '1', minH: '0', overflowY: 'auto', display: 'flex', flexDir: 'column', gap: '4' })}>
+            <div className={css({ display: 'flex', flexDir: 'column', gap: '4' })}>
               <main id={VIEW_PANEL_ID} role="tabpanel" tabIndex={0} className={css({ display: 'flex', flexDir: 'column', gap: '3' })}>
                 {view === 'grille' ? (
-                  <GridView entries={entries} onSelectMovie={handleSelectMovie} />
+                  <GridView entries={entries} onSelectMovie={setSelectedEntry} />
                 ) : (
                   <AgendaView movies={catalog.movies} cinemas={catalog.cinemas} isAdded={isAdded} onAddShowtime={addShowtime} />
                 )}
@@ -130,18 +147,12 @@ function CatalogPage() {
             <MovieSheet
               entry={selectedEntry}
               onClose={() => setSelectedEntry(null)}
-              triggerRef={selectedTriggerRef}
               isAdded={isAdded}
               onAddShowtime={addShowtime}
               onAddMovie={addMovie}
             />
 
-            <SubscribeDrawer
-              cinemas={catalog.cinemas}
-              open={drawerOpen}
-              onClose={() => setDrawerOpen(false)}
-              triggerRef={subscribeButtonRef}
-            />
+            <SubscribeDrawer cinemas={catalog.cinemas} open={drawerOpen} onClose={() => setDrawerOpen(false)} />
           </>
         )}
       </div>

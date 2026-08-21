@@ -1,4 +1,3 @@
-import { AnimatePresence } from 'framer-motion';
 import {
   createContext,
   useContext,
@@ -14,7 +13,6 @@ import {
   flip,
   FloatingFocusManager,
   FloatingList,
-  FloatingOverlay,
   FloatingPortal,
   offset,
   shift,
@@ -27,8 +25,7 @@ import {
   useRole,
 } from '@floating-ui/react';
 import { css } from '#styled-system/css';
-import { Backdrop } from './Backdrop.js';
-import { DraggableSheet } from './DraggableSheet.js';
+import { Sheet } from './Sheet.js';
 import { useIsDesktop } from '#src/hooks/useIsDesktop.js';
 
 type MenuContextValue = {
@@ -42,7 +39,7 @@ const MenuContext = createContext<MenuContextValue | null>(null);
 type TriggerProps = {
   ref: (node: HTMLElement | null) => void;
   'aria-label': string;
-  'aria-haspopup': 'menu';
+  'aria-haspopup': 'menu' | 'dialog';
   'aria-expanded': boolean;
 };
 
@@ -71,36 +68,17 @@ const popoverClass = css({
   outline: 'none',
 });
 
-// Permanently non-interactive: only its visible children (backdrop, sheet) opt back in via
-// pointerEvents: 'auto', so it never blocks the page behind it — mounted or not, animating or not.
-const overlayClass = css({
-  zIndex: '40',
-  display: 'flex',
-  alignItems: 'flex-end',
-  justifyContent: 'center',
-  pointerEvents: 'none',
-});
-
-const sheetClass = css({
-  position: 'relative',
-  w: 'full',
-  maxW: '480px',
-  bg: 'surfaceSheet',
-  rounded: '12px 12px 0 0',
-  px: '3',
-  py: '5',
-  display: 'flex',
-  flexDir: 'column',
-  gap: '2',
-  outline: 'none',
-});
-
-const sheetTitleClass = css({ fontSize: 'md', fontWeight: 'bold', m: '0', px: '3' });
+// Pulled 3 units wider than the body's padding so each item's own `px: 3` puts its label
+// flush with the sheet title, while its hover/selected background bleeds further out.
+const sheetListClass = css({ display: 'flex', flexDir: 'column', gap: '1', mx: '-3' });
 
 /**
- * Responsive menu primitive: an anchored popover on desktop (≥md) and a
- * bottom-sheet on mobile (<md). Open/close, focus trapping, dismiss (Escape /
- * outside-press), and arrow-key list navigation are handled by @floating-ui/react.
+ * Responsive menu primitive: an anchored popover on desktop (≥md) and a {@link Sheet} on
+ * mobile (<md). @floating-ui/react drives the desktop side — anchoring, focus, dismiss and
+ * arrow-key list navigation; the mobile side hands focus, dismiss and drag to the sheet, so
+ * `useDismiss`/`useRole` stay desktop-only (their outside-press would fire on taps *inside*
+ * the portalled sheet, which floating-ui doesn't know about). `useListNavigation` stays on in
+ * both: {@link MenuItem} sources its props from it.
  * Pair with {@link MenuItem} for keyboard-navigable, selectable entries.
  */
 export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
@@ -118,8 +96,8 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
   });
 
   const click = useClick(context);
-  const dismiss = useDismiss(context);
-  const role = useRole(context, { role: 'menu' });
+  const dismiss = useDismiss(context, { enabled: isDesktop });
+  const role = useRole(context, { role: 'menu', enabled: isDesktop });
   const listNavigation = useListNavigation(context, {
     listRef,
     activeIndex,
@@ -139,7 +117,7 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
     {
       ref: refs.setReference,
       'aria-label': label,
-      'aria-haspopup': 'menu',
+      'aria-haspopup': isDesktop ? 'menu' : 'dialog',
       'aria-expanded': open,
       ...getReferenceProps(),
     } as TriggerProps,
@@ -149,45 +127,34 @@ export const Menu: FC<MenuProps> = ({ label, title, trigger, children }) => {
   return (
     <>
       {triggerNode}
-      <AnimatePresence>
-        {open && (
-          <MenuContext.Provider value={menuContext}>
-            <FloatingList elementsRef={listRef}>
+      <MenuContext.Provider value={menuContext}>
+        <FloatingList elementsRef={listRef}>
+          {isDesktop ? (
+            open && (
               <FloatingPortal>
-                {isDesktop ? (
-                  <FloatingFocusManager context={context} modal={false}>
-                    <div
-                      ref={refs.setFloating}
-                      style={floatingStyles}
-                      aria-label={label}
-                      className={popoverClass}
-                      {...getFloatingProps()}
-                    >
-                      {children}
-                    </div>
-                  </FloatingFocusManager>
-                ) : (
-                  <FloatingOverlay lockScroll className={overlayClass}>
-                    <Backdrop />
-                    <FloatingFocusManager context={context} modal>
-                      <DraggableSheet
-                        ref={refs.setFloating}
-                        onClose={close}
-                        aria-label={label}
-                        className={sheetClass}
-                        {...getFloatingProps()}
-                      >
-                        {(title ?? label) && <h2 className={sheetTitleClass}>{title ?? label}</h2>}
-                        {children}
-                      </DraggableSheet>
-                    </FloatingFocusManager>
-                  </FloatingOverlay>
-                )}
+                <FloatingFocusManager context={context} modal={false}>
+                  <div
+                    ref={refs.setFloating}
+                    style={floatingStyles}
+                    aria-label={label}
+                    className={popoverClass}
+                    {...getFloatingProps()}
+                  >
+                    {children}
+                  </div>
+                </FloatingFocusManager>
               </FloatingPortal>
-            </FloatingList>
-          </MenuContext.Provider>
-        )}
-      </AnimatePresence>
+            )
+          ) : (
+            <Sheet open={open} onOpenChange={setOpen} title={title ?? label} bodyCss={{ px: '6', gap: '2' }}>
+              {/* `menuitemradio` needs an owning `menu` — the sheet itself is a `dialog`. */}
+              <div role="menu" aria-label={label} className={sheetListClass}>
+                {children}
+              </div>
+            </Sheet>
+          )}
+        </FloatingList>
+      </MenuContext.Provider>
     </>
   );
 };

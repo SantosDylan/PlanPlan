@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import type { ComponentPropsWithRef, FC } from 'react';
 import { css, cx } from '#styled-system/css';
 
@@ -15,17 +14,14 @@ const iconButtonClass = css({
   alignItems: 'center',
   justifyContent: 'center',
   WebkitTapHighlightColor: 'transparent',
+  transition: 'transform 0.15s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.15s ease',
+  _active: { transform: 'scale(0.88)', opacity: '0.65' },
+  _motionReduce: { transition: 'none' },
 });
 
-type IconButtonProps = ComponentPropsWithRef<typeof motion.button>;
+type IconButtonProps = ComponentPropsWithRef<'button'>;
 
 /** Minimal, borderless icon-only button with a subtle press feedback (scale + opacity dip). */
 export const IconButton: FC<IconButtonProps> = ({ className, ...props }) => (
-  <motion.button
-    type="button"
-    whileTap={{ scale: 0.88, opacity: 0.65 }}
-    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-    className={cx(iconButtonClass, className)}
-    {...props}
-  />
+  <button type="button" className={cx(iconButtonClass, className)} {...props} />
 );

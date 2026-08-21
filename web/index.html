@@ -9,7 +9,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#1b1a17" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport-fit=cover: sans ça, env(safe-area-inset-*) vaut 0 sur iOS et les sheets
+         passent sous le home indicator. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta
       name="description"
       content="La programmation du cinéma La Scala (Thionville) — et chaque séance dans ton agenda en un clic."
